@@ -1,0 +1,263 @@
+// video modal
+.video-modal-wrapper {
+  max-width: 850px;
+
+  .modal-content {
+    border: none;
+    background: transparent;
+
+    .close-video-modal {
+      position: absolute;
+      top: -28px;
+      right: 0;
+      font-size: 20px;
+      line-height: 20px;
+      color: #fff;
+    }
+  }
+}
+
+.preview-slider {
+  overflow: hidden;
+
+  .slide {
+    margin: 0 10px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3));
+    }
+
+    .play-preview-button {
+      @include center;
+      z-index: 10;
+      width: 40px;
+
+      @media (max-width: $screen-sm-min) {
+        width: 20px;
+      }
+    }
+
+    .title-video-preview {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 5px 10px;
+      width: 100%;
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 900;
+      color: #fff;
+      text-transform: uppercase;
+      z-index: 10;
+    }
+  }
+
+  .slick-list {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
+
+// invest modal
+.invest-modal-dialog {
+  max-width: 600px;
+
+  .modal-content {
+    padding: 20px;
+    border: none;
+
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: #7f7f7f;
+      font-size: 14px;
+      line-height: 14px;
+    }
+
+    .bottom-text {
+      font-size: 11px;
+      line-height: 16px;
+      color: $dark-color;
+      margin: 0;
+      text-align: justify;
+    }
+
+    span {
+      display: block;
+      font-size: 24px;
+      line-height: 26px;
+      color: $main-color;
+      text-transform: uppercase;
+      font-weight: 900;
+      margin-bottom: 20px;
+      padding-right: 25px;
+    }
+
+    em {
+      display: block;
+      font-style: normal;
+      font-size: 18px;
+      line-height: 23px;
+      font-weight: 300;
+      margin-bottom: 23px;
+
+      &.red-color {
+        color: #f33;
+      }
+    }
+
+    .invest-form-row {
+      margin-bottom: 20px;
+
+      @media (max-width: $screen-sm-min) {
+        display: block !important;
+      }
+
+      label {
+        display: block;
+        font-size: 24px;
+        line-height: 26px;
+        font-weight: 300;
+        color: $dark-color;
+        margin: 0;
+        flex: 1;
+
+        @media (max-width: $screen-sm-min) {
+          margin-bottom: 10px;
+        }
+
+        b {
+          font-size: 16px;
+          line-height: 18px;
+        }
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 24px;
+        color: $dark-color;
+        margin: 0;
+        flex: 1;
+
+        @media (max-width: $screen-sm-min) {
+          margin-bottom: 10px;
+        }
+
+        a {
+          color: $main-color;
+          text-decoration: underline;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+
+      .input-wrap {
+        input {
+          padding-left: 30px;
+          background-color: #ffffe1;
+        }
+      }
+    }
+  }
+}
+
+.input-wrap {
+  position: relative;
+
+  i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 700;
+    font-style: normal;
+    color: $dark-color;
+  }
+
+  input {
+    display: block;
+    width: 260px;
+    height: 50px;
+    border-radius: .3rem;
+    border: 1px solid #ccc;
+    text-align: right;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 300;
+    color: $dark-color;
+    outline: none;
+    padding: 10px;
+
+    @media (max-width: $screen-sm-min) {
+      width: 100%;
+    }
+  }
+}
+
+.select-wrap {
+  position: relative;
+
+  select {
+    display: block;
+    width: 330px;
+    height: 30px;
+    border-radius: .3rem;
+    border: 1px solid #ccc;
+    background-color: #ffffe1;
+    outline: none;
+    padding: 0 10px;
+
+    @media (max-width: $screen-sm-min) {
+      width: 100%;
+    }
+
+    option {
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: 300;
+    }
+  }
+}
+
+.input-submit {
+  margin-left: 30px;
+
+  @media (max-width: $screen-sm-min) {
+    margin-left: 0;
+  }
+  
+  input {
+    display: block;
+    min-width: 90px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: $main-color;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    @include transition;
+    
+    &:hover {
+      background-color: $dark-color;
+    }
+  }
+}

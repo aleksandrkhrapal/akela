@@ -1,0 +1,96 @@
+.latest-news-section {
+  margin-top: -50px;
+  padding-bottom: 50px;
+
+  @media (max-width: $screen-sm-max) {
+    margin-top: 0;
+  }
+
+  .news-list {
+    padding-top: 120px;
+
+    @media (max-width: $screen-sm-max) {
+      padding-top: 0;
+    }
+
+    .news-list-row {
+      border-bottom: 2px solid #d0dfe6;
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+
+      &:last-of-type {
+        padding-bottom: 0;
+        border: none;
+      }
+
+      span {
+        display: block;
+        font-size: 32px;
+        line-height: 35px;
+        font-weight: 900;
+        color: $dark-color;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+
+        @media (max-width: $screen-sm-max) {
+          font-size: 26px;
+          line-height: 28px;
+        }
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 24px;
+        color: $dark-color;
+        text-align: justify;
+      }
+    }
+  }
+
+  .latest-news-title {
+    padding-top: 0;
+  }
+}
+
+.pagination {
+  @media (max-width: $screen-sm-max) {
+    justify-content: center;
+  }
+
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    color: $dark-color;
+
+    &.active {
+      text-decoration: underline;
+    }
+
+    &.prev, &.next {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      border: 1px solid $main-color;
+      position: relative;
+      @include transition;
+
+      &:hover {
+        background-color: $main-color;
+
+        i {
+          color: #fff;
+        }
+      }
+
+      i {
+        @include center;
+        @include transition;
+        color: $main-color;
+      }
+    }
+  }
+}
