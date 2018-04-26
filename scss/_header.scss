@@ -160,9 +160,13 @@
     display: none;
     width: 35px;
     height: 35px;
-    margin-left: 10px;
+    margin-left: 15px;
     cursor: pointer;
     position: relative;
+
+    @media (max-width: 320px) {
+      margin-left: 10px;
+    }
 
     &.active {
       span {
@@ -230,6 +234,14 @@
       margin-left: 15px;
 
       @media (max-width: $screen-md-max) {
+        margin-left: 5px;
+      }
+
+      @media (max-width: $screen-sm-min) {
+        margin-left: 15px;
+      }
+
+      @media (max-width: 320px) {
         margin-left: 5px;
       }
 
