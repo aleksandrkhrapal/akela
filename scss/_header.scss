@@ -245,14 +245,14 @@
         margin-left: 5px;
       }
 
-      &:hover {
+      &:hover, &.active {
         background-color: $main-color;
         border-color: $main-color;
       }
     }
 
     &.button-sign-up {
-      &:hover {
+      &:hover, &.active {
         color: $main-color;
       }
     }
