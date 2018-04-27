@@ -124,34 +124,10 @@
       padding-bottom: 22px;
       border-bottom: 1px solid #dedfe0;
 
-      .button-wrap {
-        margin-bottom: 10px;
-
-        &:last-child {
-          margin-bottom: 0;
-        }
-
-        .see-all-offers {
-          display: inline-block;
-          font-size: 14px;
-          line-height: 16px;
-          color: $main-color;
-        }
-
-        .see-all-upcoming {
-          display: inline-block;
-          font-size: 14px;
-          line-height: 16px;
-          font-weight: 700;
-          text-transform: uppercase;
-          color: $main-color;
-        }
-      }
-
       .investment-board-left {
         position: relative;
         margin-bottom: 23px;
-        
+
         &:after {
           content: '';
           display: block;
@@ -251,6 +227,30 @@
         }
       }
     }
+  }
+}
+
+.button-wrap {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .see-all-offers {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 16px;
+    color: $main-color;
+  }
+
+  .see-all-upcoming {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $main-color;
   }
 }
 

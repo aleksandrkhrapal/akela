@@ -25,12 +25,6 @@
     }
 
     .about-info {
-      padding-top: 35px;
-
-      @media (max-width: $screen-sm-max) {
-        padding-top: 0;
-      }
-
       p {
         color: #fff;
 

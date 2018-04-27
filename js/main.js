@@ -19,7 +19,6 @@ $('.mobile-menu-button').on('click', function (e) {
 
 // video slider
 $('.video-slider').slick({
-    centerMode: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     dots: false,

@@ -109,6 +109,27 @@ main {
   @media (max-width: $screen-md-min) {
     margin-top: 59px;
   }
+
+  &.top-gradient {
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 91px;
+      left: 0;
+      width: 100%;
+      height: 55px;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.001));
+
+      @media (max-width: $screen-lg-min) {
+        top: 77px;
+      }
+
+      @media (max-width: $screen-md-min) {
+        top: 59px;
+      }
+    }
+  }
 }
 
 .wrapper {
@@ -146,8 +167,8 @@ main {
     color: #959595;
 
     &:hover {
-      background-color: #959595;
-      border-color: #959595;
+      background-color: $main-color;
+      border-color: $main-color;
     }
   }
   
