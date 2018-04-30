@@ -1,3 +1,7 @@
+@import "variables";
+@import "header";
+@import "footer";
+
 .about-top-section {
   position: relative;
 
@@ -67,7 +71,7 @@
       background: none !important;
       padding-top: 0;
     }
-    
+
     &.left-img {
       background-position: 0 0;
     }

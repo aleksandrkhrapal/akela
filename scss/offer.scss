@@ -1,3 +1,8 @@
+@import "variables";
+@import "header";
+@import "footer";
+@import "modals";
+
 .offer-top-section {
 
   .offer-top-wrapper {
@@ -12,7 +17,7 @@
   .offer-after-img {
     margin-top: -115px;
     width: 100%;
-    
+
     @media (max-width: 1550px) {
       margin-top: -80px;
     }
@@ -33,11 +38,11 @@
 
 .bread-crumbs {
   margin-bottom: 20px;
-  
+
   &.white-color {
     a {
       color: #fff;
-      
+
       &:before {
         color: #fff;
       }
@@ -61,7 +66,7 @@
         color: #fff;
       }
     }
-    
+
     &.active-main-color {
       color: $main-color;
     }
@@ -88,94 +93,6 @@
       font-size: 12px;
       line-height: 14px;
       font-weight: 300;
-    }
-  }
-}
-
-.offer-title {
-  margin-bottom: 80px;
-
-  @media (max-width: $screen-sm-max) {
-    margin-bottom: 40px;
-  }
-
-  &.offer-title-top {
-    padding-top: 45px;
-
-    @media (max-width: $screen-sm-max) {
-      padding-top: 0;
-    }
-
-    span {
-      font-size: 40px;
-      line-height: 42px;
-
-      &:after {
-        left: 0;
-        transform: none;
-      }
-    }
-  }
-
-  &.offer-title-center {
-    display: inline-block;
-    min-width: 355px;
-    text-align: center;
-
-    @media (max-width: $screen-sm-max) {
-      display: block;
-      width: 100%;
-      min-width: inherit;
-    }
-  }
-
-  span {
-    display: inline-block;
-    font-size: 32px;
-    line-height: 34px;
-    font-weight: 900;
-    text-transform: uppercase;
-    position: relative;
-
-    @media (max-width: $screen-sm-max) {
-      br {
-        display: none;
-      }
-    }
-
-    &.main-color {
-      color: $main-color;
-
-      &:after {
-        background-color: $main-color;
-      }
-    }
-
-    &.dark-color {
-      color: $dark-color;
-      
-      &:after {
-        background-color: $dark-color;
-      }
-    }
-
-    &.white-color {
-      color: #fff;
-
-      &:after {
-        background-color: #fff;
-      }
-    }
-
-    &:after {
-      content: '';
-      display: block;
-      width: 88px;
-      height: 5px;
-      position: absolute;
-      bottom: -15px;
-      left: 50%;
-      transform: translateX(-50%);
     }
   }
 }
@@ -288,7 +205,7 @@
 .offer-prospectus {
   position: relative;
   height: 130px;
-  
+
   @media (max-width: $screen-md-max) {
     display: none;
   }
@@ -487,7 +404,7 @@
         i {
           color: $main-color;
         }
-        
+
         span {
           color: $main-color;
         }
@@ -545,7 +462,7 @@
     outline: none;
     cursor: pointer;
     position: relative;
-    
+
     &:before {
       content: '';
       display: block;

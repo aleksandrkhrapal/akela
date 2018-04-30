@@ -11,7 +11,7 @@
 
 		<link media="all" rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
 		<link media="all" rel="stylesheet" href="css/fontawesome-all.min.css" type="text/css" />
-		<link media="all" rel="stylesheet" href="css/login.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/style.css" type="text/css" />
 
 		<!-- Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700,900" rel="stylesheet">
@@ -47,7 +47,7 @@
 						</ul>
 					</nav>
 					<div class="header-buttons">
-						<a href="signup.html" class="button-sign-up active">Sign up</a>
+						<a href="signup.html" class="button-sign-up">Sign up</a>
 						<a href="login.html" class="button-login">Login</a>
 						<div class="mobile-menu-button">
 							<span class="line1"></span>
@@ -59,77 +59,13 @@
 			</div>
 		</header>
 
-		<main class="login-main">
-			<div class="signup-wrapper">
-				<div class="login-wrapper">
-					<div class="hint-alerts error">
-						<mark>*Last Name - This field is required</mark>
-					</div>
-					<span class="login-title">CREATE AN ACCOUNT</span>
-					<form action="#">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="login-form-row">
-									<label for="first-name">*First Name</label>
-									<input id="first-name" class="border-main-color" type="text">
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="login-form-row">
-									<label for="last-name">*Last Name</label>
-									<input id="last-name" class="border-error" type="text">
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6">
-								<div class="login-form-row">
-									<label for="email">*Email</label>
-									<input id="email" type="email">
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="login-form-row">
-									<label for="referer-code">Referer code</label>
-									<input id="referer-code" type="number">
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6">
-								<div class="login-form-row">
-									<label for="pass">*Password</label>
-									<input id="pass" type="password">
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="login-form-row">
-									<label for="pass-repeat">*Repeat password</label>
-									<input id="pass-repeat" type="password">
-								</div>
-							</div>
-						</div>
-						<div class="checkbox">
-							<input id="check1" type="checkbox">
-							<label for="check1" class="d-flex">
-								<span><i class="material-icons">check</i></span>
-								<em>I have read & downloaded the <a href="#">Financial Services Guide</a></em>
-							</label>
-						</div>
-						<div class="checkbox">
-							<input id="check2" type="checkbox">
-							<label for="check2" class="d-flex">
-								<span><i class="material-icons">check</i></span>
-								<em>I accept the <a href="terms.html">Terms & conditions</a></em>
-							</label>
-						</div>
-						<div class="login-form-buttons d-flex justify-content-between align-items-center">
-							<a href="#">Forgot your password?</a>
-							<input type="submit" value="Register">
-						</div>
-					</form>
+		<main>
+			<div class="error-page-wrapper">
+				<div class="container-fluid">
+					<span>We couldn't find the page you're looking for.</span>
+					<p>The requested page couldn't be located. Checkout for any URL misspelling or <a href="index.html">return to the homepage</a></p>
+					<mark>Error: 404</mark>
 				</div>
-				<p>The information on this site is of a general nature only. It does not take your specific needs or circumstances into consideration. You should look at your own personal situation and requirements before making any financial decisions. The information provided on this site about the financial products, is not an endorsement of these products.</p>
 			</div>
 		</main>
 
