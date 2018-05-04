@@ -23,20 +23,18 @@
     }
 
     .news-list-row {
-      border-bottom: 2px solid #d0dfe6;
       margin-bottom: 40px;
       padding-bottom: 40px;
 
       &:last-of-type {
         padding-bottom: 0;
-        border: none;
       }
 
       span {
         display: block;
         font-size: 32px;
         line-height: 35px;
-        font-weight: 900;
+        font-weight: 700;
         color: $dark-color;
         text-transform: uppercase;
         margin-bottom: 20px;

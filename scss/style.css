@@ -102,7 +102,7 @@ main {
     font-size: 40px;
     line-height: 42px;
     color: #fff;
-    font-weight: 900;
+    font-weight: 700;
     text-transform: uppercase;
     position: relative; }
     @media (max-width: 576px) {
@@ -506,7 +506,7 @@ input[type=number]::-webkit-outer-spin-button {
     display: block;
     font-size: 37px;
     line-height: 39px;
-    font-weight: 900;
+    font-weight: 700;
     color: #fff;
     text-transform: uppercase;
     margin: 0 0 35px 0; }
@@ -571,7 +571,7 @@ input[type=number]::-webkit-outer-spin-button {
           padding: 0;
           color: #00b3b7; }
         .investment-board .investment-board-container .investment-board-heading h2 em {
-          font-weight: 900;
+          font-weight: 700;
           color: #00b3b7;
           font-style: normal;
           font-size: 21px;
@@ -616,7 +616,7 @@ input[type=number]::-webkit-outer-spin-button {
           color: #203140;
           font-size: 16px;
           line-height: 18px;
-          font-weight: 900;
+          font-weight: 700;
           margin-bottom: 10px;
           text-transform: uppercase; }
         .investment-board .investment-board-container .investment-board-row .investment-board-left p {
@@ -631,7 +631,7 @@ input[type=number]::-webkit-outer-spin-button {
         font-size: 18px;
         line-height: 20px;
         text-transform: uppercase;
-        font-weight: 900;
+        font-weight: 700;
         margin-bottom: 10px; }
         .investment-board .investment-board-container .investment-board-row .investment-board-right .status.status-closes {
           color: #203140; }
@@ -856,7 +856,7 @@ input[type=number]::-webkit-outer-spin-button {
     display: inline-block;
     font-size: 32px;
     line-height: 34px;
-    font-weight: 900;
+    font-weight: 700;
     text-transform: uppercase;
     position: relative; }
     @media (max-width: 767px) {
@@ -981,7 +981,7 @@ input[type=number]::-webkit-outer-spin-button {
   margin-bottom: 15px;
   font-size: 18px;
   line-height: 20px;
-  font-weight: 900;
+  font-weight: 700;
   color: #203140;
   text-transform: uppercase; }
   .offer-span em {
@@ -1016,7 +1016,7 @@ input[type=number]::-webkit-outer-spin-button {
       padding: 0;
       font-size: 24px;
       line-height: 26px;
-      font-weight: 900;
+      font-weight: 700;
       color: #00b3b7;
       margin-bottom: 30px; }
     .key-points-overview-section .offer-sidebar .prospectus-wrapper .offer-span {
@@ -1056,7 +1056,7 @@ input[type=number]::-webkit-outer-spin-button {
         display: block;
         font-size: 18px;
         line-height: 20px;
-        font-weight: 900;
+        font-weight: 700;
         color: #203140;
         text-transform: uppercase;
         margin-bottom: 50px; }
@@ -1157,7 +1157,7 @@ input[type=number]::-webkit-outer-spin-button {
     width: 100%;
     font-size: 28px;
     line-height: 30px;
-    font-weight: 900;
+    font-weight: 700;
     color: #fff;
     text-transform: uppercase;
     z-index: 10; }
@@ -1335,7 +1335,7 @@ input[type=number]::-webkit-outer-spin-button {
         display: block;
         font-size: 32px;
         line-height: 35px;
-        font-weight: 900;
+        font-weight: 700;
         color: #203140;
         text-transform: uppercase;
         margin-bottom: 20px; }
@@ -1460,7 +1460,7 @@ input[type=number]::-webkit-outer-spin-button {
     display: block;
     font-size: 40px;
     line-height: 43px;
-    font-weight: 900;
+    font-weight: 700;
     text-transform: uppercase;
     color: #203140;
     position: relative; }
@@ -1528,7 +1528,7 @@ input[type=number]::-webkit-outer-spin-button {
       width: 100%;
       font-size: 14px;
       line-height: 16px;
-      font-weight: 900;
+      font-weight: 700;
       color: #fff;
       text-transform: uppercase;
       z-index: 10; }
@@ -1560,7 +1560,7 @@ input[type=number]::-webkit-outer-spin-button {
       line-height: 26px;
       color: #00b3b7;
       text-transform: uppercase;
-      font-weight: 900;
+      font-weight: 700;
       margin-bottom: 20px;
       padding-right: 25px; }
     .invest-modal-dialog .modal-content em {
@@ -1712,7 +1712,7 @@ input[type=number]::-webkit-outer-spin-button {
     left: 35px;
     font-size: 24px;
     line-height: 26px;
-    font-weight: 900;
+    font-weight: 700;
     color: #00b3b7;
     text-transform: uppercase;
     background-color: #f5f5f5;

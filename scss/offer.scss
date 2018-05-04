@@ -231,7 +231,7 @@
   margin-bottom: 15px;
   font-size: 18px;
   line-height: 20px;
-  font-weight: 900;
+  font-weight: 700;
   color: $dark-color;
   text-transform: uppercase;
 
@@ -280,7 +280,7 @@
         padding: 0;
         font-size: 24px;
         line-height: 26px;
-        font-weight: 900;
+        font-weight: 700;
         color: $main-color;
         margin-bottom: 30px;
       }
@@ -344,7 +344,7 @@
         display: block;
         font-size: 18px;
         line-height: 20px;
-        font-weight: 900;
+        font-weight: 700;
         color: $dark-color;
         text-transform: uppercase;
         margin-bottom: 50px;
@@ -416,7 +416,6 @@
     a {
       display: block;
       padding: 20px 0;
-      border-bottom: 1px solid #000;
       text-decoration: none;
 
       &:hover {
@@ -488,7 +487,7 @@
       width: 100%;
       font-size: 28px;
       line-height: 30px;
-      font-weight: 900;
+      font-weight: 700;
       color: #fff;
       text-transform: uppercase;
       z-index: 10;
@@ -610,7 +609,6 @@
   .news-row {
     margin-bottom: 45px;
     padding-bottom: 40px;
-    border-bottom: 1px solid #aa4144;
 
     &:last-child {
       margin-bottom: 0;
@@ -661,8 +659,6 @@
 }
 
 .faq-container {
-  border-bottom: 1px solid #000;
-
   &.active {
     .faq-header {
       .faq-arrow {

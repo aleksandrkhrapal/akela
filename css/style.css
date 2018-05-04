@@ -112,7 +112,7 @@ main {
     font-size: 40px;
     line-height: 42px;
     color: #fff;
-    font-weight: 900;
+    font-weight: 700;
     text-transform: uppercase;
     position: relative; }
     @media (max-width: 576px) {
@@ -123,7 +123,7 @@ main {
       content: '';
       display: block;
       width: 90px;
-      height: 5px;
+      height: 4px;
       background-color: #fff;
       position: absolute;
       bottom: -20px;
@@ -292,7 +292,7 @@ input[type=number]::-webkit-outer-spin-button {
     display: inline-block;
     font-size: 32px;
     line-height: 34px;
-    font-weight: 900;
+    font-weight: 700;
     text-transform: uppercase;
     position: relative; }
     @media (max-width: 767px) {
@@ -314,7 +314,7 @@ input[type=number]::-webkit-outer-spin-button {
       content: '';
       display: block;
       width: 88px;
-      height: 5px;
+      height: 4px;
       position: absolute;
       bottom: -15px;
       left: 50%;
@@ -367,7 +367,8 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 12px;
     line-height: 14px;
     color: #fff;
-    font-weight: 600; }
+    font-weight: 600;
+    text-transform: capitalize; }
     @media (max-width: 991px) {
       .logo a span {
         display: none; } }
@@ -415,12 +416,12 @@ input[type=number]::-webkit-outer-spin-button {
           background-color: #00b3b7;
           opacity: 1;
           visibility: visible;
-          bottom: -10px; }
+          bottom: -7px; }
       .main-nav ul li a {
         display: inline-block;
         font-size: 14px;
         line-height: 16px;
-        font-weight: 700;
+        font-weight: 600;
         color: #fff;
         text-transform: uppercase;
         position: relative;
@@ -428,12 +429,12 @@ input[type=number]::-webkit-outer-spin-button {
         .main-nav ul li a:hover:after {
           opacity: 1;
           visibility: visible;
-          bottom: -10px; }
+          bottom: -7px; }
         .main-nav ul li a:after {
           content: '';
           display: block;
           width: 100%;
-          height: 5px;
+          height: 2px;
           background-color: #fff;
           position: absolute;
           bottom: -5px;
@@ -558,8 +559,8 @@ input[type=number]::-webkit-outer-spin-button {
       display: inline-block;
       vertical-align: middle;
       text-transform: uppercase;
-      font-size: 14px;
-      line-height: 16px;
+      font-size: 12px;
+      line-height: 14px;
       color: #fff;
       margin: 0 2px; }
       .main-footer .footer-menu-col .footer-other-nav a.active {
@@ -667,7 +668,7 @@ input[type=number]::-webkit-outer-spin-button {
       width: 100%;
       font-size: 14px;
       line-height: 16px;
-      font-weight: 900;
+      font-weight: 700;
       color: #fff;
       text-transform: uppercase;
       z-index: 10; }
@@ -699,7 +700,7 @@ input[type=number]::-webkit-outer-spin-button {
       line-height: 26px;
       color: #00b3b7;
       text-transform: uppercase;
-      font-weight: 900;
+      font-weight: 700;
       margin-bottom: 20px;
       padding-right: 25px; }
     .invest-modal-dialog .modal-content em {
