@@ -1,0 +1,289 @@
+@import "variables";
+@import "header";
+@import "dashboard-sidebar";
+@import "dashboard-header";
+
+.dashboard-wrapper {
+  .dashboard-container {
+    padding-left: 335px;
+    width: 100%;
+    transition: all .5s ease-in-out;
+
+    &.container-lg {
+      padding-left: 80px;
+    }
+
+    .header-dashboard {
+      height: 99px;
+      width: 100%;
+      background-color: $dark-color;
+      padding: 0 60px;
+
+      @media (max-width: 1280px) {
+        padding: 0 15px;
+      }
+
+      .main-nav {
+        padding: 0;
+
+        ul {
+          li {
+            &:first-child {
+              margin-left: 0;
+            }
+
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .dashboard-wrapper {
+      padding: 60px;
+
+      @media (max-width: 1280px) {
+        padding: 60px 15px;
+      }
+      
+      .dashboard-top-heading {
+        margin-bottom: 70px;
+
+        .heading {
+          h2 {
+            margin: 0;
+            font-size: 30px;
+            line-height: 32px;
+            font-weight: 700;
+            color: $main-color;
+            text-transform: uppercase;
+          }
+
+          p {
+            margin: 0;
+            font-size: 16px;
+            line-height: 24px;
+            color: $dark-color;
+          }
+        }
+        
+        .dashboard-btn-create {
+          background-color: $main-color;
+          
+          &:hover {
+            border-color: $dark-color;
+            background-color: $dark-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.dashboard-row {
+  padding-bottom: 70px;
+
+  .investment-board {
+    padding: 0;
+  }
+
+  &:first-child {
+    padding-top: 70px;
+  }
+
+  &:last-child {
+    padding: 0;
+  }
+
+  .dashboard-repeat-title {
+    margin-bottom: 30px;
+
+    h3 {
+      font-size: 24px;
+      line-height: 26px;
+      font-weight: 700;
+      color: $dark-color;
+      text-transform: uppercase;
+      margin: 0 0 10px 0;
+    }
+
+    p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 24px;
+      color: $dark-color;
+    }
+  }
+}
+
+.table-wrapper {
+  overflow: auto;
+}
+
+.db-load-more {
+  min-width: 300px;
+  font-size: 16px !important;
+  line-height: 18px !important;
+  padding: 15px 20px !important;
+  border-width: 2px !important;
+}
+
+.dashboard-table {
+  width: 100%;
+  margin-bottom: 35px;
+
+  th, td {
+    padding: 20px;
+
+    .checkbox {
+      margin: 0;
+
+      label {
+        span {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  thead {
+    background-color: $dark-color;
+
+    th {
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #fff;
+
+      &:first-child {
+        border-radius: 5px 0 0 0;
+      }
+
+      &:last-child {
+        border-radius: 0 5px 0 0;
+      }
+
+      .checkbox {
+        input {
+          &:checked {
+            + label {
+              span {
+                border-color: $main-color;
+              }
+            }
+          }
+        }
+
+        label {
+          span {
+            border-color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        position: relative;
+        font-size: 16px;
+        line-height: 18px;
+        color: $dark-color;
+
+        .pay-apply-button {
+          display: inline-block;
+          font-size: 16px;
+          line-height: 18px;
+          font-weight: 700;
+          color: $main-color;
+          text-decoration: underline;
+          text-transform: uppercase;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+
+        .pdf-button {
+          display: inline-block;
+          vertical-align: middle;
+          color: $main-color;
+          font-size: 35px;
+          line-height: 35px;
+          @include transition;
+
+          &:hover {
+            opacity: .8;
+          }
+        }
+
+        .control-buttons {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 25px;
+          line-height: 25px;
+          margin: 0 5px;
+          @include transition;
+
+          &:hover {
+            opacity: .8;
+          }
+          
+          &.edit {
+            color: $main-color;
+          }
+          
+          &.delete {
+            color: #f33;
+          }
+        }
+
+        span {
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 35px;
+        }
+
+        &:first-child {
+          &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background-color: $dark-color;
+          }
+        }
+
+        &:last-child {
+          &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background-color: $dark-color;
+          }
+        }
+
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          height: 2px;
+          width: 100%;
+          background-color: $dark-color;
+        }
+      }
+    }
+  }
+}

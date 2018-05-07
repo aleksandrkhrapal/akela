@@ -9,6 +9,13 @@ $(window).scroll(function() {
     }
 });
 
+// dashboard sidebar hide/show
+$('.sidebar-trigger').on('click', function (e) {
+    e.preventDefault();
+    $('.dashboard-container').toggleClass('container-lg');
+    $('.dashboard-sidebar').toggleClass('sidebar-sm');
+});
+
 // mobile menu
 $('.mobile-menu-button').on('click', function (e) {
    e.preventDefault();

@@ -7,7 +7,7 @@
   z-index: 100;
   min-width: 320px;
   @include transition;
-  
+
   &.darkHeader {
     background-color: $dark-color;
   }
@@ -45,7 +45,7 @@
       color: #fff;
       font-weight: 600;
       text-transform: capitalize;
-      
+
       @media (max-width: $screen-md-max) {
         display: none;
       }
@@ -96,11 +96,11 @@
         margin: 0;
         padding: 10px 0;
       }
-      
+
       &.active {
         a {
           color: $main-color;
-          
+
           &:after {
             background-color: $main-color;
             opacity: 1;
@@ -146,6 +146,66 @@
   }
 }
 
+.mobile-menu-button {
+  display: none;
+  width: 35px;
+  height: 35px;
+  margin-left: 15px;
+  cursor: pointer;
+  position: relative;
+
+  @media (max-width: 320px) {
+    margin-left: 10px;
+  }
+
+  &.active {
+    span {
+      &.line1 {
+        top: 18px;
+        transform: rotate(45deg);
+      }
+
+      &.line2 {
+        opacity: 0;
+        visibility: hidden;
+        right: 10px;
+      }
+
+      &.line3 {
+        bottom: 15px;
+        width: 100%;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  span {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    @include transition;
+
+    &.line1 {
+      top: 7px;
+    }
+
+    &.line2 {
+      top: 17px;
+    }
+
+    &.line3 {
+      bottom: 6px;
+      width: 25px;
+    }
+  }
+
+  @media (max-width: $screen-md-min) {
+    display: block;
+  }
+}
+
 .header-buttons {
   padding-top: 5px;
 
@@ -157,66 +217,6 @@
     padding-top: 0;
   }
 
-  .mobile-menu-button {
-    display: none;
-    width: 35px;
-    height: 35px;
-    margin-left: 15px;
-    cursor: pointer;
-    position: relative;
-
-    @media (max-width: 320px) {
-      margin-left: 10px;
-    }
-
-    &.active {
-      span {
-        &.line1 {
-          top: 18px;
-          transform: rotate(45deg);
-        }
-
-        &.line2 {
-          opacity: 0;
-          visibility: hidden;
-          right: 10px;
-        }
-
-        &.line3 {
-          bottom: 15px;
-          width: 100%;
-          transform: rotate(-45deg);
-        }
-      }
-    }
-
-    span {
-      position: absolute;
-      right: 0;
-      width: 100%;
-      height: 2px;
-      background-color: #fff;
-      @include transition;
-
-      &.line1 {
-        top: 7px;
-      }
-
-      &.line2 {
-        top: 17px;
-      }
-
-      &.line3 {
-        bottom: 6px;
-        width: 25px;
-      }
-    }
-    
-    @media (max-width: $screen-md-min) {
-      display: block;
-    }
-  }
-  
   a {
     display: inline-block;
     vertical-align: middle;
@@ -260,3 +260,31 @@
   }
 }
 
+.user-info {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+
+    span {
+      color: $main-color;
+    }
+  }
+
+  i {
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    margin-right: 10px;
+  }
+
+  span {
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    @include transition;
+  }
+}

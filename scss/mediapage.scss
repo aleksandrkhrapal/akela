@@ -97,6 +97,8 @@
         @include center;
         @include transition;
         color: $main-color;
+        font-size: 25px;
+        line-height: 25px;
       }
     }
   }

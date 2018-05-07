@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Akela</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<link media="all" rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/fontawesome-all.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/dashboard.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/homepage.css" type="text/css" />
+
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700,900" rel="stylesheet">
+		<link href="https://cdn.materialdesignicons.com/2.3.54/css/materialdesignicons.min.css" rel="stylesheet">
+
+	</head>
+	<body>
+		<div class="dashboard-wrapper">
+			<div class="dashboard-sidebar">
+				<div class="heading d-flex justify-content-between align-items-end">
+					<a href="#">
+						<img src="images/logo.png" class="logo-lg" alt="">
+						<img src="images/logo-sm.png" class="logo-sm" alt="">
+					</a>
+
+					<a href="#" class="sidebar-trigger">
+						<i class="mdi mdi-chevron-left"></i>
+					</a>
+				</div>
+				<ul class="sidebar-nav">
+					<li>
+						<a href="#" class="active bottom-line">
+							<i class="mdi mdi-ticket"></i>
+							<span>Overview</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="mdi mdi-account-card-details"></i>
+							<span>investment Profile</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="mdi mdi-cash-usd"></i>
+							<span>My Investments</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="bottom-line">
+							<i class="mdi mdi-approval"></i>
+							<span>Advisor Bids</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="mdi mdi-account-circle"></i>
+							<span>Profile</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="mdi mdi-playlist-check"></i>
+							<span>Subscriptions</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="bottom-line">
+							<i class="mdi mdi-credit-card"></i>
+							<span>Payments</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="mdi mdi-bell"></i>
+							<span>Notifications <em class="notif-number">26</em></span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="mdi mdi-lastpass"></i>
+							<span>change password</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="mdi mdi-logout-variant"></i>
+							<span>sign out</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="dashboard-container">
+				<header class="header-dashboard d-flex justify-content-between align-items-center">
+					<nav class="main-nav">
+						<ul>
+							<li>
+								<a href="about.html">About us</a>
+							</li>
+							<li>
+								<a href="offer.html">Investment offers</a>
+							</li>
+							<li>
+								<a href="media.html">Media</a>
+							</li>
+							<li>
+								<a href="#">Blog</a>
+							</li>
+							<li>
+								<a href="#">Faq</a>
+							</li>
+						</ul>
+					</nav>
+					<a href="#" class="user-info d-flex align-items-center">
+						<i class="mdi mdi-account-circle"></i>
+						<span>Hi, Bogdan</span>
+					</a>
+					<div class="mobile-menu-button">
+						<span class="line1"></span>
+						<span class="line2"></span>
+						<span class="line3"></span>
+					</div>
+				</header>
+				<div class="dashboard-wrapper">
+					<div class="dashboard-top-heading d-flex justify-content-between align-items-center">
+						<div class="heading">
+							<h2>Please create an investment profile</h2>
+							<p>To invest in our offers you will need to create an investment profile</p>
+						</div>
+						<a href="#" class="btn-repeat dashboard-btn-create">+ CREATE INVESTMENT PROFILE</a>
+					</div>
+					<div class="dashboard-row">
+						<div class="dashboard-repeat-title">
+							<h3>Outstanding Payment</h3>
+							<p>The following Offer applications are awaiting payment. Please transfer the funds by the due date.  Click on the PAY NOW link for transfer details.
+								<br>
+								If you have already transferred the funds, we will update your application in due course.</p>
+						</div>
+						<div class="table-wrapper">
+							<table class="dashboard-table">
+								<thead>
+									<tr>
+										<th style="width: 12%;">TITLE</th>
+										<th style="width: 13%">OFFER CLOSES</th>
+										<th style="width: 10%"># OF UNITS</th>
+										<th style="width: 13%">PRICE PER UNIT</th>
+										<th style="width: 14%">YOUR BID</th>
+										<th style="width: 15%">STATUS</th>
+										<th style="width: 14%">PDF</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>708 TEST</td>
+										<td>1 January 2019</td>
+										<td>Not Available</td>
+										<td>Not Available</td>
+										<td><span>AU$</span> 1,024.00</td>
+										<td>Pay Submission Fee</td>
+										<td><a href="#" class="pay-apply-button">Pay now</a></td>
+										<td class="text-center">
+											<a href="#" class="control-buttons edit"><i class="mdi mdi-pencil"></i></a>
+											<a href="#" class="control-buttons delete"><i class="mdi mdi-delete"></i></a>
+										</td>
+									</tr>
+									<tr>
+										<td>TOKEN</td>
+										<td>13 April 2019</td>
+										<td>20</td>
+										<td><span>AU$</span>1.00</td>
+										<td><span>AU$</span>20.00</td>
+										<td>Submit application</td>
+										<td><a href="#" class="pay-apply-button">Apply now</a></td>
+										<td class="text-center">
+											<a href="#" class="control-buttons edit"><i class="mdi mdi-pencil"></i></a>
+											<a href="#" class="control-buttons delete"><i class="mdi mdi-delete"></i></a>
+										</td>
+									</tr>
+									<tr>
+										<td>TOKEN</td>
+										<td>13 April 2019</td>
+										<td>20</td>
+										<td><span>AU$</span>1.00</td>
+										<td><span>AU$</span>20.00</td>
+										<td>Awaiting Approval</td>
+										<td></td>
+										<td class="text-center">
+											<a href="#" class="control-buttons edit"><i class="mdi mdi-pencil"></i></a>
+											<a href="#" class="control-buttons delete"><i class="mdi mdi-delete"></i></a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="text-center">
+								<a href="#" class="btn-repeat dark db-load-more">Load more</a>
+							</div>
+						</div>
+					</div>
+					<div class="dashboard-row">
+						<div class="dashboard-repeat-title">
+							<h3>Applications</h3>
+							<p>Please complete & submit the online application form followed by payment for approved bids below.</p>
+						</div>
+						<div class="table-wrapper">
+							<table class="dashboard-table">
+								<thead>
+								<tr>
+									<th style="width: 12%;">TITLE</th>
+									<th style="width: 13%">OFFER CLOSES</th>
+									<th style="width: 10%"># OF UNITS</th>
+									<th style="width: 13%">PRICE PER UNIT</th>
+									<th style="width: 14%">YOUR BID</th>
+									<th style="width: 15%">STATUS</th>
+									<th style="width: 14%">PDF</th>
+									<th></th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>TOKEN</td>
+									<td>13 April 2019</td>
+									<td>20</td>
+									<td><span>AU$</span>1.00</td>
+									<td><span>AU$</span>20.00</td>
+									<td>Awaiting Approval</td>
+									<td></td>
+									<td class="text-center">
+										<a href="#" class="control-buttons edit"><i class="mdi mdi-pencil"></i></a>
+										<a href="#" class="control-buttons delete"><i class="mdi mdi-delete"></i></a>
+									</td>
+								</tr>
+								<tr>
+									<td>TOKEN</td>
+									<td>13 April 2019</td>
+									<td>20</td>
+									<td><span>AU$</span>1.00</td>
+									<td><span>AU$</span>10.00</td>
+									<td>Payment Received</td>
+									<td><a href="#" class="pdf-button"><i class="mdi mdi-file-pdf"></i></a></td>
+									<td class="text-center">
+										<a href="#" class="control-buttons edit"><i class="mdi mdi-pencil"></i></a>
+										<a href="#" class="control-buttons delete"><i class="mdi mdi-delete"></i></a>
+									</td>
+								</tr>
+								<tr>
+									<td>708 TEST</td>
+									<td>1 January 2019</td>
+									<td>Not Available</td>
+									<td>Not Available</td>
+									<td><span>AU$</span> 1,000.00</td>
+									<td>Payment Received</td>
+									<td><a href="#" class="pdf-button"><i class="mdi mdi-file-pdf"></i></a></td>
+									<td class="text-center">
+										<a href="#" class="control-buttons edit"><i class="mdi mdi-pencil"></i></a>
+										<a href="#" class="control-buttons delete"><i class="mdi mdi-delete"></i></a>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+							<div class="text-center">
+								<a href="#" class="btn-repeat dark db-load-more">Load more</a>
+							</div>
+						</div>
+					</div>
+					<div class="dashboard-row">
+						<div class="dashboard-repeat-title">
+							<h3>Notifications</h3>
+						</div>
+						<div class="table-wrapper">
+							<table class="dashboard-table">
+								<thead>
+								<tr>
+									<th style="width: 5%;">
+										<div class="checkbox">
+											<input id="check1" type="checkbox">
+											<label for="check1" class="d-flex">
+												<span><i class="mdi mdi-check"></i></span>
+											</label>
+										</div>
+									</th>
+									<th style="width: 23%;">TITLE</th>
+									<th style="width: 53%;">message</th>
+									<th style="width: 10%">Received</th>
+									<th></th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>
+										<div class="checkbox">
+											<input id="check2" type="checkbox">
+											<label for="check2" class="d-flex">
+												<span><i class="mdi mdi-check"></i></span>
+											</label>
+										</div>
+									</td>
+									<td>708 test Application Processing and
+										Management Fee Invoice</td>
+									<td>Processing and Management Fee Invoice Fee invoice for Your application to offer 708 test. Please pay...</td>
+									<td>19 April 2018</td>
+									<td class="text-center">
+										<a href="#" class="control-buttons delete"><i class="mdi mdi-delete"></i></a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="checkbox">
+											<input id="check3" type="checkbox">
+											<label for="check3" class="d-flex">
+												<span><i class="mdi mdi-check"></i></span>
+											</label>
+										</div>
+									</td>
+									<td>708 test Application Received</td>
+									<td>Hi Bogdan, Thank you for your application in 708 test. Your application will be reviewed and when ap...</td>
+									<td>19 April 2018</td>
+									<td class="text-center">
+										<a href="#" class="control-buttons delete"><i class="mdi mdi-delete"></i></a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="checkbox">
+											<input id="check4" type="checkbox">
+											<label for="check4" class="d-flex">
+												<span><i class="mdi mdi-check"></i></span>
+											</label>
+										</div>
+									</td>
+									<td>AR FORCE NOTIFICATION</td>
+									<td>MEMBER APPLICATION - PAYMENT RECEIVED</td>
+									<td>19 April 2018</td>
+									<td class="text-center">
+										<a href="#" class="control-buttons delete"><i class="mdi mdi-delete"></i></a>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+							<div class="text-center">
+								<a href="#" class="btn-repeat dark db-load-more">Load more</a>
+							</div>
+						</div>
+					</div>
+					<div class="dashboard-row">
+						<div class="dashboard-repeat-title">
+							<h3>investment board // currently funding</h3>
+						</div>
+						<section class="investment-board wrapper">
+							<div class="investment-board-container">
+								<div class="investment-board-row">
+									<div class="row">
+										<div class="col-md-8">
+											<div class="investment-board-left">
+												<span>Metals 479</span>
+												<p>Metals 479 is a new mineral exploration and development company, with a highly-experienced board &amp; management.</p>
+											</div>
+											<div class="investment-board-buttons">
+												<div class="button-wrap">
+													<a href="#" class="btn-repeat gray">Know more</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="investment-board-right">
+												<span class="status status-closes">Closes: <em>Sat 30 MARCH 2018</em></span>
+												<div class="date d-flex">
+													<div class="date-col">
+														<mark>10</mark>
+														<i>Days</i>
+													</div>
+													<div class="date-col">
+														<mark>09</mark>
+														<i>Hours</i>
+													</div>
+												</div>
+												<a href="#" class="btn-repeat dark">BID NOW</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="investment-board-container">
+								<div class="investment-board-row">
+									<div class="row">
+										<div class="col-md-8">
+											<div class="investment-board-left">
+												<span>Metals 479</span>
+												<p>Metals 479 is a new mineral exploration and development company, with a highly-experienced board &amp; management.</p>
+											</div>
+											<div class="investment-board-buttons">
+												<div class="button-wrap">
+													<a href="#" class="btn-repeat gray">Know more</a>
+												</div>
+												<div class="button-wrap">
+													<a href="#" class="see-all-upcoming">SEE ALL CURRENT OFFERS</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="investment-board-right">
+												<span class="status status-closes">Closes: <em>Sat 30 MARCH 2018</em></span>
+												<div class="date d-flex">
+													<div class="date-col">
+														<mark>10</mark>
+														<i>Days</i>
+													</div>
+													<div class="date-col">
+														<mark>09</mark>
+														<i>Hours</i>
+													</div>
+												</div>
+												<a href="#" class="btn-repeat dark">BID NOW</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<div class="text-center">
+							<a href="#" class="btn-repeat dark db-load-more">SEE ALL CURRENT OFFERS</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Include scripts -->
+		<script	src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+		<script type="text/javascript" src="js/lib/jquery-3.3.1.slim.min.js"></script>
+		<script type="text/javascript" src="js/lib/popper.min.js"></script>
+		<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
