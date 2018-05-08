@@ -5,7 +5,8 @@ body {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; }
+  min-height: 100vh;
+  height: auto; }
   body.overflow-h {
     overflow: hidden; }
   body.modal-open .main-header .header-holder {
@@ -384,6 +385,7 @@ input[type=number]::-webkit-outer-spin-button {
       width: 250px;
       height: 100vh;
       background: #203140;
+      z-index: 10;
       padding: 58px 0 15px 0;
       transition: all .4s ease-in-out; }
       .main-nav.show-nav {
@@ -445,16 +447,17 @@ input[type=number]::-webkit-outer-spin-button {
 
 .mobile-menu-button {
   display: none;
-  width: 35px;
-  height: 35px;
-  margin-left: 15px;
+  width: 25px;
+  height: 31px;
+  margin-left: 20px;
   cursor: pointer;
-  position: relative; }
+  position: relative;
+  z-index: 10; }
   @media (max-width: 320px) {
     .mobile-menu-button {
       margin-left: 10px; } }
   .mobile-menu-button.active span.line1 {
-    top: 18px;
+    top: 15px;
     transform: rotate(45deg); }
   .mobile-menu-button.active span.line2 {
     opacity: 0;
@@ -474,7 +477,7 @@ input[type=number]::-webkit-outer-spin-button {
     .mobile-menu-button span.line1 {
       top: 7px; }
     .mobile-menu-button span.line2 {
-      top: 17px; }
+      top: 15px; }
     .mobile-menu-button span.line3 {
       bottom: 6px;
       width: 25px; }
@@ -522,16 +525,18 @@ input[type=number]::-webkit-outer-spin-button {
       color: #00b3b7; }
 
 .user-info {
-  text-decoration: none; }
+  text-decoration: none;
+  z-index: 10; }
   .user-info:hover {
     text-decoration: none; }
-    .user-info:hover span {
+    .user-info:hover span, .user-info:hover i {
       color: #00b3b7; }
   .user-info i {
     display: block;
     font-size: 20px;
     color: #fff;
-    margin-right: 10px; }
+    margin-right: 10px;
+    transition: all .2s linear; }
   .user-info span {
     display: block;
     text-transform: uppercase;

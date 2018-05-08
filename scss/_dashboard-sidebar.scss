@@ -6,15 +6,40 @@
   height: 100%;
   background-color: $dark-color;
   overflow-y: auto;
+  z-index: 100;
   overflow-x: hidden;
   transition: all .5s ease-in-out;
+
+  @media (max-width: $screen-lg-min) {
+    width: 285px;
+  }
+
+  @media (max-width: $screen-sm-min) {
+    width: 315px;
+    height: 100vh;
+  }
+
+  @media (max-height: 414px) {
+    height: 100%;
+  }
 
   &.sidebar-sm {
     width: 80px;
 
+    @media (max-width: $screen-sm-min) {
+      width: 60px;
+    }
 
     .heading {
       padding: 20px 0 30px 10px;
+
+      @media (max-width: 1280px) {
+        padding: 10px 0 10px 10px;
+      }
+
+      @media (max-width: $screen-sm-min) {
+        padding: 20px 0 20px 10px;
+      }
 
       a {
         .logo-lg {
@@ -24,10 +49,19 @@
         .logo-sm {
           display: block;
           width: 45px;
+
+          @media (max-width: $screen-sm-min) {
+            width: 25px;
+          }
         }
 
         &.sidebar-trigger {
           transform: rotate(180deg);
+
+          @media (max-width: $screen-sm-min) {
+            position: relative;
+            top: 0;
+          }
         }
       }
     }
@@ -35,12 +69,20 @@
     .sidebar-nav {
       padding: 0 0 0 10px;
 
+      @media (max-width: $screen-sm-min) {
+        padding: 0;
+      }
+
       li {
         a {
           padding: 20px 23px;
 
           @media (max-width: 1366px) {
             padding: 14px 23px;
+          }
+
+          @media (max-width: $screen-sm-min) {
+            padding: 14px 19px;
           }
 
           &.bottom-line {
@@ -61,7 +103,20 @@
   .heading {
     height: 99px;
     padding: 20px 30px 30px 60px;
+    background-color: $dark-color;
     transition: all .5s ease-in-out;
+
+    @media (max-width: 1280px) {
+      height: 65px;
+    }
+
+    @media (max-width: 1280px) {
+      padding: 10px 0 10px 10px;
+    }
+
+    @media (max-width: $screen-sm-min) {
+      padding: 20px 0 20px 10px;
+    }
 
     a {
       display: block;
@@ -72,6 +127,10 @@
 
       .logo-lg {
         display: block;
+
+        @media (max-width: $screen-sm-min) {
+          width: 87px;
+        }
       }
 
       .logo-sm {
@@ -83,9 +142,18 @@
         color: #fff;
         transition: all .5s ease-in-out;
 
+        @media (max-width: $screen-sm-min) {
+          position: relative;
+          top: 7px;
+        }
+
         i {
           font-size: 35px;
           line-height: 35px;
+
+          @media (max-width: $screen-sm-min) {
+            line-height: 22px;
+          }
         }
       }
     }
@@ -106,6 +174,11 @@
         text-decoration: none;
         border-radius: 3px 0 0 3px;
         transition: all .5s ease-in-out;
+
+        @media (max-width: $screen-sm-min) {
+          border-radius: 0;
+          padding: 14px 19px;
+        }
         
         @media (max-width: 1366px) {
           padding: 14px 30px;

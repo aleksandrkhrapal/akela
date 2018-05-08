@@ -16,6 +16,10 @@ $('.sidebar-trigger').on('click', function (e) {
     $('.dashboard-sidebar').toggleClass('sidebar-sm');
 });
 
+if ($(window).width() < 1281) {
+    $('.sidebar-trigger').click();
+}
+
 // mobile menu
 $('.mobile-menu-button').on('click', function (e) {
    e.preventDefault();

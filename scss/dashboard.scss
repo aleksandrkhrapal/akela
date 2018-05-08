@@ -4,13 +4,36 @@
 @import "dashboard-header";
 
 .dashboard-wrapper {
+  @media (max-width: $screen-sm-min) {
+    overflow: hidden;
+    position: relative;
+  }
+
   .dashboard-container {
     padding-left: 335px;
     width: 100%;
     transition: all .5s ease-in-out;
 
+    @media (max-width: 1280px) {
+      padding-left: 80px;
+    }
+
+    @media (max-width: $screen-sm-min) {
+      padding-left: 60px;
+    }
+
     &.container-lg {
       padding-left: 80px;
+
+      @media (max-width: $screen-sm-min) {
+        padding-left: 60px;
+      }
+
+      .header-dashboard {
+        @media (max-width: 1280px) {
+          padding: 0 15px;
+        }
+      }
     }
 
     .header-dashboard {
@@ -18,13 +41,32 @@
       width: 100%;
       background-color: $dark-color;
       padding: 0 60px;
+      transition: all .5s ease-in-out;
+
 
       @media (max-width: 1280px) {
+        padding: 0 15px 0 265px;
+        height: 65px;
+      }
+
+      @media (max-width: $screen-lg-min) {
+        padding: 0 15px 0 210px;
+      }
+
+      @media (max-width: $screen-md-min) {
+        justify-content: flex-end !important;
+      }
+
+      @media (max-width: $screen-sm-min) {
         padding: 0 15px;
       }
 
       .main-nav {
         padding: 0;
+        
+        @media (max-width: $screen-md-min) {
+          padding: 64px 0 15px 0;
+        }
 
         ul {
           li {
@@ -44,13 +86,25 @@
       padding: 60px;
 
       @media (max-width: 1280px) {
-        padding: 60px 15px;
+        padding: 43px 15px;
+      }
+
+      @media (max-width: $screen-lg-min) {
+        padding: 15px;
       }
       
       .dashboard-top-heading {
         margin-bottom: 70px;
 
+        @media (max-width: $screen-lg-min) {
+          margin-bottom: 30px;
+        }
+
         .heading {
+          @media (max-width: $screen-lg-min) {
+            margin-bottom: 20px;
+          }
+
           h2 {
             margin: 0;
             font-size: 30px;
@@ -58,6 +112,11 @@
             font-weight: 700;
             color: $main-color;
             text-transform: uppercase;
+
+            @media (max-width: $screen-sm-min) {
+              font-size: 24px;
+              line-height: 26px;
+            }
           }
 
           p {
@@ -84,6 +143,10 @@
 .dashboard-row {
   padding-bottom: 70px;
 
+  @media (max-width: $screen-lg-min) {
+    padding-bottom: 30px;
+  }
+
   .investment-board {
     padding: 0;
   }
@@ -106,6 +169,11 @@
       color: $dark-color;
       text-transform: uppercase;
       margin: 0 0 10px 0;
+
+      @media (max-width: $screen-sm-min) {
+        font-size: 20px;
+        line-height: 22px;
+      }
     }
 
     p {
@@ -127,11 +195,19 @@
   line-height: 18px !important;
   padding: 15px 20px !important;
   border-width: 2px !important;
+  margin-top: 35px;
+
+  @media (max-width: $screen-sm-min) {
+    min-width: inherit;
+  }
 }
 
 .dashboard-table {
   width: 100%;
-  margin-bottom: 35px;
+
+  @media (max-width: 1024px) {
+    width: 1200px;
+  }
 
   th, td {
     padding: 20px;
