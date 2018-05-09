@@ -54,7 +54,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  height:auto;
+
 
   &.overflow-h {
     overflow: hidden;
@@ -496,4 +496,85 @@ input[type=number]::-webkit-outer-spin-button {
       width: 100%;
     }
   }
+}
+
+.progress-btn {
+  display: block;
+  padding: 0;
+  outline: none !important;
+  height: 40px;
+  min-width: 90px;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  text-align: center;
+  position: relative;
+  @include transition;
+  
+  &.main-color-btn {
+    background: $main-color;
+    
+    &:hover {
+      background: $dark-color;
+    }
+  }
+
+  span {
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    @include transition;
+  }
+
+  &.active {
+    min-width: 50px;
+
+    span {
+      opacity: 0;
+    }
+
+    .circle-loader {
+      opacity: 1;
+      visibility: visible;
+      animation: dash 2s ease infinite,
+      rotate 2s linear infinite;
+    }
+  }
+
+  .circle-loader {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    position: absolute;
+    top: 5px;
+    left: calc(50% - 15px);
+    fill: transparent;
+    stroke: #eee;
+    stroke-width: 3;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1,95;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 85,95;
+    stroke-dashoffset: -15;
+  }
+  100% {
+    stroke-dasharray: 85,95;
+    stroke-dashoffset: -93;
+  }
+}
+
+@keyframes rotate {
+  0% {transform: rotate(0deg); }
+  100% {transform: rotate(360deg); }
 }

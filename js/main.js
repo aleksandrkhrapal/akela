@@ -9,6 +9,18 @@ $(window).scroll(function() {
     }
 });
 
+$(".progress-btn").on("click", function(e) {
+    e.preventDefault();
+    var progressBtn = $(this);
+
+    if (!progressBtn.hasClass("active")) {
+        progressBtn.addClass("active");
+        setTimeout(function() {
+            progressBtn.removeClass("active");
+        }, 1000);
+    }
+});
+
 // dashboard sidebar hide/show
 $('.sidebar-trigger').on('click', function (e) {
     e.preventDefault();

@@ -5,8 +5,7 @@ body {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  height: auto; }
+  min-height: 100vh; }
   body.overflow-h {
     overflow: hidden; }
   body.modal-open .main-header .header-holder {
@@ -333,6 +332,66 @@ input[type=number]::-webkit-outer-spin-button {
       right: auto;
       transform: none;
       width: 100%; } }
+.progress-btn {
+  display: block;
+  padding: 0;
+  outline: none !important;
+  height: 40px;
+  min-width: 90px;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  text-align: center;
+  position: relative;
+  transition: all .2s linear; }
+  .progress-btn.main-color-btn {
+    background: #00b3b7; }
+    .progress-btn.main-color-btn:hover {
+      background: #203140; }
+  .progress-btn span {
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    transition: all .2s linear; }
+  .progress-btn.active {
+    min-width: 50px; }
+    .progress-btn.active span {
+      opacity: 0; }
+    .progress-btn.active .circle-loader {
+      opacity: 1;
+      visibility: visible;
+      animation: dash 2s ease infinite, rotate 2s linear infinite; }
+  .progress-btn .circle-loader {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    position: absolute;
+    top: 5px;
+    left: calc(50% - 15px);
+    fill: transparent;
+    stroke: #eee;
+    stroke-width: 3;
+    opacity: 0;
+    visibility: hidden; }
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1,95;
+    stroke-dashoffset: 0; }
+  50% {
+    stroke-dasharray: 85,95;
+    stroke-dashoffset: -15; }
+  100% {
+    stroke-dasharray: 85,95;
+    stroke-dashoffset: -93; } }
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 .main-header {
   position: fixed;
   top: 0;
