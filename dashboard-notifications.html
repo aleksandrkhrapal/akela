@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Akela</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<link media="all" rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/fontawesome-all.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/dashboard.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/homepage.css" type="text/css" />
+
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700,900" rel="stylesheet">
+		<link href="https://cdn.materialdesignicons.com/2.3.54/css/materialdesignicons.min.css" rel="stylesheet">
+
+	</head>
+	<body>
+		<div class="dashboard-wrapper">
+			<div class="dashboard-sidebar">
+				<div class="heading d-flex justify-content-between align-items-end">
+					<a href="#">
+						<img src="images/logo.png" class="logo-lg" alt="">
+						<img src="images/logo-sm.png" class="logo-sm" alt="">
+					</a>
+
+					<a href="#" class="sidebar-trigger">
+						<i class="mdi mdi-chevron-left"></i>
+					</a>
+				</div>
+				<ul class="sidebar-nav">
+					<li>
+						<a href="dashboard-overview.html" class="bottom-line">
+							<i class="mdi mdi-ticket"></i>
+							<span>Overview</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="mdi mdi-account-card-details"></i>
+							<span>investment Profile</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="mdi mdi-cash-usd"></i>
+							<span>My Investments</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="bottom-line">
+							<i class="mdi mdi-approval"></i>
+							<span>Advisor Bids</span>
+						</a>
+					</li>
+					<li>
+						<a href="dashboard-profile.html">
+							<i class="mdi mdi-account-circle"></i>
+							<span>Profile</span>
+						</a>
+					</li>
+					<li>
+						<a href="dashboard-subscriptions.html">
+							<i class="mdi mdi-playlist-check"></i>
+							<span>Subscriptions</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="bottom-line">
+							<i class="mdi mdi-credit-card"></i>
+							<span>Payments</span>
+						</a>
+					</li>
+					<li>
+						<a href="dashboard-notifications.html" class="active">
+							<i class="mdi mdi-bell">
+								<mark class="sidebar-sm-notifications"></mark>
+							</i>
+							<span>Notifications <em class="notif-number">26</em></span>
+						</a>
+					</li>
+					<li>
+						<a href="dashboard-change-pass.html">
+							<i class="mdi mdi-lastpass"></i>
+							<span>change password</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="mdi mdi-logout-variant"></i>
+							<span>sign out</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="dashboard-container">
+				<header class="header-dashboard d-flex justify-content-between align-items-center">
+					<nav class="main-nav">
+						<ul>
+							<li>
+								<a href="about.html">About us</a>
+							</li>
+							<li>
+								<a href="offer.html">Investment offers</a>
+							</li>
+							<li>
+								<a href="media.html">Media</a>
+							</li>
+							<li>
+								<a href="#">Blog</a>
+							</li>
+							<li>
+								<a href="#">Faq</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="dashboard-header-right d-flex align-items-center">
+						<a href="#" class="user-info d-flex align-items-center">
+							<i class="mdi mdi-account-circle"></i>
+							<span>Hi, Bogdan</span>
+						</a>
+						<div class="mobile-menu-button">
+							<span class="line1"></span>
+							<span class="line2"></span>
+							<span class="line3"></span>
+						</div>
+					</div>
+				</header>
+				<div class="dashboard-wrapper">
+					<div style="margin-bottom: 40px;" class="dashboard-top-heading d-lg-flex justify-content-between align-items-center">
+						<div class="heading">
+							<h2>NOTIFICATIONS</h2>
+						</div>
+					</div>
+					<div class="row row-notifications">
+						<div class="col-md-9">
+							<div class="row">
+								<div class="col-md-4">
+									<mark>Email Subscriptions</mark>
+									<div class="checkbox">
+										<input id="check1" type="checkbox">
+										<label for="check1" class="d-flex">
+											<span><i class="mdi mdi-check"></i></span>
+											<em>Offer Closing Reminder Email</em>
+										</label>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<mark>SMS Subscriptions</mark>
+									<div class="checkbox">
+										<input id="check2" type="checkbox">
+										<label for="check2" class="d-flex">
+											<span><i class="mdi mdi-check"></i></span>
+											<em>Offer Closing Reminder SMS</em>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="button-wrapper" style="margin-top: 20px;">
+								<button type="submit" class="progress-btn main-color-btn">
+									<span>Update Preference</span>
+									<svg class="circle-loader" width="30" height="30" version="1.1" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="15" cy="15" r="10">
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="table-wrapper">
+						<table class="dashboard-table">
+							<thead>
+							<tr>
+								<th style="width: 35%;">TITLE</th>
+								<th style="width: 40%;">message</th>
+								<th style="width: 15%">Received</th>
+								<th style="width: 5%;">
+									<div class="checkbox">
+										<input id="check3" type="checkbox">
+										<label for="check3" class="d-flex">
+											<span><i class="mdi mdi-check"></i></span>
+										</label>
+									</div>
+								</th>
+								<th class="text-center"><i class="mdi mdi-delete"></i></th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td><strong>TOKEN Application Processing and Management Fee Invoice</strong></td>
+								<td>Processing and Management Fee Invoice Fee invoice for Your
+									application to offer TOKEN.Please pay pr...</td>
+								<td>27 April 2018</td>
+								<td>
+									<div class="checkbox">
+										<input id="check4" type="checkbox">
+										<label for="check4" class="d-flex">
+											<span><i class="mdi mdi-check"></i></span>
+										</label>
+									</div>
+								</td>
+								<td class="text-center">
+									<a href="#" class="control-buttons delete"><i class="mdi mdi-delete"></i></a>
+								</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="text-center">
+						<a href="#" class="btn-repeat dark db-load-more">Load more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Include scripts -->
+		<script	src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+		<script type="text/javascript" src="js/lib/jquery-3.3.1.slim.min.js"></script>
+		<script type="text/javascript" src="js/lib/popper.min.js"></script>
+		<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

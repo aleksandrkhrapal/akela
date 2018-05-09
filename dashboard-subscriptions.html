@@ -58,13 +58,13 @@
 						</a>
 					</li>
 					<li>
-						<a href="dashboard-profile.html" class="active">
+						<a href="dashboard-profile.html">
 							<i class="mdi mdi-account-circle"></i>
 							<span>Profile</span>
 						</a>
 					</li>
 					<li>
-						<a href="dashboard-subscriptions.html">
+						<a href="#" class="active">
 							<i class="mdi mdi-playlist-check"></i>
 							<span>Subscriptions</span>
 						</a>
@@ -131,85 +131,46 @@
 					</div>
 				</header>
 				<div class="dashboard-wrapper">
-					<div class="dashboard-top-heading d-lg-flex justify-content-between align-items-center">
+					<div style="margin-bottom: 40px;" class="dashboard-top-heading d-lg-flex justify-content-between align-items-center">
 						<div class="heading">
-							<h2>Hi, Bogdan Bogdan</h2>
+							<h2>ADD SUBSCRIPTION</h2>
 						</div>
-						<a href="#" class="btn-repeat dashboard-btn-create">+ CREATE INVESTMENT PROFILE</a>
 					</div>
 					<div class="dashboard-row">
 						<div class="dashboard-repeat-title">
-							<h3>INVESTMENT PROFILES</h3>
-						</div>
-						<div class="dashboard-profile-table">
-							<table class="invest-profiles-table">
-								<tbody>
-									<tr>
-										<td>
-											<div class="d-flex justify-content-between">
-												<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-												<span class="profile-status">ACTIVE PROFILE <i class="mdi mdi-approval"></i></span>
-											</div>
-										</td>
-										<td style="width: 340px" class="wholesale-investor">Wholesale Investor - YES</td>
-									</tr>
-									<tr>
-										<td>
-											<div class="d-flex justify-content-between">
-												<p>Contrary to popular belief, Lorem Ipsum is not simply random text</p>
-												<span class="profile-status">ACTIVE PROFILE <i class="mdi mdi-approval"></i></span>
-											</div>
-										</td>
-										<td style="width: 340px">Wholesale Investor - YES</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<p class="profile-text">To invest in our offers you will need to create an investment profile</p>
-					</div>
-					<div class="dashboard-row">
-						<div class="dashboard-repeat-title">
-							<h3>PROFILE DETAILS</h3>
+							<a href="#">AVAILABLE SUBSCRIPTIONS <span class="mdi mdi-open-in-new"></span></a>
 						</div>
 						<form action="#">
 							<div class="row profile-details-row">
 								<div class="col-lg-3">
-									<label for="lbl1">Type</label>
-									<input type="text" id="lbl1">
-								</div>
-								<div class="col-lg-3 correct">
-									<label for="lbl2">*First name</label>
-									<input type="text" id="lbl2" value="Alex Troogler">
-								</div>
-								<div class="col-lg-3 error">
-									<label for="lbl3">*Last name</label>
-									<input type="text" id="lbl3">
+									<label for="lbl5">Subscription</label>
+									<select id="lbl5">
+										<option value="">Subscription Tp7H</option>
+										<option value="">Subscription Tp7H</option>
+										<option value="">Subscription Tp7H</option>
+										<option value="">Subscription Tp7H</option>
+									</select>
 								</div>
 								<div class="col-lg-3">
-									<label for="lbl4">*Email</label>
-									<input type="email" id="lbl4">
-								</div>
-							</div>
-							<div class="row profile-details-row">
-								<div class="col-lg-3">
-									<label for="lbl5">Company</label>
-									<input type="text" id="lbl5">
-								</div>
-								<div class="col-lg-3">
-									<label for="lbl6">Phone</label>
+									<label for="lbl6">Coupon</label>
 									<input type="tel" id="lbl6">
 								</div>
 								<div class="col-lg-3">
-									<label for="lbl7">*Mobile</label>
-									<input type="tel" id="lbl7">
+									<label for="lbl7">Payment method</label>
+									<select id="lbl7">
+										<option value="">Payment method</option>
+										<option value="">Payment method</option>
+										<option value="">Payment method</option>
+										<option value="">Payment method</option>
+									</select>
 								</div>
 								<div class="col-lg-3">
 									<div class="button-wrapper">
 										<button type="submit" class="progress-btn main-color-btn">
-											<span>Save</span>
+											<span>Order</span>
 											<svg class="circle-loader" width="30" height="30" version="1.1" xmlns="http://www.w3.org/2000/svg">
 												<circle cx="15" cy="15" r="10">
-											</svg>
+												</circle></svg>
 										</button>
 									</div>
 								</div>
@@ -218,59 +179,51 @@
 					</div>
 					<div class="dashboard-row">
 						<div class="dashboard-repeat-title">
-							<h3>Advisor</h3>
+							<h3>YOUR ACTIVE SUBSCRIPTIONS</h3>
 						</div>
-						<div class="row advisor-row">
-							<div class="col-md-9">
-								<div class="advisor-info">
-									<div class="advisor-info-row">
-										<p>Your referer code: <span>c01103a2b7bf147273b89e5e43e7f1e8</span></p>
-										<p>Please advise new users to enter this code when joining Akela. This will make sure that you are assigned as their advisor.</p>
-									</div>
-									<div class="advisor-info-row">
-										<p>Your special advisor link is:</p>
-										<p><a href="#">https://stagingsrv.akela.vc/register/?referer=c01103a2b7bf147273b89e5e43e7f1e8</a></p>
-									</div>
-									<div class="advisor-info-row">
-										<p>If your customers use this link your referer code will be added automatically when they join Akela</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="upload-file-wrapper">
-									<div class="upload-file">
-										<input type="file" class="file">
-										<a href="#" class="btn-repeat">Upload file</a>
-									</div>
-									<p>You can download an <a href="#">example csv here</a></p>
-								</div>
-							</div>
+						<div class="table-wrapper">
+							<table class="dashboard-table">
+								<thead>
+								<tr>
+									<th style="width: 60%;">Subscription</th>
+									<th style="width: 15%">Status</th>
+									<th style="width: 15%">Expire Date</th>
+									<th></th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td class="font-weight-bold">Subscription Tp7H</td>
+									<td>ACTIVE</td>
+									<td>1 January 2019</td>
+									<td class="text-center text-nowrap">
+										<a href="#" class="control-buttons edit"><i class="mdi mdi-pencil"></i></a>
+										<a href="#" class="control-buttons delete"><i class="mdi mdi-delete"></i></a>
+									</td>
+								</tr>
+								<tr>
+									<td class="font-weight-bold">Subscription Tp7H</td>
+									<td>ACTIVE</td>
+									<td>1 January 2019</td>
+									<td class="text-center text-nowrap">
+										<a href="#" class="control-buttons edit"><i class="mdi mdi-pencil"></i></a>
+										<a href="#" class="control-buttons delete"><i class="mdi mdi-delete"></i></a>
+									</td>
+								</tr>
+								<tr>
+									<td class="font-weight-bold">Subscription Tp7H</td>
+									<td>ACTIVE</td>
+									<td>1 January 2019</td>
+									<td class="text-center text-nowrap">
+										<a href="#" class="control-buttons edit"><i class="mdi mdi-pencil"></i></a>
+										<a href="#" class="control-buttons delete"><i class="mdi mdi-delete"></i></a>
+									</td>
+								</tr>
+								</tbody>
+							</table>
 						</div>
-					</div>
-					<div class="dashboard-row">
-						<div class="dashboard-repeat-title">
-							<h3>invite friends</h3>
-						</div>
-						<p class="profile-text">Invite friends to Akela via email (Separate multiple email addresses with commas)</p>
-						<div class="row row-invite-friends">
-							<div class="col-md-9">
-								<div class="friends-list">
-									<div class="friends-wrap d-flex flex-wrap">
-										<span>bogdan999ivanov@gmail.com <a href="#"><i class="mdi mdi-close"></i></a></span>
-										<span>test@gmail.com <a href="#"><i class="mdi mdi-close"></i></a></span>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="button-wrapper" style="margin: 0;">
-									<button type="submit" class="progress-btn main-color-btn">
-										<span>invite friends</span>
-										<svg class="circle-loader" width="30" height="30" version="1.1" xmlns="http://www.w3.org/2000/svg">
-											<circle cx="15" cy="15" r="10">
-										</svg>
-									</button>
-								</div>
-							</div>
+						<div class="text-center">
+							<a href="#" class="btn-repeat dark db-load-more">Load more</a>
 						</div>
 					</div>
 				</div>

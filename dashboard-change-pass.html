@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Akela</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<link media="all" rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/fontawesome-all.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/dashboard.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/homepage.css" type="text/css" />
+
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700,900" rel="stylesheet">
+		<link href="https://cdn.materialdesignicons.com/2.3.54/css/materialdesignicons.min.css" rel="stylesheet">
+
+	</head>
+	<body>
+		<div class="dashboard-wrapper">
+			<div class="dashboard-sidebar">
+				<div class="heading d-flex justify-content-between align-items-end">
+					<a href="#">
+						<img src="images/logo.png" class="logo-lg" alt="">
+						<img src="images/logo-sm.png" class="logo-sm" alt="">
+					</a>
+
+					<a href="#" class="sidebar-trigger">
+						<i class="mdi mdi-chevron-left"></i>
+					</a>
+				</div>
+				<ul class="sidebar-nav">
+					<li>
+						<a href="dashboard-overview.html" class="bottom-line">
+							<i class="mdi mdi-ticket"></i>
+							<span>Overview</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="mdi mdi-account-card-details"></i>
+							<span>investment Profile</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="mdi mdi-cash-usd"></i>
+							<span>My Investments</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="bottom-line">
+							<i class="mdi mdi-approval"></i>
+							<span>Advisor Bids</span>
+						</a>
+					</li>
+					<li>
+						<a href="dashboard-profile.html">
+							<i class="mdi mdi-account-circle"></i>
+							<span>Profile</span>
+						</a>
+					</li>
+					<li>
+						<a href="dashboard-subscriptions.html">
+							<i class="mdi mdi-playlist-check"></i>
+							<span>Subscriptions</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="bottom-line">
+							<i class="mdi mdi-credit-card"></i>
+							<span>Payments</span>
+						</a>
+					</li>
+					<li>
+						<a href="dashboard-notifications.html">
+							<i class="mdi mdi-bell">
+								<mark class="sidebar-sm-notifications"></mark>
+							</i>
+							<span>Notifications <em class="notif-number">26</em></span>
+						</a>
+					</li>
+					<li>
+						<a href="dashboard-change-pass.html" class="active">
+							<i class="mdi mdi-lastpass"></i>
+							<span>change password</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="mdi mdi-logout-variant"></i>
+							<span>sign out</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="dashboard-container">
+				<header class="header-dashboard d-flex justify-content-between align-items-center">
+					<nav class="main-nav">
+						<ul>
+							<li>
+								<a href="about.html">About us</a>
+							</li>
+							<li>
+								<a href="offer.html">Investment offers</a>
+							</li>
+							<li>
+								<a href="media.html">Media</a>
+							</li>
+							<li>
+								<a href="#">Blog</a>
+							</li>
+							<li>
+								<a href="#">Faq</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="dashboard-header-right d-flex align-items-center">
+						<a href="#" class="user-info d-flex align-items-center">
+							<i class="mdi mdi-account-circle"></i>
+							<span>Hi, Bogdan</span>
+						</a>
+						<div class="mobile-menu-button">
+							<span class="line1"></span>
+							<span class="line2"></span>
+							<span class="line3"></span>
+						</div>
+					</div>
+				</header>
+				<div class="dashboard-wrapper">
+					<div style="margin-bottom: 40px;" class="dashboard-top-heading d-lg-flex justify-content-between align-items-center">
+						<div class="heading">
+							<h2>change password</h2>
+						</div>
+					</div>
+					<div class="dashboard-row dashboard-change-pass-row">
+						<div class="dashboard-repeat-title">
+							<h3>PROFILE DETAILS</h3>
+						</div>
+						<form action="#">
+							<div class="row profile-details-row">
+								<div class="col-lg-3 col-md-6">
+									<label for="lbl1">Email</label>
+									<input type="email" id="lbl1">
+								</div>
+								<div class="col-lg-3 col-md-6">
+									<div class="button-wrapper">
+										<button type="submit" class="progress-btn main-color-btn">
+											<span>continue</span>
+											<svg class="circle-loader" width="30" height="30" version="1.1" xmlns="http://www.w3.org/2000/svg">
+												<circle cx="15" cy="15" r="10">
+												</circle></svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</form>
+						<p class="profile-text">We will check your email against our records and send you instructions on how to reset your password</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Include scripts -->
+		<script	src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+		<script type="text/javascript" src="js/lib/jquery-3.3.1.slim.min.js"></script>
+		<script type="text/javascript" src="js/lib/popper.min.js"></script>
+		<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

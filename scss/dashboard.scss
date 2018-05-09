@@ -158,6 +158,18 @@
     padding-bottom: 30px;
   }
 
+  &.dashboard-change-pass-row {
+    @media (max-width: $screen-md-min) {
+      .profile-details-row input {
+        margin-bottom: 0;
+      }
+
+      .button-wrapper {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
   .investment-board {
     padding: 0;
   }
@@ -184,6 +196,34 @@
       @media (max-width: $screen-sm-min) {
         font-size: 20px;
         line-height: 22px;
+      }
+    }
+
+    a {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 24px;
+      line-height: 26px;
+      font-weight: 700;
+      color: $dark-color;
+      text-transform: uppercase;
+      margin: 0 0 10px 0;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      @media (max-width: $screen-sm-min) {
+        font-size: 20px;
+        line-height: 22px;
+      }
+
+      span {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 5px;
+        color: #000;
       }
     }
 
@@ -269,6 +309,14 @@
           }
         }
       }
+
+      i {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 25px;
+        line-height: 25px;
+        color: #fff;
+      }
     }
   }
 
@@ -279,6 +327,7 @@
         font-size: 16px;
         line-height: 18px;
         color: $dark-color;
+        vertical-align: top;
 
         .pay-apply-button {
           display: inline-block;
@@ -524,6 +573,22 @@
     outline: none;
     color: $dark-color;
   }
+
+  select {
+    display: block;
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    border: 2px solid $dark-color;
+    margin-bottom: 30px;
+    padding: 15px;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    outline: none;
+    color: $dark-color;
+    background: none;
+  }
 }
 
 .button-wrapper {
@@ -690,6 +755,50 @@
         &:hover {
           color: #f33;
         }
+      }
+    }
+  }
+}
+
+.row-notifications {
+  margin-bottom: 80px;
+
+  @media (max-width: $screen-sm-min) {
+    margin-bottom: 30px;
+  }
+
+  mark {
+    display: block;
+    font-size: 18px;
+    line-height: 20px;
+    color: $dark-color;
+    margin-bottom: 20px;
+    padding: 0;
+    background: none;
+
+    @media (max-width: $screen-sm-min) {
+      margin-bottom: 10px;
+    }
+  }
+
+  .checkbox {
+    input{
+      &:checked {
+        + label {
+          span {
+            background-color: #000;
+            border-color: #000;
+          }
+        }
+      }
+    }
+
+    label {
+      em {
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 700;
+        color: $dark-color;
       }
     }
   }

@@ -355,6 +355,7 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 14px;
     line-height: 16px;
     font-weight: 700;
+    white-space: nowrap;
     transition: all .2s linear; }
   .progress-btn.active {
     min-width: 50px; }
@@ -621,8 +622,11 @@ input[type=number]::-webkit-outer-spin-button {
       width: 285px; } }
   @media (max-width: 576px) {
     .dashboard-sidebar {
-      width: 315px;
+      width: calc(100% - 55px);
       height: 100vh; } }
+  @media (max-width: 320px) {
+    .dashboard-sidebar {
+      width: 100%; } }
   @media (max-height: 414px) {
     .dashboard-sidebar {
       height: 100%; } }
@@ -665,9 +669,13 @@ input[type=number]::-webkit-outer-spin-button {
             padding: 14px 23px; } }
         @media (max-width: 576px) {
           .dashboard-sidebar.sidebar-sm .sidebar-nav li a {
-            padding: 14px 19px; } }
+            padding: 14px 19px;
+            border-radius: 0; } }
         .dashboard-sidebar.sidebar-sm .sidebar-nav li a.bottom-line:after {
           width: 35px; }
+        .dashboard-sidebar.sidebar-sm .sidebar-nav li a i mark {
+          opacity: 1;
+          visibility: visible; }
         .dashboard-sidebar.sidebar-sm .sidebar-nav li a span {
           opacity: 0;
           visibility: hidden; }
@@ -725,7 +733,6 @@ input[type=number]::-webkit-outer-spin-button {
       transition: all .5s ease-in-out; }
       @media (max-width: 576px) {
         .dashboard-sidebar .sidebar-nav li a {
-          border-radius: 0;
           padding: 14px 19px; } }
       @media (max-width: 1366px) {
         .dashboard-sidebar .sidebar-nav li a {
@@ -734,6 +741,10 @@ input[type=number]::-webkit-outer-spin-button {
         background-color: #fff; }
         .dashboard-sidebar .sidebar-nav li a.active i, .dashboard-sidebar .sidebar-nav li a.active span {
           color: #203140; }
+          .dashboard-sidebar .sidebar-nav li a.active i .notif-number, .dashboard-sidebar .sidebar-nav li a.active span .notif-number {
+            color: #fff; }
+          .dashboard-sidebar .sidebar-nav li a.active i mark, .dashboard-sidebar .sidebar-nav li a.active span mark {
+            border-color: #fff; }
       .dashboard-sidebar .sidebar-nav li a:hover i, .dashboard-sidebar .sidebar-nav li a:hover span {
         color: #00b3b7; }
       .dashboard-sidebar .sidebar-nav li a.bottom-line {
@@ -758,7 +769,22 @@ input[type=number]::-webkit-outer-spin-button {
         font-size: 22px;
         line-height: 22px;
         margin-right: 15px;
+        position: relative;
         transition: all .2s linear; }
+        .dashboard-sidebar .sidebar-nav li a i mark {
+          display: block;
+          padding: 0;
+          background: #00b3b7;
+          position: absolute;
+          top: -3px;
+          right: 0;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          opacity: 0;
+          visibility: hidden;
+          border: 2px solid #203140;
+          transition: all .2s linear; }
       .dashboard-sidebar .sidebar-nav li a span {
         display: block;
         color: #fff;
@@ -885,6 +911,11 @@ input[type=number]::-webkit-outer-spin-button {
   @media (max-width: 992px) {
     .dashboard-row {
       padding-bottom: 30px; } }
+  @media (max-width: 768px) {
+    .dashboard-row.dashboard-change-pass-row .profile-details-row input {
+      margin-bottom: 0; }
+    .dashboard-row.dashboard-change-pass-row .button-wrapper {
+      margin-bottom: 15px; } }
   .dashboard-row .investment-board {
     padding: 0; }
   .dashboard-row:first-child {
@@ -904,6 +935,27 @@ input[type=number]::-webkit-outer-spin-button {
         .dashboard-row .dashboard-repeat-title h3 {
           font-size: 20px;
           line-height: 22px; } }
+    .dashboard-row .dashboard-repeat-title a {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 24px;
+      line-height: 26px;
+      font-weight: 700;
+      color: #203140;
+      text-transform: uppercase;
+      margin: 0 0 10px 0;
+      text-decoration: underline; }
+      .dashboard-row .dashboard-repeat-title a:hover {
+        text-decoration: none; }
+      @media (max-width: 576px) {
+        .dashboard-row .dashboard-repeat-title a {
+          font-size: 20px;
+          line-height: 22px; } }
+      .dashboard-row .dashboard-repeat-title a span {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 5px;
+        color: #000; }
     .dashboard-row .dashboard-repeat-title p {
       margin: 0;
       font-size: 16px;
@@ -951,11 +1003,18 @@ input[type=number]::-webkit-outer-spin-button {
         border-color: #00b3b7; }
       .dashboard-table thead th .checkbox label span {
         border-color: #fff; }
+      .dashboard-table thead th i {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 25px;
+        line-height: 25px;
+        color: #fff; }
   .dashboard-table tbody tr td {
     position: relative;
     font-size: 16px;
     line-height: 18px;
-    color: #203140; }
+    color: #203140;
+    vertical-align: top; }
     .dashboard-table tbody tr td .pay-apply-button {
       display: inline-block;
       font-size: 16px;
@@ -1118,6 +1177,20 @@ input[type=number]::-webkit-outer-spin-button {
   font-weight: 700;
   outline: none;
   color: #203140; }
+.profile-details-row select {
+  display: block;
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+  border: 2px solid #203140;
+  margin-bottom: 30px;
+  padding: 15px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  outline: none;
+  color: #203140;
+  background: none; }
 
 .button-wrapper {
   margin-top: 28px; }
@@ -1230,5 +1303,30 @@ input[type=number]::-webkit-outer-spin-button {
             margin-left: 2px; } }
         .row-invite-friends .friends-list span i:hover {
           color: #f33; }
+
+.row-notifications {
+  margin-bottom: 80px; }
+  @media (max-width: 576px) {
+    .row-notifications {
+      margin-bottom: 30px; } }
+  .row-notifications mark {
+    display: block;
+    font-size: 18px;
+    line-height: 20px;
+    color: #203140;
+    margin-bottom: 20px;
+    padding: 0;
+    background: none; }
+    @media (max-width: 576px) {
+      .row-notifications mark {
+        margin-bottom: 10px; } }
+  .row-notifications .checkbox input:checked + label span {
+    background-color: #000;
+    border-color: #000; }
+  .row-notifications .checkbox label em {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #203140; }
 
 /*# sourceMappingURL=dashboard.css.map */

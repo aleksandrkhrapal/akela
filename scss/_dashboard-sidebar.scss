@@ -15,8 +15,12 @@
   }
 
   @media (max-width: $screen-sm-min) {
-    width: 315px;
+    width: calc(100% - 55px);
     height: 100vh;
+  }
+
+  @media (max-width: 320px) {
+    width: 100%;
   }
 
   @media (max-height: 414px) {
@@ -83,11 +87,19 @@
 
           @media (max-width: $screen-sm-min) {
             padding: 14px 19px;
+            border-radius: 0;
           }
 
           &.bottom-line {
             &:after {
               width: 35px;
+            }
+          }
+
+          i {
+            mark {
+              opacity: 1;
+              visibility: visible;
             }
           }
 
@@ -176,7 +188,6 @@
         transition: all .5s ease-in-out;
 
         @media (max-width: $screen-sm-min) {
-          border-radius: 0;
           padding: 14px 19px;
         }
         
@@ -189,6 +200,14 @@
 
           i, span {
             color: $dark-color;
+            
+            .notif-number {
+              color: #fff;
+            }
+
+            mark {
+              border-color: #fff;
+            }
           }
         }
 
@@ -225,7 +244,24 @@
           font-size: 22px;
           line-height: 22px;
           margin-right: 15px;
+          position: relative;
           @include transition;
+
+          mark {
+            display: block;
+            padding: 0;
+            background: $main-color;
+            position: absolute;
+            top: -3px;
+            right: 0;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            opacity: 0;
+            visibility: hidden;
+            border: 2px solid $dark-color;
+            @include transition;
+          }
         }
 
         span {
