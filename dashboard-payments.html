@@ -70,13 +70,13 @@
 						</a>
 					</li>
 					<li>
-						<a href="dashboard-payments.html" class="bottom-line">
+						<a href="dashboard-payments.html" class="active bottom-line">
 							<i class="mdi mdi-credit-card"></i>
 							<span>Payments</span>
 						</a>
 					</li>
 					<li>
-						<a href="dashboard-notifications.html" class="active">
+						<a href="dashboard-notifications.html">
 							<i class="mdi mdi-bell">
 								<mark class="sidebar-sm-notifications"></mark>
 							</i>
@@ -133,86 +133,42 @@
 				<div class="dashboard-wrapper">
 					<div style="margin-bottom: 40px;" class="dashboard-top-heading d-lg-flex justify-content-between align-items-center">
 						<div class="heading">
-							<h2>NOTIFICATIONS</h2>
+							<h2>PAYMENT HISTORY</h2>
 						</div>
 					</div>
-					<div class="row row-notifications">
-						<div class="col-md-9">
-							<div class="row">
-								<div class="col-md-4">
-									<mark>Email Subscriptions</mark>
-									<div class="checkbox">
-										<input id="check1" type="checkbox">
-										<label for="check1" class="d-flex">
-											<span><i class="mdi mdi-check"></i></span>
-											<em>Offer Closing Reminder Email</em>
-										</label>
-									</div>
-								</div>
-								<div class="col-md-4">
-									<mark>SMS Subscriptions</mark>
-									<div class="checkbox">
-										<input id="check2" type="checkbox">
-										<label for="check2" class="d-flex">
-											<span><i class="mdi mdi-check"></i></span>
-											<em>Offer Closing Reminder SMS</em>
-										</label>
-									</div>
-								</div>
-							</div>
+					<div class="dashboard-row">
+						<div class="dashboard-repeat-title">
+							<h3>your transactions</h3>
 						</div>
-						<div class="col-md-3">
-							<div class="button-wrapper" style="margin-top: 20px;">
-								<button type="submit" class="progress-btn main-color-btn">
-									<span>Update Preference</span>
-									<svg class="circle-loader" width="30" height="30" version="1.1" xmlns="http://www.w3.org/2000/svg">
-										<circle cx="15" cy="15" r="10">
-									</svg>
-								</button>
-							</div>
+						<div class="table-wrapper">
+							<table class="dashboard-table">
+								<thead>
+								<tr>
+									<th style="width: 30%;">Subscription</th>
+									<th>Start Date</th>
+									<th>Term</th>
+									<th>Method</th>
+									<th>Amount</th>
+									<th>Pdf</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td class="font-weight-bold">Premium</td>
+									<td>May 7, 2018 00:00</td>
+									<td>12 Months</td>
+									<td>Bank Transfer</td>
+									<td>$100.0000</td>
+									<td>
+										<a href="#" class="pdf-button"><i class="mdi mdi-file-pdf"></i></a>
+									</td>
+								</tr>
+								</tbody>
+							</table>
 						</div>
-					</div>
-					<div class="table-wrapper">
-						<table class="dashboard-table">
-							<thead>
-							<tr>
-								<th style="width: 35%;">TITLE</th>
-								<th style="width: 40%;">message</th>
-								<th style="width: 15%">Received</th>
-								<th style="width: 5%;">
-									<div class="checkbox">
-										<input id="check3" type="checkbox">
-										<label for="check3" class="d-flex">
-											<span><i class="mdi mdi-check"></i></span>
-										</label>
-									</div>
-								</th>
-								<th class="text-center"><i class="mdi mdi-delete"></i></th>
-							</tr>
-							</thead>
-							<tbody>
-							<tr>
-								<td><strong>TOKEN Application Processing and Management Fee Invoice</strong></td>
-								<td>Processing and Management Fee Invoice Fee invoice for Your
-									application to offer TOKEN.Please pay pr...</td>
-								<td>27 April 2018</td>
-								<td>
-									<div class="checkbox">
-										<input id="check4" type="checkbox">
-										<label for="check4" class="d-flex">
-											<span><i class="mdi mdi-check"></i></span>
-										</label>
-									</div>
-								</td>
-								<td class="text-center">
-									<a href="#" class="control-buttons delete"><i class="mdi mdi-delete"></i></a>
-								</td>
-							</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="text-center">
-						<a href="#" class="btn-repeat dark db-load-more">Load more</a>
+						<div class="text-center">
+							<a href="#" class="btn-repeat dark db-load-more">Load more</a>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -221,7 +221,7 @@ input[type=number]::-webkit-outer-spin-button {
       bottom: auto;
       right: auto;
       transform: none; } }
-  @media (max-height: 480px) {
+  @media (max-height: 768px) {
     .error-page-wrapper {
       position: inherit;
       top: auto;
@@ -229,7 +229,8 @@ input[type=number]::-webkit-outer-spin-button {
       bottom: auto;
       right: auto;
       transform: none;
-      padding: 50px 0; } }
+      padding: 50px 0;
+      margin: 0 auto; } }
   .error-page-wrapper span {
     display: block;
     font-size: 80px;
@@ -689,10 +690,10 @@ input[type=number]::-webkit-outer-spin-button {
         height: 65px; } }
     @media (max-width: 1280px) {
       .dashboard-sidebar .heading {
-        padding: 10px 0 10px 10px; } }
+        padding: 10px 0 10px 50px; } }
     @media (max-width: 576px) {
       .dashboard-sidebar .heading {
-        padding: 20px 0 20px 10px; } }
+        padding: 20px 0 20px 50px; } }
     .dashboard-sidebar .heading a {
       display: block; }
       .dashboard-sidebar .heading a img {
@@ -1013,8 +1014,7 @@ input[type=number]::-webkit-outer-spin-button {
     position: relative;
     font-size: 16px;
     line-height: 18px;
-    color: #203140;
-    vertical-align: top; }
+    color: #203140; }
     .dashboard-table tbody tr td .pay-apply-button {
       display: inline-block;
       font-size: 16px;
