@@ -11,11 +11,12 @@
 
 		<link media="all" rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
 		<link media="all" rel="stylesheet" href="css/fontawesome-all.min.css" type="text/css" />
-		<link media="all" rel="stylesheet" href="css/style.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/mediapage.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/login.css" type="text/css" />
 
 		<!-- Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700,900" rel="stylesheet">
-		<link href="https://cdn.materialdesignicons.com/2.3.54/css/materialdesignicons.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.materialdesignicons.com/2.3.54/css/materialdesignicons.min.css">
 	</head>
 	<body>
 		<header class="main-header darkHeader">
@@ -59,14 +60,84 @@
 			</div>
 		</header>
 
-		<main>
-			<div class="error-page-wrapper">
-				<div class="container-fluid">
-					<span>We couldn't find the page you're looking for.</span>
-					<p>The requested page couldn't be located. Checkout for any URL misspelling or <a href="index.html">return to the homepage</a></p>
-					<mark>Error: 404</mark>
+		<main class="login-main">
+			<img src="images/media-before.png" class="img-fluid media-img" alt="">
+
+			<section class="latest-news-section contact-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-2">
+							<div class="offer-title offer-title-top latest-news-title">
+								<span class="main-color">Contact</span>
+							</div>
+						</div>
+						<div class="col-md-7 offset-md-1 news-list">
+							<div class="signup-wrapper contact-wrapper">
+								<div class="login-wrapper">
+									<span class="login-title">SEND US A MESSAGE</span>
+									<form action="#">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="login-form-row">
+													<input id="name" class="border-main-color" type="text">
+													<label for="name">*Name</label>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="login-form-row">
+													<input id="email" class="border-error" type="email">
+													<label for="email">*Email</label>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-6">
+												<div class="login-form-row">
+													<input id="phone" type="tel">
+													<label for="phone">*Phone</label>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="login-form-row">
+													<input id="howdid" type="text">
+													<label for="howdid">*How Did You Hear About Us?</label>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<div class="login-form-row form-textarea">
+													<textarea id="message"></textarea>
+													<label for="message">*Message</label>
+												</div>
+											</div>
+										</div>
+										<div class="login-form-buttons d-flex justify-content-center">
+											<button type="submit" class="progress-btn main-color-btn">
+												<span>Send</span>
+												<svg class="circle-loader" width="30" height="30" version="1.1" xmlns="http://www.w3.org/2000/svg">
+													<circle cx="15" cy="15" r="10">
+													</circle></svg>
+											</button>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="contact-info">
+								<p>PO BOX 1974, West Perth, WA 6872, Australia</p>
+								<div class="contact-row d-flex align-items-center">
+									<i class="mdi mdi-cellphone-iphone"></i>
+									<span>+61 8 9486 7244</span>
+								</div>
+								<div class="contact-row d-flex align-items-center">
+									<i class="mdi mdi-email"></i>
+									<span>Email: <a href="mailto:investors@akela.vc">investors@akela.vc</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
+			</section>
 		</main>
 
 		<footer class="main-footer">
@@ -89,7 +160,7 @@
 							<a href="#">faq</a>
 						</nav>
 						<nav class="footer-other-nav">
-							<a href="contact.html">Contact</a>
+							<a href="contact.html" class="active">Contact</a>
 							<a href="#">Glossary of terms</a>
 							<a href="terms.html">Terms & conditions</a>
 							<a href="privacy-policy.html">privacy policy</a>

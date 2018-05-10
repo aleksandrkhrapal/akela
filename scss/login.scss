@@ -6,7 +6,7 @@
   background: #f5f5f5 url("../images/login-bg.png") no-repeat 50% 50%;
   background-size: cover;
   position: relative;
-  padding: 1px 15px;
+  //padding: 1px 15px;
 
   &:before {
     content: '';
@@ -67,17 +67,30 @@
   }
 
   .login-form-row {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    position: relative;
+
+    &.form-textarea {
+      label {
+        top: 10px;
+        transform: none;
+      }
+    }
 
     label {
       display: block;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 20px;
       font-weight: 300;
       color: $dark-color;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 10px;
+      @include transition;
     }
 
-    input {
+    input, textarea {
       display: block;
       width: 100%;
       height: 50px;
@@ -89,6 +102,13 @@
       line-height: 20px;
       color: $dark-color;
 
+      &:focus + label {
+        top: -20px;
+        transform: none;
+        font-size: 14px;
+        line-height: 16px;
+      }
+
       &.border-main-color {
         border: 1px solid $main-color;
       }
@@ -96,6 +116,11 @@
       &.border-error {
         border: 1px solid #d45155;
       }
+    }
+
+    textarea {
+      height: 150px;
+      resize: none;
     }
   }
 
@@ -212,5 +237,61 @@
     color: #fff;
     font-size: 18px;
     line-height: 24px;
+  }
+}
+
+.contact-section {
+  margin-top: -90px;
+}
+
+.contact-wrapper {
+  max-width: 700px;
+  margin: 20px auto 75px auto;
+
+  .login-wrapper {
+    padding: 30px;
+  }
+}
+
+.contact-info {
+  max-width: 375px;
+  margin: 0 auto;
+  text-align: center;
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    color: $dark-color;
+    margin: 0 0 30px 0;
+  }
+
+  .contact-row {
+    max-width: 220px;
+    margin: 0 auto 25px auto;
+
+    span {
+      display: block;
+      font-size: 16px;
+      line-height: 18px;
+      color: $dark-color;
+      
+      a {
+        color: $main-color;
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    
+    i {
+      display: block;
+      margin-right: 15px;
+      width: 20px;
+      font-size: 20px;
+      line-height: 20px;
+      color: $dark-color;
+    }
   }
 }

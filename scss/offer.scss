@@ -553,47 +553,50 @@
 
   .management-row {
     margin-bottom: 40px;
+  }
+}
 
-    .management-photo {
-      margin-bottom: 35px;
+.management-info-wrapper {
+  .management-photo {
+    margin-bottom: 35px;
+  }
+
+  .management-info {
+    margin-bottom: 20px;
+
+    .name {
+      display: block;
+      font-size: 24px;
+      line-height: 26px;
+      font-weight: 700;
+      color: $main-color;
+      text-transform: uppercase;
+      margin-bottom: 15px;
     }
 
-    .management-info {
-      margin-bottom: 20px;
+    .position {
+      display: block;
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 600;
+      color: $dark-color;
+      margin-bottom: 15px;
+    }
 
-      .name {
-        display: block;
-        font-size: 24px;
-        line-height: 26px;
-        font-weight: 700;
-        color: $main-color;
-        text-transform: uppercase;
-        margin-bottom: 15px;
-      }
+    .description {
+      font-size: 16px;
+      line-height: 24px;
+      color: $dark-color;
+      text-align: justify;
+    }
 
-      .position {
-        display: block;
-        font-size: 18px;
-        line-height: 20px;
-        font-weight: 600;
-        color: $dark-color;
-        margin-bottom: 15px;
-      }
-
-      .description {
-        font-size: 16px;
-        line-height: 24px;
-        color: $dark-color;
-        text-align: justify;
-      }
-
-      .read-more {
-        display: inline-block;
-        font-size: 18px;
-        line-height: 20px;
-        font-weight: 700;
-        color: $main-color;
-      }
+    .read-more {
+      display: inline-block;
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 700;
+      color: $main-color;
+      outline: none;
     }
   }
 }

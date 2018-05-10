@@ -773,8 +773,8 @@ input[type=number]::-webkit-outer-spin-button {
       top: 20px;
       right: 20px;
       color: #7f7f7f;
-      font-size: 14px;
-      line-height: 14px; }
+      font-size: 20px;
+      line-height: 20px; }
     .invest-modal-dialog .modal-content .bottom-text {
       font-size: 11px;
       line-height: 16px;
@@ -1290,36 +1290,38 @@ input[type=number]::-webkit-outer-spin-button {
       padding: 50px 0; } }
   .management-section .management-row {
     margin-bottom: 40px; }
-    .management-section .management-row .management-photo {
-      margin-bottom: 35px; }
-    .management-section .management-row .management-info {
-      margin-bottom: 20px; }
-      .management-section .management-row .management-info .name {
-        display: block;
-        font-size: 24px;
-        line-height: 26px;
-        font-weight: 700;
-        color: #00b3b7;
-        text-transform: uppercase;
-        margin-bottom: 15px; }
-      .management-section .management-row .management-info .position {
-        display: block;
-        font-size: 18px;
-        line-height: 20px;
-        font-weight: 600;
-        color: #203140;
-        margin-bottom: 15px; }
-      .management-section .management-row .management-info .description {
-        font-size: 16px;
-        line-height: 24px;
-        color: #203140;
-        text-align: justify; }
-      .management-section .management-row .management-info .read-more {
-        display: inline-block;
-        font-size: 18px;
-        line-height: 20px;
-        font-weight: 700;
-        color: #00b3b7; }
+
+.management-info-wrapper .management-photo {
+  margin-bottom: 35px; }
+.management-info-wrapper .management-info {
+  margin-bottom: 20px; }
+  .management-info-wrapper .management-info .name {
+    display: block;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #00b3b7;
+    text-transform: uppercase;
+    margin-bottom: 15px; }
+  .management-info-wrapper .management-info .position {
+    display: block;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #203140;
+    margin-bottom: 15px; }
+  .management-info-wrapper .management-info .description {
+    font-size: 16px;
+    line-height: 24px;
+    color: #203140;
+    text-align: justify; }
+  .management-info-wrapper .management-info .read-more {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #00b3b7;
+    outline: none; }
 
 .news-section {
   padding: 150px 0;

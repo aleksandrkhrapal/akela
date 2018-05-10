@@ -711,8 +711,7 @@ input[type=number]::-webkit-outer-spin-button {
 .login-main {
   background: #f5f5f5 url("../images/login-bg.png") no-repeat 50% 50%;
   background-size: cover;
-  position: relative;
-  padding: 1px 15px; }
+  position: relative; }
   .login-main:before {
     content: '';
     display: block;
@@ -761,14 +760,23 @@ input[type=number]::-webkit-outer-spin-button {
     font-weight: 300;
     text-transform: none; }
   .login-wrapper .login-form-row {
-    margin-bottom: 20px; }
+    margin-bottom: 30px;
+    position: relative; }
+    .login-wrapper .login-form-row.form-textarea label {
+      top: 10px;
+      transform: none; }
     .login-wrapper .login-form-row label {
       display: block;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 20px;
       font-weight: 300;
-      color: #203140; }
-    .login-wrapper .login-form-row input {
+      color: #203140;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 10px;
+      transition: all .2s linear; }
+    .login-wrapper .login-form-row input, .login-wrapper .login-form-row textarea {
       display: block;
       width: 100%;
       height: 50px;
@@ -779,10 +787,18 @@ input[type=number]::-webkit-outer-spin-button {
       font-size: 18px;
       line-height: 20px;
       color: #203140; }
-      .login-wrapper .login-form-row input.border-main-color {
+      .login-wrapper .login-form-row input:focus + label, .login-wrapper .login-form-row textarea:focus + label {
+        top: -20px;
+        transform: none;
+        font-size: 14px;
+        line-height: 16px; }
+      .login-wrapper .login-form-row input.border-main-color, .login-wrapper .login-form-row textarea.border-main-color {
         border: 1px solid #00b3b7; }
-      .login-wrapper .login-form-row input.border-error {
+      .login-wrapper .login-form-row input.border-error, .login-wrapper .login-form-row textarea.border-error {
         border: 1px solid #d45155; }
+    .login-wrapper .login-form-row textarea {
+      height: 150px;
+      resize: none; }
   @media (max-width: 576px) {
     .login-wrapper .login-form-buttons {
       display: block !important;
@@ -868,5 +884,44 @@ input[type=number]::-webkit-outer-spin-button {
     color: #fff;
     font-size: 18px;
     line-height: 24px; }
+
+.contact-section {
+  margin-top: -90px; }
+
+.contact-wrapper {
+  max-width: 700px;
+  margin: 20px auto 75px auto; }
+  .contact-wrapper .login-wrapper {
+    padding: 30px; }
+
+.contact-info {
+  max-width: 375px;
+  margin: 0 auto;
+  text-align: center; }
+  .contact-info p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #203140;
+    margin: 0 0 30px 0; }
+  .contact-info .contact-row {
+    max-width: 220px;
+    margin: 0 auto 25px auto; }
+    .contact-info .contact-row span {
+      display: block;
+      font-size: 16px;
+      line-height: 18px;
+      color: #203140; }
+      .contact-info .contact-row span a {
+        color: #00b3b7;
+        text-decoration: underline; }
+        .contact-info .contact-row span a:hover {
+          text-decoration: none; }
+    .contact-info .contact-row i {
+      display: block;
+      margin-right: 15px;
+      width: 20px;
+      font-size: 20px;
+      line-height: 20px;
+      color: #203140; }
 
 /*# sourceMappingURL=login.css.map */
