@@ -21,6 +21,14 @@ $(".progress-btn").on("click", function(e) {
     }
 });
 
+$('.login-form-row input, .profile-detail-input input').on('change', function() {
+    if( $(this).val() ) {
+        $(this).addClass('active');
+    } else {
+        $(this).removeClass('active');
+    }
+});
+
 // dashboard sidebar hide/show
 $('.sidebar-trigger').on('click', function (e) {
     e.preventDefault();

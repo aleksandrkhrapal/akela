@@ -43,7 +43,7 @@
       font-size: 12px;
       line-height: 14px;
       color: #fff;
-      font-weight: 600;
+      //font-weight: 600;
       text-transform: capitalize;
 
       @media (max-width: $screen-md-max) {
@@ -115,7 +115,7 @@
         display: inline-block;
         font-size: 14px;
         line-height: 16px;
-        font-weight: 600;
+        font-weight: 400;
         color: #fff;
         text-transform: uppercase;
         position: relative;
@@ -225,7 +225,6 @@
     color: #fff;
     font-size: 13px;
     line-height: 15px;
-    font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
     @include transition;
@@ -288,7 +287,7 @@
     color: #fff;
     font-size: 14px;
     line-height: 16px;
-    font-weight: 700;
+    //font-weight: 700;
     @include transition;
   }
 }

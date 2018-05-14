@@ -79,14 +79,14 @@
 
       li {
         a {
-          padding: 20px 23px;
+          padding: 10px 23px;
 
           @media (max-width: 1366px) {
-            padding: 14px 23px;
+            padding: 10px 23px;
           }
 
           @media (max-width: $screen-sm-min) {
-            padding: 14px 19px;
+            padding: 10px 19px;
             border-radius: 0;
           }
 
@@ -182,17 +182,17 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding: 20px 40px;
+        padding: 10px 40px;
         text-decoration: none;
         border-radius: 3px 0 0 3px;
         transition: all .5s ease-in-out;
 
         @media (max-width: $screen-sm-min) {
-          padding: 14px 19px;
+          padding: 10px 19px;
         }
         
         @media (max-width: 1366px) {
-          padding: 14px 30px;
+          padding: 10px 30px;
         }
 
         &.active {

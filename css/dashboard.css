@@ -379,6 +379,20 @@ input[type=number]::-webkit-outer-spin-button {
     opacity: 0;
     visibility: hidden; }
 
+.loading {
+  position: relative;
+  left: 50%;
+  margin-left: -15px;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  fill: transparent;
+  stroke: #203140;
+  stroke-width: 3;
+  opacity: 1;
+  visibility: visible;
+  animation: dash 2s ease infinite, rotate 2s linear infinite; }
+
 @keyframes dash {
   0% {
     stroke-dasharray: 1,95;
@@ -429,7 +443,6 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 12px;
     line-height: 14px;
     color: #fff;
-    font-weight: 600;
     text-transform: capitalize; }
     @media (max-width: 991px) {
       .logo a span {
@@ -484,7 +497,7 @@ input[type=number]::-webkit-outer-spin-button {
         display: inline-block;
         font-size: 14px;
         line-height: 16px;
-        font-weight: 600;
+        font-weight: 400;
         color: #fff;
         text-transform: uppercase;
         position: relative;
@@ -561,7 +574,6 @@ input[type=number]::-webkit-outer-spin-button {
     color: #fff;
     font-size: 13px;
     line-height: 15px;
-    font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
     transition: all .2s linear; }
@@ -604,7 +616,6 @@ input[type=number]::-webkit-outer-spin-button {
     color: #fff;
     font-size: 14px;
     line-height: 16px;
-    font-weight: 700;
     transition: all .2s linear; }
 
 .dashboard-sidebar {
@@ -664,13 +675,13 @@ input[type=number]::-webkit-outer-spin-button {
         .dashboard-sidebar.sidebar-sm .sidebar-nav {
           padding: 0; } }
       .dashboard-sidebar.sidebar-sm .sidebar-nav li a {
-        padding: 20px 23px; }
+        padding: 10px 23px; }
         @media (max-width: 1366px) {
           .dashboard-sidebar.sidebar-sm .sidebar-nav li a {
-            padding: 14px 23px; } }
+            padding: 10px 23px; } }
         @media (max-width: 576px) {
           .dashboard-sidebar.sidebar-sm .sidebar-nav li a {
-            padding: 14px 19px;
+            padding: 10px 19px;
             border-radius: 0; } }
         .dashboard-sidebar.sidebar-sm .sidebar-nav li a.bottom-line:after {
           width: 35px; }
@@ -728,16 +739,16 @@ input[type=number]::-webkit-outer-spin-button {
       display: flex;
       flex-direction: row;
       align-items: center;
-      padding: 20px 40px;
+      padding: 10px 40px;
       text-decoration: none;
       border-radius: 3px 0 0 3px;
       transition: all .5s ease-in-out; }
       @media (max-width: 576px) {
         .dashboard-sidebar .sidebar-nav li a {
-          padding: 14px 19px; } }
+          padding: 10px 19px; } }
       @media (max-width: 1366px) {
         .dashboard-sidebar .sidebar-nav li a {
-          padding: 14px 30px; } }
+          padding: 10px 30px; } }
       .dashboard-sidebar .sidebar-nav li a.active {
         background-color: #fff; }
         .dashboard-sidebar .sidebar-nav li a.active i, .dashboard-sidebar .sidebar-nav li a.active span {
@@ -878,7 +889,6 @@ input[type=number]::-webkit-outer-spin-button {
         margin: 0;
         font-size: 30px;
         line-height: 32px;
-        font-weight: 700;
         color: #00b3b7;
         text-transform: uppercase; }
         @media (max-width: 576px) {
@@ -891,21 +901,20 @@ input[type=number]::-webkit-outer-spin-button {
         line-height: 24px;
         color: #203140; }
       .dashboard-wrapper .dashboard-container .dashboard-wrapper .dashboard-top-heading .dashboard-btn-create {
-        min-width: 320px;
-        text-align: center;
-        padding: 21px;
         font-size: 16px;
         line-height: 18px;
-        background-color: #00b3b7; }
+        font-weight: 400;
+        color: #00b3b7; }
         @media (max-width: 576px) {
           .dashboard-wrapper .dashboard-container .dashboard-wrapper .dashboard-top-heading .dashboard-btn-create {
             min-width: inherit;
-            padding: 15px 20px;
+            padding: 15px 0;
             font-size: 14px;
             line-height: 16px; } }
         .dashboard-wrapper .dashboard-container .dashboard-wrapper .dashboard-top-heading .dashboard-btn-create:hover {
-          border-color: #203140;
-          background-color: #203140; }
+          color: #203140;
+          background-color: transparent;
+          border-color: transparent; }
 
 .dashboard-row {
   padding-bottom: 70px; }
@@ -928,7 +937,6 @@ input[type=number]::-webkit-outer-spin-button {
     .dashboard-row .dashboard-repeat-title h3 {
       font-size: 24px;
       line-height: 26px;
-      font-weight: 700;
       color: #203140;
       text-transform: uppercase;
       margin: 0 0 10px 0; }
@@ -941,7 +949,6 @@ input[type=number]::-webkit-outer-spin-button {
       vertical-align: middle;
       font-size: 24px;
       line-height: 26px;
-      font-weight: 700;
       color: #203140;
       text-transform: uppercase;
       margin: 0 0 10px 0;
@@ -965,14 +972,19 @@ input[type=number]::-webkit-outer-spin-button {
 
 .table-wrapper {
   overflow: auto; }
+  .table-wrapper.table-wrapper-profile {
+    margin-bottom: 15px; }
 
 .db-load-more {
-  min-width: 300px;
   font-size: 16px !important;
   line-height: 18px !important;
-  padding: 15px 20px !important;
-  border-width: 2px !important;
-  margin-top: 35px; }
+  margin-top: 35px;
+  padding: 0 !important;
+  border: none !important;
+  font-weight: normal !important; }
+  .db-load-more:hover {
+    background: none !important;
+    color: #00b3b7 !important; }
   @media (max-width: 576px) {
     .db-load-more {
       min-width: inherit; } }
@@ -983,43 +995,80 @@ input[type=number]::-webkit-outer-spin-button {
     .dashboard-table {
       width: 1200px; } }
   .dashboard-table th, .dashboard-table td {
-    padding: 20px; }
+    padding: 13px 15px;
+    border: 1px solid #b7b7b7; }
     .dashboard-table th .checkbox, .dashboard-table td .checkbox {
-      margin: 0; }
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 5px; }
       .dashboard-table th .checkbox label span, .dashboard-table td .checkbox label span {
         margin: 0 auto; }
   .dashboard-table thead {
-    background-color: #203140; }
+    background-color: #d7d7d7; }
     .dashboard-table thead th {
       font-size: 16px;
       line-height: 18px;
-      font-weight: 700;
+      font-weight: 400;
       text-transform: uppercase;
-      color: #fff; }
-      .dashboard-table thead th:first-child {
-        border-radius: 5px 0 0 0; }
-      .dashboard-table thead th:last-child {
-        border-radius: 0 5px 0 0; }
-      .dashboard-table thead th .checkbox input:checked + label span {
-        border-color: #00b3b7; }
-      .dashboard-table thead th .checkbox label span {
-        border-color: #fff; }
+      color: #203140;
+      /*&:first-child {
+        border-radius: 5px 0 0 0;
+      }
+
+      &:last-child {
+        border-radius: 0 5px 0 0;
+      }*/ }
       .dashboard-table thead th i {
         display: inline-block;
         vertical-align: middle;
         font-size: 25px;
         line-height: 25px;
-        color: #fff; }
+        color: #b72e00; }
   .dashboard-table tbody tr td {
     position: relative;
     font-size: 16px;
     line-height: 18px;
-    color: #203140; }
+    color: #000;
+        /*&:first-child {
+          &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background-color: $dark-color;
+          }
+        }
+
+        &:last-child {
+          &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background-color: $dark-color;
+          }
+        }
+
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          height: 2px;
+          width: 100%;
+          background-color: $dark-color;
+        }*/ }
     .dashboard-table tbody tr td .pay-apply-button {
       display: inline-block;
       font-size: 16px;
       line-height: 18px;
-      font-weight: 700;
       color: #00b3b7;
       text-decoration: underline;
       text-transform: uppercase; }
@@ -1034,50 +1083,24 @@ input[type=number]::-webkit-outer-spin-button {
       transition: all .2s linear; }
       .dashboard-table tbody tr td .pdf-button:hover {
         opacity: .8; }
-    .dashboard-table tbody tr td .control-buttons {
-      display: inline-block;
-      vertical-align: middle;
-      font-size: 25px;
-      line-height: 25px;
-      margin: 0 5px;
-      transition: all .2s linear; }
-      .dashboard-table tbody tr td .control-buttons:hover {
-        opacity: .8; }
-      .dashboard-table tbody tr td .control-buttons.edit {
-        color: #00b3b7; }
-      .dashboard-table tbody tr td .control-buttons.delete {
-        color: #f33; }
     .dashboard-table tbody tr td span {
       display: inline-block;
       vertical-align: middle;
       margin-right: 35px; }
-    .dashboard-table tbody tr td:first-child:before {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 2px;
-      height: 100%;
-      background-color: #203140; }
-    .dashboard-table tbody tr td:last-child:before {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 2px;
-      height: 100%;
-      background-color: #203140; }
-    .dashboard-table tbody tr td:after {
-      content: '';
-      display: block;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      height: 2px;
-      width: 100%;
-      background-color: #203140; }
+
+.control-buttons {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 25px;
+  line-height: 25px;
+  margin: 0 5px;
+  transition: all .2s linear; }
+  .control-buttons:hover {
+    opacity: .8; }
+  .control-buttons.edit {
+    color: #00b3b7; }
+  .control-buttons.delete {
+    color: #b72e00; }
 
 .dashboard-profile-table {
   overflow: auto;
@@ -1119,22 +1142,22 @@ input[type=number]::-webkit-outer-spin-button {
       color: #fff; }
     .invest-profiles-table tr td p {
       margin: 0; }
-    .invest-profiles-table tr td .profile-status {
-      display: block;
-      font-size: 16px;
-      line-height: 18px;
-      font-weight: 700;
-      color: #00b3b7;
-      text-transform: uppercase;
-      white-space: nowrap;
-      margin-left: 15px; }
-      .invest-profiles-table tr td .profile-status i {
-        display: inline-block;
-        vertical-align: middle;
-        color: #00b3b7;
-        font-size: 20px;
-        line-height: 22px;
-        margin-left: 5px; }
+
+.profile-status {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 18px;
+  color: #00b3b7;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-right: 0 !important; }
+  .profile-status i {
+    display: inline-block;
+    vertical-align: middle;
+    color: #00b3b7;
+    font-size: 20px;
+    line-height: 22px;
+    margin-left: 5px; }
 
 .profile-text {
   margin: 0;
@@ -1156,38 +1179,46 @@ input[type=number]::-webkit-outer-spin-button {
   color: #f33; }
 .profile-details-row label {
   display: block;
-  padding: 0 15px;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 300;
-  margin: 0 0 10px 0; }
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 300; }
   @media (max-width: 576px) {
     .profile-details-row label {
       padding: 0; } }
+.profile-details-row .profile-detail-input {
+  position: relative;
+  margin-bottom: 40px; }
+  .profile-details-row .profile-detail-input label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    transition: all .2s linear; }
 .profile-details-row input {
   display: block;
   width: 100%;
-  height: 60px;
+  height: 44px;
   border-radius: 5px;
-  border: 2px solid #203140;
-  margin-bottom: 30px;
+  border: 1px solid #9aa9b8;
   padding: 15px;
   font-size: 18px;
   line-height: 20px;
-  font-weight: 700;
   outline: none;
   color: #203140; }
+  .profile-details-row input:focus + label, .profile-details-row input.active + label {
+    top: -23px;
+    transform: none;
+    font-size: 16px;
+    line-height: 18px; }
 .profile-details-row select {
   display: block;
   width: 100%;
-  height: 60px;
+  height: 44px;
   border-radius: 5px;
-  border: 2px solid #203140;
-  margin-bottom: 30px;
-  padding: 15px;
+  border: 1px solid #9aa9b8;
+  padding: 5px 15px;
   font-size: 18px;
   line-height: 20px;
-  font-weight: 700;
   outline: none;
   color: #203140;
   background: none; }
@@ -1196,14 +1227,15 @@ input[type=number]::-webkit-outer-spin-button {
   margin-top: 28px; }
   .button-wrapper .progress-btn {
     width: 100%;
-    height: 60px;
+    height: 44px;
     left: 50%;
-    transform: translateX(-50%); }
+    transform: translateX(-50%);
+    border-radius: 5px; }
     .button-wrapper .progress-btn span {
       font-size: 16px;
       line-height: 18px; }
     .button-wrapper .progress-btn .circle-loader {
-      top: 17px; }
+      top: 8px; }
     .button-wrapper .progress-btn.active {
       width: 130px; }
 
@@ -1252,8 +1284,9 @@ input[type=number]::-webkit-outer-spin-button {
     text-align: center;
     font-size: 16px;
     line-height: 18px;
-    padding: 20px;
-    position: relative; }
+    padding: 12px 20px;
+    position: relative;
+    border-radius: 5px; }
   .upload-file-wrapper .upload-file .file {
     position: absolute;
     top: 0;
@@ -1269,9 +1302,9 @@ input[type=number]::-webkit-outer-spin-button {
 .row-invite-friends {
   margin-top: 30px; }
   .row-invite-friends .friends-list {
-    border: 2px solid #203140;
+    border: 1px solid #9aa9b8;
     border-radius: 5px;
-    padding: 18px 15px 0 15px;
+    padding: 11px 15px 0 15px;
     margin-bottom: 20px; }
     @media (max-width: 576px) {
       .row-invite-friends .friends-list {
@@ -1282,7 +1315,7 @@ input[type=number]::-webkit-outer-spin-button {
       font-size: 16px;
       line-height: 18px;
       color: #203140;
-      margin-bottom: 17px;
+      margin-bottom: 10px;
       white-space: nowrap; }
       @media (max-width: 576px) {
         .row-invite-friends .friends-list span {
@@ -1326,7 +1359,6 @@ input[type=number]::-webkit-outer-spin-button {
   .row-notifications .checkbox label em {
     font-size: 18px;
     line-height: 20px;
-    font-weight: 700;
     color: #203140; }
 
 /*# sourceMappingURL=dashboard.css.map */

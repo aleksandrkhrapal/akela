@@ -379,6 +379,20 @@ input[type=number]::-webkit-outer-spin-button {
     opacity: 0;
     visibility: hidden; }
 
+.loading {
+  position: relative;
+  left: 50%;
+  margin-left: -15px;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  fill: transparent;
+  stroke: #203140;
+  stroke-width: 3;
+  opacity: 1;
+  visibility: visible;
+  animation: dash 2s ease infinite, rotate 2s linear infinite; }
+
 @keyframes dash {
   0% {
     stroke-dasharray: 1,95;
@@ -429,7 +443,6 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 12px;
     line-height: 14px;
     color: #fff;
-    font-weight: 600;
     text-transform: capitalize; }
     @media (max-width: 991px) {
       .logo a span {
@@ -484,7 +497,7 @@ input[type=number]::-webkit-outer-spin-button {
         display: inline-block;
         font-size: 14px;
         line-height: 16px;
-        font-weight: 600;
+        font-weight: 400;
         color: #fff;
         text-transform: uppercase;
         position: relative;
@@ -561,7 +574,6 @@ input[type=number]::-webkit-outer-spin-button {
     color: #fff;
     font-size: 13px;
     line-height: 15px;
-    font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
     transition: all .2s linear; }
@@ -604,7 +616,6 @@ input[type=number]::-webkit-outer-spin-button {
     color: #fff;
     font-size: 14px;
     line-height: 16px;
-    font-weight: 700;
     transition: all .2s linear; }
 
 .main-footer {
@@ -787,7 +798,7 @@ input[type=number]::-webkit-outer-spin-button {
       font-size: 18px;
       line-height: 20px;
       color: #203140; }
-      .login-wrapper .login-form-row input:focus + label, .login-wrapper .login-form-row textarea:focus + label {
+      .login-wrapper .login-form-row input:focus + label, .login-wrapper .login-form-row input.active + label, .login-wrapper .login-form-row textarea:focus + label, .login-wrapper .login-form-row textarea.active + label {
         top: -20px;
         transform: none;
         font-size: 14px;

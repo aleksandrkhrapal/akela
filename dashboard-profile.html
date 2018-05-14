@@ -141,27 +141,29 @@
 						<div class="dashboard-repeat-title">
 							<h3>INVESTMENT PROFILES</h3>
 						</div>
-						<div class="dashboard-profile-table">
-							<table class="invest-profiles-table">
+						<div class="table-wrapper table-wrapper-profile">
+							<table class="dashboard-table">
+								<thead>
+								<tr>
+									<th style="width: 50%;">TITLE</th>
+									<th style="width: 16%">Type</th>
+									<th style="width: 16%"></th>
+									<th style="width: 16%" class="text-center">wholesale investor</th>
+								</tr>
+								</thead>
 								<tbody>
-									<tr>
-										<td>
-											<div class="d-flex justify-content-between">
-												<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-												<span class="profile-status">ACTIVE PROFILE <i class="mdi mdi-approval"></i></span>
-											</div>
-										</td>
-										<td style="width: 340px" class="wholesale-investor">Wholesale Investor - YES</td>
-									</tr>
-									<tr>
-										<td>
-											<div class="d-flex justify-content-between">
-												<p>Contrary to popular belief, Lorem Ipsum is not simply random text</p>
-												<span class="profile-status">ACTIVE PROFILE <i class="mdi mdi-approval"></i></span>
-											</div>
-										</td>
-										<td style="width: 340px">Wholesale Investor - YES</td>
-									</tr>
+								<tr>
+									<td>Lorem Ipsum is simply dummy text of the printing and typesetting industry</td>
+									<td>Individual</td>
+									<td class="text-center"><span class="profile-status">ACTIVE PROFILE <i class="mdi mdi-approval"></i></span></td>
+									<td class="text-center text-uppercase">Yes</td>
+								</tr>
+								<tr>
+									<td>Contrary to popular belief, Lorem Ipsum is not simply random text</td>
+									<td>Company</td>
+									<td class="text-center"><span class="profile-status">ACTIVE PROFILE <i class="mdi mdi-approval"></i></span></td>
+									<td class="text-center text-uppercase">No</td>
+								</tr>
 								</tbody>
 							</table>
 						</div>
@@ -174,37 +176,51 @@
 						<form action="#">
 							<div class="row profile-details-row">
 								<div class="col-lg-3">
-									<label for="lbl1">Type</label>
-									<input type="text" id="lbl1">
+									<div class="profile-detail-input">
+										<input type="text" id="lbl1">
+										<label for="lbl1">Type</label>
+									</div>
 								</div>
 								<div class="col-lg-3 correct">
-									<label for="lbl2">*First name</label>
-									<input type="text" id="lbl2" value="Alex Troogler">
+									<div class="profile-detail-input">
+										<input type="text" class="active" id="lbl2" value="Alex Troogler">
+										<label for="lbl2">*First name</label>
+									</div>
 								</div>
 								<div class="col-lg-3 error">
-									<label for="lbl3">*Last name</label>
-									<input type="text" id="lbl3">
+									<div class="profile-detail-input">
+										<input type="text" id="lbl3">
+										<label for="lbl3">*Last name</label>
+									</div>
 								</div>
 								<div class="col-lg-3">
-									<label for="lbl4">*Email</label>
-									<input type="email" id="lbl4">
+									<div class="profile-detail-input">
+										<input type="email" id="lbl4">
+										<label for="lbl4">*Email</label>
+									</div>
 								</div>
 							</div>
 							<div class="row profile-details-row">
 								<div class="col-lg-3">
-									<label for="lbl5">Company</label>
-									<input type="text" id="lbl5">
+									<div class="profile-detail-input">
+										<input type="text" id="lbl5">
+										<label for="lbl5">Company</label>
+									</div>
 								</div>
 								<div class="col-lg-3">
-									<label for="lbl6">Phone</label>
-									<input type="tel" id="lbl6">
+									<div class="profile-detail-input">
+										<input type="tel" id="lbl6">
+										<label for="lbl6">Phone</label>
+									</div>
 								</div>
 								<div class="col-lg-3">
-									<label for="lbl7">*Mobile</label>
-									<input type="tel" id="lbl7">
+									<div class="profile-detail-input">
+										<input type="tel" id="lbl7">
+										<label for="lbl7">*Mobile</label>
+									</div>
 								</div>
 								<div class="col-lg-3">
-									<div class="button-wrapper">
+									<div class="button-wrapper" style="margin: 0;">
 										<button type="submit" class="progress-btn main-color-btn">
 											<span>Save</span>
 											<svg class="circle-loader" width="30" height="30" version="1.1" xmlns="http://www.w3.org/2000/svg">

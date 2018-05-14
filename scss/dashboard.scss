@@ -108,7 +108,7 @@
             margin: 0;
             font-size: 30px;
             line-height: 32px;
-            font-weight: 700;
+            //font-weight: 700;
             color: $main-color;
             text-transform: uppercase;
 
@@ -127,23 +127,22 @@
         }
 
         .dashboard-btn-create {
-          min-width: 320px;
-          text-align: center;
-          padding: 21px;
           font-size: 16px;
           line-height: 18px;
-          background-color: $main-color;
+          font-weight: 400;
+          color: $main-color;
 
           @media (max-width: $screen-sm-min) {
             min-width: inherit;
-            padding: 15px 20px;
+            padding: 15px 0;
             font-size: 14px;
             line-height: 16px;
           }
 
           &:hover {
-            border-color: $dark-color;
-            background-color: $dark-color;
+            color: $dark-color;
+            background-color: transparent;
+            border-color: transparent;
           }
         }
       }
@@ -188,7 +187,7 @@
     h3 {
       font-size: 24px;
       line-height: 26px;
-      font-weight: 700;
+      //font-weight: 700;
       color: $dark-color;
       text-transform: uppercase;
       margin: 0 0 10px 0;
@@ -204,7 +203,7 @@
       vertical-align: middle;
       font-size: 24px;
       line-height: 26px;
-      font-weight: 700;
+      //font-weight: 700;
       color: $dark-color;
       text-transform: uppercase;
       margin: 0 0 10px 0;
@@ -238,15 +237,24 @@
 
 .table-wrapper {
   overflow: auto;
+
+  &.table-wrapper-profile {
+    margin-bottom: 15px;
+  }
 }
 
 .db-load-more {
-  min-width: 300px;
   font-size: 16px !important;
   line-height: 18px !important;
-  padding: 15px 20px !important;
-  border-width: 2px !important;
   margin-top: 35px;
+  padding: 0 !important;
+  border: none !important;
+  font-weight: normal !important;
+  
+  &:hover {
+    background: none !important;
+    color: $main-color !important;
+  }
 
   @media (max-width: $screen-sm-min) {
     min-width: inherit;
@@ -261,10 +269,13 @@
   }
 
   th, td {
-    padding: 20px;
+    padding: 13px 15px;
+    border: 1px solid #b7b7b7;
 
     .checkbox {
-      margin: 0;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 5px;
 
       label {
         span {
@@ -275,47 +286,29 @@
   }
 
   thead {
-    background-color: $dark-color;
+    background-color: #d7d7d7;
 
     th {
       font-size: 16px;
       line-height: 18px;
-      font-weight: 700;
+      font-weight: 400;
       text-transform: uppercase;
-      color: #fff;
+      color: $dark-color;
 
-      &:first-child {
+      /*&:first-child {
         border-radius: 5px 0 0 0;
       }
 
       &:last-child {
         border-radius: 0 5px 0 0;
-      }
-
-      .checkbox {
-        input {
-          &:checked {
-            + label {
-              span {
-                border-color: $main-color;
-              }
-            }
-          }
-        }
-
-        label {
-          span {
-            border-color: #fff;
-          }
-        }
-      }
+      }*/
 
       i {
         display: inline-block;
         vertical-align: middle;
         font-size: 25px;
         line-height: 25px;
-        color: #fff;
+        color: #b72e00;
       }
     }
   }
@@ -326,14 +319,14 @@
         position: relative;
         font-size: 16px;
         line-height: 18px;
-        color: $dark-color;
+        color: #000;
         //vertical-align: top;
 
         .pay-apply-button {
           display: inline-block;
           font-size: 16px;
           line-height: 18px;
-          font-weight: 700;
+          //font-weight: 700;
           color: $main-color;
           text-decoration: underline;
           text-transform: uppercase;
@@ -356,34 +349,13 @@
           }
         }
 
-        .control-buttons {
-          display: inline-block;
-          vertical-align: middle;
-          font-size: 25px;
-          line-height: 25px;
-          margin: 0 5px;
-          @include transition;
-
-          &:hover {
-            opacity: .8;
-          }
-
-          &.edit {
-            color: $main-color;
-          }
-
-          &.delete {
-            color: #f33;
-          }
-        }
-
         span {
           display: inline-block;
           vertical-align: middle;
           margin-right: 35px;
         }
 
-        &:first-child {
+        /*&:first-child {
           &:before {
             content: '';
             display: block;
@@ -418,9 +390,30 @@
           height: 2px;
           width: 100%;
           background-color: $dark-color;
-        }
+        }*/
       }
     }
+  }
+}
+
+.control-buttons {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 25px;
+  line-height: 25px;
+  margin: 0 5px;
+  @include transition;
+
+  &:hover {
+    opacity: .8;
+  }
+
+  &.edit {
+    color: $main-color;
+  }
+
+  &.delete {
+    color: #b72e00;
   }
 }
 
@@ -491,27 +484,27 @@
       p {
         margin: 0;
       }
-
-      .profile-status {
-        display: block;
-        font-size: 16px;
-        line-height: 18px;
-        font-weight: 700;
-        color: $main-color;
-        text-transform: uppercase;
-        white-space: nowrap;
-        margin-left: 15px;
-
-        i {
-          display: inline-block;
-          vertical-align: middle;
-          color: $main-color;
-          font-size: 20px;
-          line-height: 22px;
-          margin-left: 5px;
-        }
-      }
     }
+  }
+}
+
+.profile-status {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 18px;
+  //font-weight: 700;
+  color: $main-color;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-right: 0 !important;
+
+  i {
+    display: inline-block;
+    vertical-align: middle;
+    color: $main-color;
+    font-size: 20px;
+    line-height: 22px;
+    margin-left: 5px;
   }
 }
 
@@ -548,43 +541,59 @@
 
   label {
     display: block;
-    padding: 0 15px;
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 18px;
+    line-height: 20px;
     font-weight: 300;
-    margin: 0 0 10px 0;
 
     @media (max-width: $screen-sm-min) {
       padding: 0;
     }
   }
 
+  .profile-detail-input {
+    position: relative;
+    margin-bottom: 40px;
+
+    label {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 15px;
+      @include transition;
+    }
+  }
+
   input {
     display: block;
     width: 100%;
-    height: 60px;
+    height: 44px;
     border-radius: 5px;
-    border: 2px solid $dark-color;
-    margin-bottom: 30px;
+    border: 1px solid #9aa9b8;
     padding: 15px;
     font-size: 18px;
     line-height: 20px;
-    font-weight: 700;
+    //font-weight: 700;
     outline: none;
     color: $dark-color;
+
+    &:focus + label,
+    &.active + label {
+      top: -23px;
+      transform: none;
+      font-size: 16px;
+      line-height: 18px;
+    }
   }
 
   select {
     display: block;
     width: 100%;
-    height: 60px;
+    height: 44px;
     border-radius: 5px;
-    border: 2px solid $dark-color;
-    margin-bottom: 30px;
-    padding: 15px;
+    border: 1px solid #9aa9b8;
+    padding: 5px 15px;
     font-size: 18px;
     line-height: 20px;
-    font-weight: 700;
     outline: none;
     color: $dark-color;
     background: none;
@@ -596,9 +605,10 @@
 
   .progress-btn {
     width: 100%;
-    height: 60px;
+    height: 44px;
     left: 50%;
     transform: translateX(-50%);
+    border-radius: 5px;
 
     span {
       font-size: 16px;
@@ -606,7 +616,7 @@
     }
 
     .circle-loader {
-      top: 17px;
+      top: 8px;
     }
 
     &.active {
@@ -685,8 +695,9 @@
       text-align: center;
       font-size: 16px;
       line-height: 18px;
-      padding: 20px;
+      padding: 12px 20px;
       position: relative;
+      border-radius: 5px;
     }
 
     .file {
@@ -712,9 +723,9 @@
   margin-top: 30px;
 
   .friends-list {
-    border: 2px solid $dark-color;
+    border: 1px solid #9aa9b8;
     border-radius: 5px;
-    padding: 18px 15px 0 15px;
+    padding: 11px 15px 0 15px;
     margin-bottom: 20px;
 
     @media (max-width: $screen-sm-min) {
@@ -727,7 +738,7 @@
       font-size: 16px;
       line-height: 18px;
       color: $dark-color;
-      margin-bottom: 17px;
+      margin-bottom: 10px;
       white-space: nowrap;
 
       @media (max-width: $screen-sm-min) {
@@ -797,7 +808,7 @@
       em {
         font-size: 18px;
         line-height: 20px;
-        font-weight: 700;
+        //font-weight: 700;
         color: $dark-color;
       }
     }

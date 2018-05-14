@@ -561,6 +561,21 @@ input[type=number]::-webkit-outer-spin-button {
   }
 }
 
+.loading {
+  position: relative;
+  left: 50%;
+  margin-left: -15px;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  fill: transparent;
+  stroke: $dark-color;
+  stroke-width: 3;
+  opacity: 1;
+  visibility: visible;
+  animation: dash 2s ease infinite, rotate 2s linear infinite;
+}
+
 @keyframes dash {
   0% {
     stroke-dasharray: 1,95;
