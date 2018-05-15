@@ -36,23 +36,23 @@
 					<li>
 						<a href="dashboard-overview.html" class="active bottom-line">
 							<i class="mdi mdi-ticket"></i>
-							<span>Overview</span>
+							<span>Offer</span>
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="dashboard-investment-profile.html">
 							<i class="mdi mdi-account-card-details"></i>
 							<span>investment Profile</span>
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="dashboard-investments.html">
 							<i class="mdi mdi-cash-usd"></i>
 							<span>My Investments</span>
 						</a>
 					</li>
 					<li>
-						<a href="#" class="bottom-line">
+						<a href="dashboard-advisor.html" class="bottom-line">
 							<i class="mdi mdi-approval"></i>
 							<span>Advisor Bids</span>
 						</a>
@@ -135,8 +135,8 @@
 						<div class="heading">
 							<h2>Please create an investment profile</h2>
 							<p>To invest in our offers you will need to create an investment profile</p>
+							<a href="#" class="btn-repeat dashboard-btn">+ CREATE INVESTMENT PROFILE</a>
 						</div>
-						<a href="#" class="btn-repeat dashboard-btn-create">+ CREATE INVESTMENT PROFILE</a>
 					</div>
 					<div class="dashboard-row">
 						<div class="dashboard-repeat-title">
@@ -167,7 +167,7 @@
 										<td>Not Available</td>
 										<td><span>AU$</span> 1,024.00</td>
 										<td>Pay Submission Fee</td>
-										<td><a href="#" class="pay-apply-button">payment details</a></td>
+										<td><a href="#" class="pay-apply-button" data-toggle="modal" data-target="#payment-detail">payment details</a></td>
 										<td class="text-center text-nowrap">
 											<a href="#" class="control-buttons edit"><i class="mdi mdi-pencil"></i></a>
 											<a href="#" class="control-buttons delete"><i class="mdi mdi-delete"></i></a>
@@ -435,6 +435,41 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="modal fade" id="payment-detail" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered payment-detail-modal" role="document">
+				<div class="modal-content">
+					<a href="#" class="modal-close" data-dismiss="modal" aria-label="Close"><i class="mdi mdi-close"></i></a>
+					<h2>PLEASE PAY SUBMISSION FEE</h2>
+					<div class="payment-detail-row">
+						<p><span>OFFER: </span>{{ offer.title }}</p>
+						<p><span>SHARES: </span>{{ memberApplication.numberOfShares }} at {{ memberApplication.pricePerShare|number_format(2, '.', ',') }} per {{shareTYPE}}</p>
+						<p><span>TOTAL: </span>A${{ memberApplication.total|number_format(3, '.', ',') }} </p>
+					</div>
+					<div class="payment-detail-row">
+						<p>{{ application.procedureText }}</p>
+					</div>
+					<div class="payment-detail-row">
+						<p><span>Transfer Detail:</span></p>
+						<p>{{ application.bankDetails|raw }}</p>
+						<p>{% if memberApplication.referenceNumber is defined %} AKELA APPLICATION REFERENCE: {{ memberApplication.referenceNumber }} {% endif %}</p>
+					</div>
+					<div class="payment-detail-row">
+						<p>BANK REFERENCE - Please QUOTE your AKELA Reference# as the bank reference when making the payment.</p>
+						<p>Please send confirmation of payment to investors@akela.vc</p>
+						<p>Thank you. {{ projectName() }}</p>
+					</div>
+					<div class="payment-detail-row">
+						<p><span>PLEASE ALLOW TIME FOR US TO PROCESS ALL APPLICATIONS AND RECEIVE FUNDS.</span></p>
+						<p>We will update the status of your application (currently ‘Payment Pending’) at the appropriate time.</p>
+					</div>
+					<div class="d-flex justify-content-end position-relative">
+						<a href="#" class="btn-repeat dashboard-btn" data-dismiss="modal" aria-label="Close">Ok</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<!-- Include scripts -->
 		<script	src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 

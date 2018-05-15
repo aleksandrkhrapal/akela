@@ -40,7 +40,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="dashboard-investment-profile.html">
+						<a href="dashboard-investment-profile.html" class="active">
 							<i class="mdi mdi-account-card-details"></i>
 							<span>investment Profile</span>
 						</a>
@@ -76,7 +76,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="dashboard-notifications.html" class="active">
+						<a href="dashboard-notifications.html">
 							<i class="mdi mdi-bell">
 								<mark class="sidebar-sm-notifications"></mark>
 							</i>
@@ -131,90 +131,46 @@
 					</div>
 				</header>
 				<div class="dashboard-wrapper">
-					<div style="margin-bottom: 40px;" class="dashboard-top-heading d-lg-flex justify-content-between align-items-center">
+					<div class="dashboard-top-heading d-lg-flex justify-content-between align-items-center">
 						<div class="heading">
-							<h2>NOTIFICATIONS</h2>
+							<h2>INVESTMENT PROFILE</h2>
+							<a href="#" class="btn-repeat dashboard-btn">+ CREATE INVESTMENT PROFILE</a>
 						</div>
 					</div>
-					<div class="row row-notifications">
-						<div class="col-md-9">
-							<div class="row">
-								<div class="col-md-4">
-									<mark>Email Subscriptions</mark>
-									<div class="checkbox">
-										<input id="check1" type="checkbox">
-										<label for="check1" class="d-flex">
-											<span><i class="mdi mdi-check"></i></span>
-											<em>Offer Closing Reminder Email</em>
-										</label>
-									</div>
-								</div>
-								<div class="col-md-4">
-									<mark>SMS Subscriptions</mark>
-									<div class="checkbox">
-										<input id="check2" type="checkbox">
-										<label for="check2" class="d-flex">
-											<span><i class="mdi mdi-check"></i></span>
-											<em>Offer Closing Reminder SMS</em>
-										</label>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="button-wrapper" style="margin-top: 20px;">
-								<button type="submit" class="progress-btn main-color-btn">
-									<span>Update Preference</span>
-									<svg class="circle-loader" width="30" height="30" version="1.1" xmlns="http://www.w3.org/2000/svg">
-										<circle cx="15" cy="15" r="10">
-									</svg>
-								</button>
-							</div>
-						</div>
+					123
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="payment-detail" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered payment-detail-modal" role="document">
+				<div class="modal-content">
+					<a href="#" class="modal-close" data-dismiss="modal" aria-label="Close"><i class="mdi mdi-close"></i></a>
+					<h2>PLEASE PAY SUBMISSION FEE</h2>
+					<div class="payment-detail-row">
+						<p><span>OFFER: </span>{{ offer.title }}</p>
+						<p><span>SHARES: </span>{{ memberApplication.numberOfShares }} at {{ memberApplication.pricePerShare|number_format(2, '.', ',') }} per {{shareTYPE}}</p>
+						<p><span>TOTAL: </span>A${{ memberApplication.total|number_format(3, '.', ',') }} </p>
 					</div>
-					<div class="table-wrapper">
-						<table class="dashboard-table">
-							<thead>
-							<tr>
-								<th style="width: 35%;">TITLE</th>
-								<th style="width: 42%;">message</th>
-								<th style="width: 15%">Received</th>
-								<th class="text-center text-nowrap">
-									<div class="checkbox">
-										<input id="check3" type="checkbox">
-										<label for="check3" class="d-flex">
-											<span><i class="mdi mdi-check"></i></span>
-										</label>
-									</div>
-									<a href="#" class="control-buttons delete">
-										<i class="mdi mdi-delete"></i>
-									</a>
-								</th>
-							</tr>
-							</thead>
-							<tbody>
-							<tr>
-								<td>TOKEN Application Processing and Management Fee Invoice</td>
-								<td>Processing and Management Fee Invoice Fee invoice for Your
-									application to offer TOKEN.Please pay pr...</td>
-								<td>27 April 2018</td>
-								<th class="text-center text-nowrap">
-									<div class="checkbox">
-										<input id="check4" type="checkbox">
-										<label for="check4" class="d-flex">
-											<span><i class="mdi mdi-check"></i></span>
-										</label>
-									</div>
-									<a href="#" class="control-buttons delete">
-										<i class="mdi mdi-delete"></i>
-									</a>
-								</th>
-							</tr>
-							</tbody>
-						</table>
+					<div class="payment-detail-row">
+						<p>{{ application.procedureText }}</p>
 					</div>
-					<div class="text-center">
-						<a href="#" class="btn-repeat dark db-load-more">Load more</a>
+					<div class="payment-detail-row">
+						<p><span>Transfer Detail:</span></p>
+						<p>{{ application.bankDetails|raw }}</p>
+						<p>{% if memberApplication.referenceNumber is defined %} AKELA APPLICATION REFERENCE: {{ memberApplication.referenceNumber }} {% endif %}</p>
+					</div>
+					<div class="payment-detail-row">
+						<p>BANK REFERENCE - Please QUOTE your AKELA Reference# as the bank reference when making the payment.</p>
+						<p>Please send confirmation of payment to investors@akela.vc</p>
+						<p>Thank you. {{ projectName() }}</p>
+					</div>
+					<div class="payment-detail-row">
+						<p><span>PLEASE ALLOW TIME FOR US TO PROCESS ALL APPLICATIONS AND RECEIVE FUNDS.</span></p>
+						<p>We will update the status of your application (currently ‘Payment Pending’) at the appropriate time.</p>
+					</div>
+					<div class="d-flex justify-content-end position-relative">
+						<a href="#" class="btn-repeat dashboard-btn" data-dismiss="modal" aria-label="Close">Ok</a>
 					</div>
 				</div>
 			</div>

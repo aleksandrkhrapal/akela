@@ -65,7 +65,6 @@ main {
   color: #fff;
   font-size: 14px;
   line-height: 16px;
-  font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
   border: 1px solid #fff;
@@ -95,6 +94,19 @@ main {
     background-color: #00b3b7;
     border-color: #00b3b7;
     text-decoration: none; }
+  .btn-repeat.dashboard-btn {
+    border-radius: 5px;
+    background-color: #00b3b7;
+    border-color: #00b3b7;
+    min-width: 100px;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 15px 0 0 0; }
+    .btn-repeat.dashboard-btn:hover {
+      background-color: #203140;
+      border-color: #203140; }
 
 .repeat-heading {
   width: 520px;
@@ -112,7 +124,6 @@ main {
     font-size: 40px;
     line-height: 42px;
     color: #fff;
-    font-weight: 700;
     text-transform: uppercase;
     position: relative; }
     @media (max-width: 576px) {
@@ -123,10 +134,10 @@ main {
       content: '';
       display: block;
       width: 90px;
-      height: 4px;
+      height: 3px;
       background-color: #fff;
       position: absolute;
-      bottom: -20px;
+      bottom: -15px;
       left: 50%;
       transform: translateX(-50%); }
 
@@ -293,7 +304,6 @@ input[type=number]::-webkit-outer-spin-button {
     display: inline-block;
     font-size: 32px;
     line-height: 34px;
-    font-weight: 700;
     text-transform: uppercase;
     position: relative; }
     @media (max-width: 767px) {
@@ -315,7 +325,7 @@ input[type=number]::-webkit-outer-spin-button {
       content: '';
       display: block;
       width: 88px;
-      height: 4px;
+      height: 2px;
       position: absolute;
       bottom: -15px;
       left: 50%;
@@ -638,7 +648,7 @@ input[type=number]::-webkit-outer-spin-button {
       text-transform: uppercase;
       font-size: 14px;
       line-height: 16px;
-      font-weight: 700;
+      font-weight: 600;
       color: #fff;
       text-decoration: none;
       margin: 0 10px;
@@ -729,7 +739,6 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0 0 25px 0;
     font-size: 32px;
     line-height: 35px;
-    font-weight: 700;
     color: #203140; }
   .privacy-terms-wrapper p {
     font-size: 16px;
@@ -755,7 +764,7 @@ input[type=number]::-webkit-outer-spin-button {
     .privacy-terms-wrapper ol li {
       font-size: 24px;
       line-height: 26px;
-      font-weight: 700;
+      font-weight: 600;
       color: #203140; }
       .privacy-terms-wrapper ol li a {
         color: #00b3b7;
@@ -765,7 +774,7 @@ input[type=number]::-webkit-outer-spin-button {
       .privacy-terms-wrapper ol li:before {
         content: counters(item,".") ". ";
         counter-increment: item;
-        font-weight: 700; }
+        font-weight: 600; }
       @media (max-width: 576px) {
         .privacy-terms-wrapper ol li ol {
           margin: 0 0 0 10px; } }
@@ -781,7 +790,7 @@ input[type=number]::-webkit-outer-spin-button {
         .privacy-terms-wrapper ol li ol li ol li {
           margin-bottom: 0; }
           .privacy-terms-wrapper ol li ol li ol li span {
-            font-weight: 700; }
+            font-weight: 600; }
     .privacy-terms-wrapper ol ol li ol li:before {
       display: none; }
 

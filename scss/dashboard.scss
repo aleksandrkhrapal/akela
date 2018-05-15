@@ -2,6 +2,7 @@
 @import "header";
 @import "dashboard-sidebar";
 @import "dashboard-header";
+@import "modals";
 
 .dashboard-wrapper {
   @media (max-width: $screen-sm-min) {
@@ -164,7 +165,7 @@
       }
 
       .button-wrapper {
-        margin-bottom: 15px;
+        margin-bottom: 15px !important;
       }
     }
   }
@@ -330,6 +331,7 @@
           color: $main-color;
           text-decoration: underline;
           text-transform: uppercase;
+          outline: none !important;
 
           &:hover {
             text-decoration: none;
@@ -342,6 +344,7 @@
           color: $main-color;
           font-size: 35px;
           line-height: 35px;
+          margin: 0 7px 0 -7px;
           @include transition;
 
           &:hover {
@@ -393,6 +396,16 @@
         }*/
       }
     }
+  }
+}
+
+.table-link {
+  color: $main-color;
+  text-decoration: underline;
+
+  &:hover {
+    color: $main-color;
+    text-decoration: none;
   }
 }
 

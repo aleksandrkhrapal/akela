@@ -65,7 +65,6 @@ main {
   color: #fff;
   font-size: 14px;
   line-height: 16px;
-  font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
   border: 1px solid #fff;
@@ -95,6 +94,19 @@ main {
     background-color: #00b3b7;
     border-color: #00b3b7;
     text-decoration: none; }
+  .btn-repeat.dashboard-btn {
+    border-radius: 5px;
+    background-color: #00b3b7;
+    border-color: #00b3b7;
+    min-width: 100px;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 15px 0 0 0; }
+    .btn-repeat.dashboard-btn:hover {
+      background-color: #203140;
+      border-color: #203140; }
 
 .repeat-heading {
   width: 520px;
@@ -112,7 +124,6 @@ main {
     font-size: 40px;
     line-height: 42px;
     color: #fff;
-    font-weight: 700;
     text-transform: uppercase;
     position: relative; }
     @media (max-width: 576px) {
@@ -123,10 +134,10 @@ main {
       content: '';
       display: block;
       width: 90px;
-      height: 4px;
+      height: 3px;
       background-color: #fff;
       position: absolute;
-      bottom: -20px;
+      bottom: -15px;
       left: 50%;
       transform: translateX(-50%); }
 
@@ -293,7 +304,6 @@ input[type=number]::-webkit-outer-spin-button {
     display: inline-block;
     font-size: 32px;
     line-height: 34px;
-    font-weight: 700;
     text-transform: uppercase;
     position: relative; }
     @media (max-width: 767px) {
@@ -315,7 +325,7 @@ input[type=number]::-webkit-outer-spin-button {
       content: '';
       display: block;
       width: 88px;
-      height: 4px;
+      height: 2px;
       position: absolute;
       bottom: -15px;
       left: 50%;
@@ -638,7 +648,7 @@ input[type=number]::-webkit-outer-spin-button {
       text-transform: uppercase;
       font-size: 14px;
       line-height: 16px;
-      font-weight: 700;
+      font-weight: 600;
       color: #fff;
       text-decoration: none;
       margin: 0 10px;
@@ -917,5 +927,56 @@ input[type=number]::-webkit-outer-spin-button {
     transition: all .2s linear; }
     .input-submit input:hover {
       background-color: #203140; }
+
+.payment-detail-modal {
+  max-width: 1450px; }
+  .payment-detail-modal .modal-content {
+    padding: 30px;
+    border: none; }
+    @media (max-width: 576px) {
+      .payment-detail-modal .modal-content {
+        padding: 30px 15px 15px 15px; } }
+    .payment-detail-modal .modal-content .modal-close {
+      position: absolute;
+      top: 30px;
+      right: 30px; }
+      @media (max-width: 576px) {
+        .payment-detail-modal .modal-content .modal-close {
+          top: 8px;
+          right: 8px; } }
+      .payment-detail-modal .modal-content .modal-close i {
+        font-size: 20px;
+        line-height: 24px;
+        color: #203140; }
+    .payment-detail-modal .modal-content h2 {
+      margin: 0 0 35px 0;
+      font-size: 30px;
+      line-height: 32px;
+      color: #00b3b7;
+      text-transform: uppercase; }
+      @media (max-width: 576px) {
+        .payment-detail-modal .modal-content h2 {
+          font-size: 24px;
+          line-height: 26px;
+          margin: 0 0 20px 0; } }
+    .payment-detail-modal .modal-content .payment-detail-row {
+      margin-bottom: 40px; }
+      @media (max-width: 576px) {
+        .payment-detail-modal .modal-content .payment-detail-row {
+          margin-bottom: 20px; } }
+      .payment-detail-modal .modal-content .payment-detail-row:last-child {
+        margin-bottom: 0; }
+      .payment-detail-modal .modal-content .payment-detail-row p {
+        font-size: 16px;
+        line-height: 20px;
+        color: #203140;
+        margin: 0 0 15px 0; }
+        @media (max-width: 576px) {
+          .payment-detail-modal .modal-content .payment-detail-row p {
+            word-break: break-all; } }
+        .payment-detail-modal .modal-content .payment-detail-row p:last-child {
+          margin: 0; }
+        .payment-detail-modal .modal-content .payment-detail-row p span {
+          font-weight: 700; }
 
 /*# sourceMappingURL=style.css.map */
