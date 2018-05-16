@@ -199,6 +199,10 @@ main {
     line-height: 18px;
     margin: 15px 0 0 0;
 
+    @media (max-width: 320px) {
+      padding: 12px 2px;
+    }
+
     &:hover {
       background-color: $dark-color;
       border-color: $dark-color;

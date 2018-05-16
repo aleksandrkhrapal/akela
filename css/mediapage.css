@@ -104,6 +104,9 @@ main {
     font-size: 16px;
     line-height: 18px;
     margin: 15px 0 0 0; }
+    @media (max-width: 320px) {
+      .btn-repeat.dashboard-btn {
+        padding: 12px 2px; } }
     .btn-repeat.dashboard-btn:hover {
       background-color: #203140;
       border-color: #203140; }

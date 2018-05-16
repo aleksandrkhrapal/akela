@@ -104,6 +104,9 @@ main {
     font-size: 16px;
     line-height: 18px;
     margin: 15px 0 0 0; }
+    @media (max-width: 320px) {
+      .btn-repeat.dashboard-btn {
+        padding: 12px 2px; } }
     .btn-repeat.dashboard-btn:hover {
       background-color: #203140;
       border-color: #203140; }
@@ -741,7 +744,8 @@ input[type=number]::-webkit-outer-spin-button {
           line-height: 35px; }
           @media (max-width: 576px) {
             .dashboard-sidebar .heading a.sidebar-trigger i {
-              line-height: 22px; } }
+              line-height: 22px;
+              font-size: 28px; } }
   .dashboard-sidebar .sidebar-nav {
     padding: 0 0 0 20px;
     margin: 0;
@@ -1454,17 +1458,50 @@ input[type=number]::-webkit-outer-spin-button {
     line-height: 22px;
     margin-left: 5px; }
 
+.back-button {
+  display: inline-block;
+  font-size: 30px;
+  line-height: 32px;
+  color: #00b3b7;
+  text-transform: uppercase;
+  transition: all .2s linear; }
+  @media (max-width: 576px) {
+    .back-button {
+      font-size: 15px;
+      line-height: 17px; } }
+  .back-button:hover {
+    text-decoration: none;
+    color: #203140; }
+    .back-button:hover i {
+      color: #00b3b7; }
+  .back-button i {
+    display: inline-block;
+    vertical-align: middle;
+    color: #203140;
+    font-size: 24px;
+    line-height: 25px;
+    margin-top: -4px;
+    transition: all .2s linear; }
+
 .profile-text {
   margin: 0;
-  padding: 0 15px;
   font-size: 16px;
   line-height: 18px;
-  color: #203140; }
+  color: #203140;
+  text-indent: 15px; }
   @media (max-width: 576px) {
     .profile-text {
       padding: 0; } }
 
-.profile-details-row .correct input {
+.profile-details-row [class*='col-'] {
+  margin-bottom: 40px; }
+.profile-details-row .note-text {
+  font-size: 16px;
+  line-height: 22px;
+  color: #203140;
+  margin: 0;
+  text-align: justify; }
+.profile-details-row .correct input, .profile-details-row .correct select {
   border-color: #00b3b7;
   color: #00b3b7; }
 .profile-details-row .error input {
@@ -1474,20 +1511,20 @@ input[type=number]::-webkit-outer-spin-button {
   color: #f33; }
 .profile-details-row label {
   display: block;
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: 300; }
-  @media (max-width: 576px) {
-    .profile-details-row label {
-      padding: 0; } }
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 300;
+  padding-left: 15px;
+  top: -25px;
+  transform: none;
+  position: absolute; }
 .profile-details-row .profile-detail-input {
-  position: relative;
-  margin-bottom: 40px; }
+  position: relative; }
   .profile-details-row .profile-detail-input label {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 15px;
+    left: 0;
     transition: all .2s linear; }
 .profile-details-row input {
   display: block;
@@ -1501,7 +1538,7 @@ input[type=number]::-webkit-outer-spin-button {
   outline: none;
   color: #203140; }
   .profile-details-row input:focus + label, .profile-details-row input.active + label {
-    top: -23px;
+    top: -25px;
     transform: none;
     font-size: 16px;
     line-height: 18px; }
@@ -1511,7 +1548,7 @@ input[type=number]::-webkit-outer-spin-button {
   height: 44px;
   border-radius: 5px;
   border: 1px solid #9aa9b8;
-  padding: 5px 15px;
+  padding: 5px 11px;
   font-size: 18px;
   line-height: 20px;
   outline: none;
@@ -1656,16 +1693,13 @@ input[type=number]::-webkit-outer-spin-button {
     line-height: 20px;
     color: #203140; }
 
-.dashboard-investment-row {
-  margin-bottom: 60px; }
-
 .invest-title {
   display: block;
   font-size: 24px;
   line-height: 26px;
   color: #203140;
   text-transform: uppercase;
-  margin-bottom: 25px; }
+  margin-bottom: 50px; }
 
 .dashboard-investment-profile .investment-details .investment-details-row {
   margin-bottom: 6px; }
@@ -1687,6 +1721,12 @@ input[type=number]::-webkit-outer-spin-button {
   border-radius: 5px;
   overflow: hidden;
   margin-bottom: 50px; }
+  @media (max-width: 768px) {
+    .dashboard-steps-wrapper {
+      padding: 20px 15px; } }
+  @media (max-width: 576px) {
+    .dashboard-steps-wrapper {
+      padding: 20px 0; } }
 
 .dashboard-investment-steps {
   position: relative; }
@@ -1710,19 +1750,19 @@ input[type=number]::-webkit-outer-spin-button {
       content: '';
       display: block;
       position: absolute;
-      top: 10px;
+      top: 8px;
       right: 48px;
       width: 200px;
-      height: 4px;
+      height: 8px;
       background-color: #ebebeb; }
     .dashboard-investment-steps .step-col:last-child .circle-wrapper:before {
       content: '';
       display: block;
       position: absolute;
-      top: 10px;
+      top: 8px;
       left: 48px;
       width: 200px;
-      height: 4px;
+      height: 8px;
       background-color: #ebebeb; }
     .dashboard-investment-steps .step-col.completed .circle-wrapper .circle {
       border-color: #00b3b7;
@@ -1735,7 +1775,7 @@ input[type=number]::-webkit-outer-spin-button {
       border-color: #203140; }
       .dashboard-investment-steps .step-col.active .circle-wrapper .circle em {
         color: #203140; }
-    .dashboard-investment-steps .step-col.active .circle-wrapper span {
+    .dashboard-investment-steps .step-col.active span {
       color: #203140; }
     .dashboard-investment-steps .step-col .circle-wrapper {
       width: 52px;
@@ -1765,5 +1805,27 @@ input[type=number]::-webkit-outer-spin-button {
       line-height: 22px;
       color: #999;
       text-transform: uppercase; }
+      @media (max-width: 768px) {
+        .dashboard-investment-steps .step-col span {
+          font-size: 12px;
+          line-height: 14px; } }
+
+.hint-wrapper {
+  border-radius: 5px;
+  background-color: #203140;
+  padding: 20px;
+  margin-bottom: 40px; }
+  @media (max-width: 768px) {
+    .hint-wrapper {
+      padding: 10px 15px; } }
+  .hint-wrapper p {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 20px;
+    color: #fff; }
+    @media (max-width: 768px) {
+      .hint-wrapper p {
+        font-size: 14px; } }
 
 /*# sourceMappingURL=dashboard.css.map */

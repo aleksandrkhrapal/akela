@@ -104,6 +104,9 @@ main {
     font-size: 16px;
     line-height: 18px;
     margin: 15px 0 0 0; }
+    @media (max-width: 320px) {
+      .btn-repeat.dashboard-btn {
+        padding: 12px 2px; } }
     .btn-repeat.dashboard-btn:hover {
       background-color: #203140;
       border-color: #203140; }
@@ -733,7 +736,10 @@ input[type=number]::-webkit-outer-spin-button {
 .login-main {
   background: #f5f5f5 url("../images/login-bg.png") no-repeat 50% 50%;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  padding: 1px 15px; }
+  .login-main.contact-main {
+    padding: 0; }
   .login-main:before {
     content: '';
     display: block;
@@ -754,7 +760,7 @@ input[type=number]::-webkit-outer-spin-button {
   position: relative; }
   @media (max-width: 576px) {
     .login-wrapper {
-      padding: 25px; } }
+      padding: 40px 25px; } }
   .login-wrapper .login-title {
     position: absolute;
     top: -15px;
