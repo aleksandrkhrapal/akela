@@ -795,7 +795,8 @@ input[type=number]::-webkit-outer-spin-button {
       right: 20px;
       color: #7f7f7f;
       font-size: 20px;
-      line-height: 20px; }
+      line-height: 20px;
+      cursor: pointer; }
     .invest-modal-dialog .modal-content .bottom-text {
       font-size: 11px;
       line-height: 16px;
@@ -808,7 +809,6 @@ input[type=number]::-webkit-outer-spin-button {
       line-height: 26px;
       color: #00b3b7;
       text-transform: uppercase;
-      font-weight: 700;
       margin-bottom: 20px;
       padding-right: 25px; }
     .invest-modal-dialog .modal-content em {
@@ -818,6 +818,18 @@ input[type=number]::-webkit-outer-spin-button {
       line-height: 23px;
       font-weight: 300;
       margin-bottom: 23px; }
+      .invest-modal-dialog .modal-content em.prospectus-text {
+        margin: 0 0 5px 0;
+        font-size: 16px;
+        line-height: 20px;
+        color: #203140; }
+        .invest-modal-dialog .modal-content em.prospectus-text a {
+          color: #00b3b7; }
+      .invest-modal-dialog .modal-content em.prospectus-text-sm {
+        font-size: 13px;
+        line-height: 17px;
+        color: #203140;
+        margin: 0; }
       .invest-modal-dialog .modal-content em.red-color {
         color: #f33; }
     .invest-modal-dialog .modal-content .invest-form-row {
@@ -856,6 +868,18 @@ input[type=number]::-webkit-outer-spin-button {
       .invest-modal-dialog .modal-content .invest-form-row .input-wrap input {
         padding-left: 30px;
         background-color: #ffffe1; }
+
+.prospectus-buttons {
+  margin-top: 20px;
+  text-align: center; }
+  .prospectus-buttons a {
+    background-color: #00b3b7;
+    border-color: #00b3b7;
+    color: #fff;
+    margin-bottom: 15px; }
+    .prospectus-buttons a:hover {
+      background-color: #203140;
+      border-color: #203140; }
 
 .input-wrap {
   position: relative; }
@@ -913,7 +937,7 @@ input[type=number]::-webkit-outer-spin-button {
   .input-submit input {
     display: block;
     min-width: 90px;
-    height: 30px;
+    height: 44px;
     border-radius: 30px;
     background-color: #00b3b7;
     color: #fff;

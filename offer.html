@@ -92,8 +92,8 @@
 										</div>
 									</div>
 									<div class="offer-buttons">
-										<a href="#" class="bid-now" data-toggle="modal" data-target="#invest-modal">BID NOW</a>
-										<a href="#" class="closing-soon">CLOSING SOON</a>
+										<span class="bid-now" data-toggle="modal" data-target="#invest-modal">BID NOW</span>
+										<span class="closing-soon">CLOSING SOON</span>
 									</div>
 								</div>
 							</div>
@@ -117,14 +117,14 @@
 						<div class="col-xl-3 col-md-5 offer-sidebar">
 							<img src="images/kleos.png" class="kleos-img img-fluid" alt="">
 							<div class="prospectus-wrapper">
-								<mark>PROSPECTUS</mark>
+								<mark data-toggle="modal" data-target="#prospectus-modal">PROSPECTUS</mark>
 								<span class="offer-span">Share Price: <em>$0.20</em></span>
 								<span class="offer-span">Min PArcel: <em>$2,000</em></span>
 								<span class="offer-span">Type: <em>ORDINARY SHARE</em></span>
 							</div>
 							<div class="sidebar-menu">
-								<a href="#">Key Points / Overview</a>
-								<a href="#">Board and MAnagement</a>
+								<a href="#" data-toggle="modal" data-target="#register-modal">Key Points / Overview</a>
+								<a href="#" data-toggle="modal" data-target="#reservation-modal">Board and MAnagement</a>
 								<a href="#">FAQ</a>
 								<a href="#">Deal Terms</a>
 								<a href="#">Videos</a>
@@ -134,6 +134,9 @@
 							<img src="images/technology-icon.png" class="img-fluid technology-icon" alt="">
 						</div>
 						<div class="col-xl-8 col-md-7 offset-xl-1 key-points-overview">
+							<div class="videoWrapper">
+								<iframe width="560" height="349" src="http://www.youtube.com/embed/n_dZNLr2cME?rel=0&amp;hd=1" frameborder="0" allowfullscreen=""></iframe>
+							</div>
 							<div class="offer-title offer-title-key-points offer-title-center">
 								<span class="main-color">Key points</span>
 							</div>
@@ -318,7 +321,7 @@
 											<span class="name">ANDREW BOWYER</span>
 											<span class="position">Co-founder, Director</span>
 											<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ...</p>
-											<a href="#" class="read-more" data-toggle="modal" data-target="#detail-info">Read more...</a>
+											<em class="read-more" data-toggle="modal" data-target="#detail-info">Read more...</em>
 										</div>
 									</div>
 								</div>
@@ -331,7 +334,7 @@
 											<span class="name">MILES ASHCROF</span>
 											<span class="position">Co-founder, Director</span>
 											<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ...</p>
-											<a href="#" class="read-more">Read more...</a>
+											<em class="read-more">Read more...</em>
 										</div>
 									</div>
 								</div>
@@ -346,7 +349,7 @@
 											<span class="name">AIR CDRE PETER ROUND</span>
 											<span class="position">Non-Exec Director</span>
 											<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ...</p>
-											<a href="#" class="read-more">Read more...</a>
+											<em class="read-more">Read more...</em>
 										</div>
 									</div>
 								</div>
@@ -359,7 +362,7 @@
 											<span class="name">LARA BUSTO</span>
 											<span class="position">Principle Engineer</span>
 											<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ...</p>
-											<a href="#" class="read-more">Read more...</a>
+											<em class="read-more">Read more...</em>
 										</div>
 									</div>
 								</div>
@@ -374,7 +377,7 @@
 											<span class="name">ANDREW CHENEY</span>
 											<span class="position">Project Manager</span>
 											<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ...</p>
-											<a href="#" class="read-more">Read more...</a>
+											<em class="read-more">Read more...</em>
 										</div>
 									</div>
 								</div>
@@ -387,7 +390,7 @@
 											<span class="name">DANIEL MARTIN</span>
 											<span class="position">Principle Electronics Engineer</span>
 											<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ...</p>
-											<a href="#" class="read-more">Read more...</a>
+											<em class="read-more">Read more...</em>
 										</div>
 									</div>
 								</div>
@@ -607,7 +610,7 @@
 		<div class="modal fade" id="invest-modal" tabindex="-1" role="dialog" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered invest-modal-dialog" role="document">
 				<div class="modal-content">
-					<a href="#" class="modal-close" data-dismiss="modal" aria-label="Close"><i class="mdi mdi-close"></i></a>
+					<i class="modal-close" data-dismiss="modal" aria-label="Close"><i class="mdi mdi-close"></i></i>
 					<span>Invest NOW</span>
 					<em class="red-color">By submitting your bid you acknowledge your firm commitment to the Offer for the amount specified below.</em>
 					<form action="#">
@@ -651,7 +654,7 @@
 		<div class="modal fade" id="detail-info" tabindex="-1" role="dialog" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered invest-modal-dialog" role="document">
 				<div class="modal-content">
-					<a href="#" class="modal-close" data-dismiss="modal" aria-label="Close"><i class="mdi mdi-close"></i></a>
+					<span class="modal-close" data-dismiss="modal" aria-label="Close"><i class="mdi mdi-close"></i></span>
 					<div class="management-info-wrapper">
 						<div class="management-photo">
 							<img src="images/avatar-man.png" class="img-fluid" alt="">
@@ -662,6 +665,53 @@
 							<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
 							<a href="#" class="read-more" data-dismiss="modal" aria-label="Close">Back</a>
 						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal prospectus now -->
+		<div class="modal fade" id="prospectus-modal" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered invest-modal-dialog" role="document">
+				<div class="modal-content">
+					<i class="modal-close" data-dismiss="modal" aria-label="Close"><i class="mdi mdi-close"></i></i>
+					<span>Terms & Conditions</span>
+					<em class="prospectus-text">Rich Text Editor, s5accd00abb905_termsAndConditions</em>
+					<em class="prospectus-text">Rich Text Editor, s5accc12332b01_termsAndConditions</em>
+
+					<div class="prospectus-buttons d-flex justify-content-between flex-wrap">
+						<a href="#" class="btn-repeat">Cancel</a>
+						<a href="#" class="btn-repeat" target="_blank">Agree To Terms and Download Prospectus</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal register now -->
+		<div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered invest-modal-dialog" role="document">
+				<div class="modal-content">
+					<i class="modal-close" data-dismiss="modal" aria-label="Close"><i class="mdi mdi-close"></i></i>
+					<span>Please register to apply for this offer</span>
+					<em class="prospectus-text">Please create an account to register your interest in this Offer.</em>
+					<div class="prospectus-buttons d-flex justify-content-end">
+						<a href="#" class="btn-repeat">Register</a>
+					</div>
+					<em class="prospectus-text-sm">The content of this website has been prepared without taking into account the user's personal objectives, financial situation or needs. Any prospectus or product disclosure statement that is obtained from this website should be considered before applying for financial products. We recommend that you seek independent professional advice</em>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal reservation now -->
+		<div class="modal fade" id="reservation-modal" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered invest-modal-dialog" role="document">
+				<div class="modal-content">
+					<i class="modal-close" data-dismiss="modal" aria-label="Close"><i class="mdi mdi-close"></i></i>
+					<span>RESERVATION LIMIT EXCEEDED</span>
+					<em class="prospectus-text">You cannot add another reservation as you have already subscribed to the maximum allowed for this Offer. Please manage your investments / applications by navigating to the
+						<a href="#">My Investments</a> page.</em>
+					<div class="prospectus-buttons d-flex justify-content-end">
+						<a href="#" class="btn-repeat" data-dismiss="modal" aria-label="Close">Close</a href="#">
 					</div>
 				</div>
 			</div>

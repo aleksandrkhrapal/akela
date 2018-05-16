@@ -827,3 +827,183 @@
     }
   }
 }
+
+// investment profile
+
+.dashboard-investment-row {
+  margin-bottom: 60px;
+}
+
+.invest-title {
+  display: block;
+  font-size: 24px;
+  line-height: 26px;
+  color: $dark-color;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.dashboard-investment-profile {
+  .select-iprofile {
+
+  }
+
+  .investment-details {
+    .investment-details-row {
+      margin-bottom: 6px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      span, mark {
+        display: block;
+        font-size: 16px;
+        line-height: 18px;
+        color: #000;
+      }
+
+      mark {
+        padding: 0;
+        background: none;
+        color: $main-color;
+      }
+    }
+  }
+}
+
+.dashboard-steps-wrapper {
+  padding: 20px 45px;
+  background-color: #ebebeb;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.dashboard-investment-steps {
+  position: relative;
+
+  .progress-wrapper {
+    width: 100%;
+    height: 4px;
+    background-color: $dark-color;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    
+    .progress-line {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background-color: $main-color;
+    }
+  }
+
+  .step-col {
+    text-align: center;
+    position: relative;
+    
+    &:first-child {
+      .circle-wrapper {
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 10px;
+          right: 48px;
+          width: 200px;
+          height: 4px;
+          background-color: #ebebeb;
+        }
+      }
+    }
+
+    &:last-child {
+      .circle-wrapper {
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 10px;
+          left: 48px;
+          width: 200px;
+          height: 4px;
+          background-color: #ebebeb;
+        }
+      }
+    }
+
+    &.completed {
+      .circle-wrapper {
+        .circle {
+          border-color: $main-color;
+          background-color: $main-color;
+
+          em {
+            display: none;
+          }
+
+          i {
+            display: block;
+          }
+        }
+      }
+    }
+
+    &.active {
+      .circle-wrapper {
+        .circle {
+          border-color: $dark-color;
+
+          em {
+            color: $dark-color;
+          }
+        }
+
+        span {
+          color: $dark-color;
+        }
+      }
+    }
+
+    .circle-wrapper {
+      width: 52px;
+      margin: 0 auto;
+      background-color: #ebebeb;
+      position: relative;
+
+      .circle {
+        margin: 0 auto 10px auto;
+        width: 24px;
+        height: 24px;
+        border: 2px solid #999;
+        border-radius: 50%;
+
+        em {
+          display: block;
+          font-size: 16px;
+          line-height: 20px;
+          font-weight: 700;
+          color: #999;
+          font-style: normal;
+        }
+
+        i {
+          display: none;
+          color: #fff;
+          line-height: 22px;
+        }
+      }
+
+    }
+
+    span {
+      display: block;
+      font-size: 20px;
+      line-height: 22px;
+      color: #999;
+      text-transform: uppercase;
+    }
+  }
+}
