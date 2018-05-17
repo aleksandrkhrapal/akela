@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Akela</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<link media="all" rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/fontawesome-all.min.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/dashboard.css" type="text/css" />
+		<link media="all" rel="stylesheet" href="css/homepage.css" type="text/css" />
+
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700,900" rel="stylesheet">
+		<link href="https://cdn.materialdesignicons.com/2.3.54/css/materialdesignicons.min.css" rel="stylesheet">
+
+	</head>
+	<body>
+		<div class="dashboard-wrapper">
+			<div class="dashboard-sidebar">
+				<div class="heading d-flex justify-content-between align-items-end">
+					<a href="#">
+						<img src="images/logo.svg" class="logo-lg" alt="">
+						<img src="images/logo-sm.svg" class="logo-sm" alt="">
+					</a>
+
+					<a href="#" class="sidebar-trigger">
+						<i class="mdi mdi-chevron-left"></i>
+					</a>
+				</div>
+				<ul class="sidebar-nav">
+					<li>
+						<a href="dashboard-overview.html" class="bottom-line">
+							<i class="mdi mdi-ticket"></i>
+							<span>Offer</span>
+						</a>
+					</li>
+					<li>
+						<a href="dashboard-investment-profile.html" class="active">
+							<i class="mdi mdi-account-card-details"></i>
+							<span>investment Profile</span>
+						</a>
+					</li>
+					<li>
+						<a href="dashboard-investments.html">
+							<i class="mdi mdi-cash-usd"></i>
+							<span>My Investments</span>
+						</a>
+					</li>
+					<li>
+						<a href="dashboard-advisor.html" class="bottom-line">
+							<i class="mdi mdi-approval"></i>
+							<span>Advisor Bids</span>
+						</a>
+					</li>
+					<li>
+						<a href="dashboard-profile.html">
+							<i class="mdi mdi-account-circle"></i>
+							<span>Profile</span>
+						</a>
+					</li>
+					<li>
+						<a href="dashboard-subscriptions.html">
+							<i class="mdi mdi-playlist-check"></i>
+							<span>Subscriptions</span>
+						</a>
+					</li>
+					<li>
+						<a href="dashboard-payments.html" class="bottom-line">
+							<i class="mdi mdi-credit-card"></i>
+							<span>Payments</span>
+						</a>
+					</li>
+					<li>
+						<a href="dashboard-notifications.html">
+							<i class="mdi mdi-bell">
+								<mark class="sidebar-sm-notifications"></mark>
+							</i>
+							<span>Notifications <em class="notif-number">26</em></span>
+						</a>
+					</li>
+					<li>
+						<a href="dashboard-change-pass.html">
+							<i class="mdi mdi-lastpass"></i>
+							<span>change password</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="mdi mdi-logout-variant"></i>
+							<span>sign out</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="dashboard-container">
+				<header class="header-dashboard d-flex justify-content-between align-items-center">
+					<nav class="main-nav">
+						<ul>
+							<li>
+								<a href="about.html">About us</a>
+							</li>
+							<li>
+								<a href="offer.html">Investment offers</a>
+							</li>
+							<li>
+								<a href="media.html">Media</a>
+							</li>
+							<li>
+								<a href="#">Blog</a>
+							</li>
+							<li>
+								<a href="#">Faq</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="dashboard-header-right d-flex align-items-center">
+						<a href="#" class="user-info d-flex align-items-center">
+							<i class="mdi mdi-account-circle"></i>
+							<span>Hi Bogdan</span>
+						</a>
+						<div class="mobile-menu-button">
+							<span class="line1"></span>
+							<span class="line2"></span>
+							<span class="line3"></span>
+						</div>
+					</div>
+				</header>
+				<div class="dashboard-wrapper">
+					<div class="dashboard-top-heading d-lg-flex justify-content-between align-items-center">
+						<div class="heading">
+							<h2>INVESTMENT PROFILE</h2>
+						</div>
+					</div>
+
+					<div class="dashboard-investment-row">
+						<div class="dashboard-investment-profile profile-details-row row justify-content-between">
+							<div class="col-md-5">
+								<div class="select-iprofile">
+									<span class="invest-title" style="margin-bottom: 25px;">SELECT INVESTMENT PROFILE</span>
+									<select>
+										<option value="">Individual</option>
+										<option value="">Company</option>
+										<option value="">Trust</option>
+										<option value="">Self managed Superannuation Fund Trustee</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="investment-details">
+									<div class="investment-details-row d-flex align-items-center justify-content-between">
+										<span class="font-weight-bold">Investment Profile Status</span>
+										<mark>Active</mark>
+									</div>
+									<div class="investment-details-row d-flex align-items-center justify-content-between">
+										<span>Profile details</span>
+										<mark>Complete</mark>
+									</div>
+									<div class="investment-details-row d-flex align-items-center justify-content-between">
+										<span>ID verification</span>
+										<mark>Complete</mark>
+									</div>
+									<div class="investment-details-row d-flex align-items-center justify-content-between">
+										<span>Wholesale Investor</span>
+										<mark>Yes</mark>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="dashboard-steps-wrapper">
+						<div class="dashboard-investment-steps">
+							<div class="progress-wrapper">
+								<div class="progress-line" style="width: 50%;"></div>
+							</div>
+							<div class="d-flex align-items-center justify-content-between">
+								<a href="#" class="step-col completed">
+									<div class="circle-wrapper">
+										<div class="circle">
+											<em>1</em>
+											<i class="mdi mdi-check"></i>
+										</div>
+									</div>
+									<span>profile details</span>
+								</a>
+								<a href="#" class="step-col active">
+									<div class="circle-wrapper">
+										<div class="circle">
+											<em>2</em>
+											<i class="mdi mdi-check"></i>
+										</div>
+									</div>
+									<span>id verification</span>
+								</a>
+								<a href="#" class="step-col">
+									<div class="circle-wrapper">
+										<div class="circle">
+											<em>3</em>
+											<i class="mdi mdi-check"></i>
+										</div>
+									</div>
+									<span>wholesale investor</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="dashboard-investment-row">
+						<span class="invest-title" style="margin-bottom: 25px;">AWAITING VERIFICATION</span>
+						<p class="profile-text indent-none">You can read more about the AML/CTF program (customer due diligence procedures) here:
+							<br><a href="#">http://www.austrac.gov.au/part-b-amlctf-program-customer-due-diligence-procedures</a></p>
+					</div>
+					<div class="dashboard-steps-row">
+						<span class="invest-title" style="margin-bottom: 25px;"><span>STEP 1.</span> ACCEPT TERMS & CONDITIONS</span>
+						<h3>PRIVACY STATEMENT</h3>
+						<p class="profile-text">We will at all times seek to ensure that the personal information collected and held by us is protected from misuse, loss, unauthorised access, modification or disclosure.  At all times your personal information is treated as confidential and any sensitive information is treated as highly confidential.  Your personal information is generally held in your client file which may be in hardcopy or electronic.</p>
+						<p class="profile-text">In the event you cease to be an Akela account holder, any personal information which we hold about you will be maintained in a secure offsite storage facility for a period of seven years in order to comply with legislative and professional requirements, following which time the information will be destroyed.  Akela will ensure that any documents that are destroyed are done so in a secure manner.</p>
+						<div class="row row-checkbox-terms">
+							<div class="col-md-9">
+								<div class="row">
+									<div class="col-md-4">
+										<div class="checkbox">
+											<input id="check1" type="checkbox" class="verify-checkbox">
+											<label for="check1" class="d-flex">
+												<span><i class="mdi mdi-check"></i></span>
+												<em>READ AND UNDERSTOOD</em>
+											</label>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="checkbox">
+											<input id="check2" type="checkbox" class="politically-exposed-checkbox">
+											<label for="check2" class="d-flex">
+												<span><i class="mdi mdi-check"></i></span>
+												<em>ARE YOU A <a href="#">POLITICALLY EXPOSED PERSON?</a></em>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="dashboard-steps-row verify-container">
+						<span class="invest-title" style="margin-bottom: 25px;"><span>STEP 2.</span> VERIFY YOUR IDENTIFICATION</span>
+						<div class="dashboard-investment-row">
+							<div class="row profile-details-row">
+								<div class="col-lg-3">
+									<div class="profile-detail-input">
+										<input type="text" id="lbl1">
+										<label for="lbl1">*First Name</label>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="profile-detail-input">
+										<input type="text" id="lbl2">
+										<label for="lbl2">Middle name</label>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="profile-detail-input">
+										<input type="text" id="lbl3">
+										<label for="lbl3">*Surname</label>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="profile-detail-input">
+										<input type="text" id="lbl4">
+										<label for="lbl4">*Address</label>
+									</div>
+								</div>
+							</div>
+							<div class="row profile-details-row">
+								<div class="col-lg-3">
+									<input type="date" id="lbl5">
+									<label for="lbl5">*Date of Birth (dd/mm/yyyy)</label>
+								</div>
+								<div class="col-lg-3">
+									<div class="profile-detail-input">
+										<input type="email" id="lbl6">
+										<label for="lbl6">*Email</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="dashboard-investment-row">
+							<div class="row profile-details-row">
+								<div class="col-lg-3">
+									<div class="profile-detail-input">
+										<input type="number" id="lbl7">
+										<label for="lbl7">*Unit Number</label>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="profile-detail-input">
+										<input type="number" id="lbl8">
+										<label for="lbl8">*Street Number</label>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="profile-detail-input">
+										<input type="text" id="lbl9">
+										<label for="lbl9">*Street Name</label>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<label for="lbl10">*State</label>
+									<select id="lbl10">
+										<option value="">State</option>
+										<option value="">State</option>
+										<option value="">State</option>
+										<option value="">State</option>
+									</select>
+								</div>
+							</div>
+							<div class="row profile-details-row">
+								<div class="col-lg-3">
+									<label for="lbl11">Street Type</label>
+									<select id="lbl11">
+										<option value="">Select your street type...</option>
+										<option value="">Street Type</option>
+										<option value="">Street Type</option>
+										<option value="">Street Type</option>
+									</select>
+								</div>
+								<div class="col-lg-3">
+									<div class="profile-detail-input">
+										<input type="text" id="lbl12">
+										<label for="lbl12">*Suburb, City or Town</label>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="profile-detail-input">
+										<input type="number" id="lbl13">
+										<label for="lbl13">*Postcode </label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="dashboard-investment-row">
+							<span class="invest-title" style="margin-bottom: 25px;">**IF YOU CANNOT COMPLETE THE STEPS ABOVE</span>
+							<h3>UPLOAD A <i>CERTIFIED</i> COPY OF EITHER YOUR <i>DRIVER'S LICENSE</i> or <i>PASSPORT</i></h3>
+							<div class="upload-input-wrapper d-flex">
+								<input type="text" class="uploads-container" disabled>
+								<div class="file">
+									<input type="file">
+									<span>Upload</span>
+								</div>
+							</div>
+						</div>
+						<div class="dashboard-investment-row">
+							<div class="row profile-details-row justify-content-center">
+								<div class="col-lg-3">
+									<a href="#" class="btn-repeat dashboard-btn fullwidth">Next</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="dashboard-steps-row politically-exposed-container">
+						<p class="profile-text">By clicking the check box you acknowledge that you a Publicly Exposed Person. For this reason support needs to be notified as additional documentation is required. Click the button below to notify support, we will contact you with follow up documentation.</p>
+						<div class="dashboard-investment-row">
+							<div class="row profile-details-row justify-content-center">
+								<div class="col-lg-3">
+									<span class="btn-repeat dashboard-btn fullwidth">Notify Administrator</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="payment-detail" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered payment-detail-modal" role="document">
+				<div class="modal-content">
+					<a href="#" class="modal-close" data-dismiss="modal" aria-label="Close"><i class="mdi mdi-close"></i></a>
+					<h2>PLEASE PAY SUBMISSION FEE</h2>
+					<div class="payment-detail-row">
+						<p><span>OFFER: </span>{{ offer.title }}</p>
+						<p><span>SHARES: </span>{{ memberApplication.numberOfShares }} at {{ memberApplication.pricePerShare|number_format(2, '.', ',') }} per {{shareTYPE}}</p>
+						<p><span>TOTAL: </span>A${{ memberApplication.total|number_format(3, '.', ',') }} </p>
+					</div>
+					<div class="payment-detail-row">
+						<p>{{ application.procedureText }}</p>
+					</div>
+					<div class="payment-detail-row">
+						<p><span>Transfer Detail:</span></p>
+						<p>{{ application.bankDetails|raw }}</p>
+						<p>{% if memberApplication.referenceNumber is defined %} AKELA APPLICATION REFERENCE: {{ memberApplication.referenceNumber }} {% endif %}</p>
+					</div>
+					<div class="payment-detail-row">
+						<p>BANK REFERENCE - Please QUOTE your AKELA Reference# as the bank reference when making the payment.</p>
+						<p>Please send confirmation of payment to investors@akela.vc</p>
+						<p>Thank you. {{ projectName() }}</p>
+					</div>
+					<div class="payment-detail-row">
+						<p><span>PLEASE ALLOW TIME FOR US TO PROCESS ALL APPLICATIONS AND RECEIVE FUNDS.</span></p>
+						<p>We will update the status of your application (currently ‘Payment Pending’) at the appropriate time.</p>
+					</div>
+					<div class="d-flex justify-content-end position-relative">
+						<a href="#" class="btn-repeat dashboard-btn" data-dismiss="modal" aria-label="Close">Ok</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Include scripts -->
+		<script	src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+		<script type="text/javascript" src="js/lib/jquery-3.3.1.slim.min.js"></script>
+		<script type="text/javascript" src="js/lib/popper.min.js"></script>
+		<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

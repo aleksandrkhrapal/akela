@@ -69,6 +69,7 @@ main {
   text-decoration: none;
   border: 1px solid #fff;
   border-radius: 30px;
+  cursor: pointer;
   padding: 10px 20px;
   transition: all .2s linear; }
   .btn-repeat.darkHover:hover {
@@ -94,6 +95,8 @@ main {
     background-color: #00b3b7;
     border-color: #00b3b7;
     text-decoration: none; }
+  .btn-repeat.fullwidth {
+    width: 100%; }
   .btn-repeat.dashboard-btn {
     border-radius: 5px;
     background-color: #00b3b7;
@@ -104,6 +107,10 @@ main {
     font-size: 16px;
     line-height: 18px;
     margin: 15px 0 0 0; }
+    .btn-repeat.dashboard-btn span {
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: -8px; }
     @media (max-width: 320px) {
       .btn-repeat.dashboard-btn {
         padding: 12px 2px; } }
@@ -368,7 +375,6 @@ input[type=number]::-webkit-outer-spin-button {
     color: #fff;
     font-size: 14px;
     line-height: 16px;
-    font-weight: 700;
     white-space: nowrap;
     transition: all .2s linear; }
   .progress-btn.active {
@@ -421,6 +427,21 @@ input[type=number]::-webkit-outer-spin-button {
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: ''; }
+  select::-ms-expand {
+    display: none; }
+
+input::-webkit-calendar-picker-indicator {
+  opacity: 0; }
+
+input[type=date]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  display: none; }
+
 .main-header {
   position: fixed;
   top: 0;

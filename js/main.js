@@ -9,6 +9,24 @@ $(window).scroll(function() {
     }
 });
 
+$('.verify-checkbox').on('click', function() {
+    if($(this).is(':checked')) {
+        $(".verify-container").show();
+    } else {
+        $(".verify-container").hide();
+    }
+});
+
+$('.politically-exposed-checkbox').on('click', function() {
+    if($(this).is(':checked') && $('.verify-checkbox').is(':checked')) {
+        $(".verify-container").hide();
+        $(".politically-exposed-container").show();
+    } else {
+        $(".verify-container").show();
+        $(".politically-exposed-container").hide();
+    }
+});
+
 $(".progress-btn").on("click", function(e) {
     e.preventDefault();
     var progressBtn = $(this);

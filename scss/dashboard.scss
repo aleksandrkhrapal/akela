@@ -560,6 +560,19 @@
   line-height: 18px;
   color: $dark-color;
   text-indent: 15px;
+  
+  &.indent-none {
+    text-indent: 0;
+  }
+
+  a {
+    color: $main-color;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 .profile-details-row {
@@ -643,6 +656,10 @@
       font-size: 16px;
       line-height: 18px;
     }
+    
+    &[type='date'] {
+      background: url('../images/calendar-icon.png') no-repeat 96% 50%;
+    }
   }
 
   select {
@@ -656,7 +673,7 @@
     line-height: 20px;
     outline: none;
     color: $dark-color;
-    background: none;
+    background: url('../images/arrow-icon.png') no-repeat 98% 50%;
   }
 }
 
@@ -888,6 +905,10 @@
   color: $dark-color;
   text-transform: uppercase;
   margin-bottom: 50px;
+  
+  span {
+    color: $main-color;
+  }
 }
 
 .dashboard-investment-profile {
@@ -958,6 +979,11 @@
   .step-col {
     text-align: center;
     position: relative;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
     
     &:first-child {
       .circle-wrapper {
@@ -1080,13 +1106,175 @@
 
   p {
     margin: 0;
-    text-transform: uppercase;
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 18px;
     color: #fff;
 
     @media (max-width: $screen-md-min) {
       font-size: 14px;
     }
+  }
+
+  span {
+    display: block;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $main-color;
+  }
+}
+
+.dashboard-steps-row {
+  margin: 30px 0;
+
+  &.verify-container,
+  &.politically-exposed-container {
+    display: none;
+  }
+
+  h3 {
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $dark-color;
+    margin: 0 0 20px 0;
+
+    i {
+      font-weight: 600;
+      text-decoration: underline;
+      font-style: normal;
+    }
+  }
+
+  .dashboard-investment-row {
+    margin-top: 35px;
+
+    &:last-child {
+      margin-top: 0;
+    }
+  }
+}
+.upload-input-wrapper {
+  max-width: 700px;
+  margin-bottom: 15px;
+
+  .uploads-container {
+    display: block;
+    width: 100%;
+    height: 44px;
+    border: 1px solid $main-color;
+    border-right: none;
+    border-radius: 5px 0 0  5px;
+    outline: none;
+    padding: 15px;
+    background: none !important;
+  }
+
+  .file {
+    width: 250px;
+    height: 44px;
+    position: relative;
+
+    &:hover {
+      span {
+        background-color: $dark-color;
+      }
+    }
+
+    input[type='file'] {
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      z-index: 20;
+    }
+
+    span {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      font-size: 16px;
+      line-height: 44px;
+      color: #fff;
+      text-transform: uppercase;
+      position: relative;
+      z-index: 10;
+      cursor: pointer;
+      background-color: $main-color;
+      border-radius: 0 5px 5px 0;
+      @include transition;
+    }
+  }
+}
+
+.row-checkbox-terms {
+  margin-top: 40px;
+
+  .checkbox {
+    input{
+      &:checked {
+        + label {
+          span {
+            background-color: #000;
+            border-color: #000;
+          }
+        }
+      }
+    }
+
+    label {
+      em {
+        font-size: 18px;
+        line-height: 20px;
+        //font-weight: 700;
+        color: $dark-color;
+      }
+    }
+  }
+}
+
+.download-form-button {
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid $main-color;
+  padding: 10px 20px;
+  white-space: nowrap;
+  text-decoration: none;
+  @include transition;
+  
+  &:hover {
+    background-color: $main-color;
+    text-decoration: none !important;
+    
+    span {
+      color: #fff;
+    }
+    
+    i {
+      color: #fff;
+    }
+  }
+
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $main-color;
+    @include transition;
+  }
+
+  i {
+    display: inline-block;
+    vertical-align: middle;
+    color: $main-color;
+    font-size: 25px;
+    line-height: 25px;
+    @include transition;
   }
 }

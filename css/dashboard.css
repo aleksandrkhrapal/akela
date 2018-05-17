@@ -69,6 +69,7 @@ main {
   text-decoration: none;
   border: 1px solid #fff;
   border-radius: 30px;
+  cursor: pointer;
   padding: 10px 20px;
   transition: all .2s linear; }
   .btn-repeat.darkHover:hover {
@@ -94,6 +95,8 @@ main {
     background-color: #00b3b7;
     border-color: #00b3b7;
     text-decoration: none; }
+  .btn-repeat.fullwidth {
+    width: 100%; }
   .btn-repeat.dashboard-btn {
     border-radius: 5px;
     background-color: #00b3b7;
@@ -104,6 +107,10 @@ main {
     font-size: 16px;
     line-height: 18px;
     margin: 15px 0 0 0; }
+    .btn-repeat.dashboard-btn span {
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: -8px; }
     @media (max-width: 320px) {
       .btn-repeat.dashboard-btn {
         padding: 12px 2px; } }
@@ -368,7 +375,6 @@ input[type=number]::-webkit-outer-spin-button {
     color: #fff;
     font-size: 14px;
     line-height: 16px;
-    font-weight: 700;
     white-space: nowrap;
     transition: all .2s linear; }
   .progress-btn.active {
@@ -421,6 +427,21 @@ input[type=number]::-webkit-outer-spin-button {
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: ''; }
+  select::-ms-expand {
+    display: none; }
+
+input::-webkit-calendar-picker-indicator {
+  opacity: 0; }
+
+input[type=date]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  display: none; }
+
 .main-header {
   position: fixed;
   top: 0;
@@ -1489,6 +1510,13 @@ input[type=number]::-webkit-outer-spin-button {
   line-height: 18px;
   color: #203140;
   text-indent: 15px; }
+  .profile-text.indent-none {
+    text-indent: 0; }
+  .profile-text a {
+    color: #00b3b7;
+    text-decoration: underline; }
+    .profile-text a:hover {
+      text-decoration: none; }
 
 .profile-details-row [class*='col-'] {
   margin-bottom: 40px; }
@@ -1539,6 +1567,8 @@ input[type=number]::-webkit-outer-spin-button {
     transform: none;
     font-size: 16px;
     line-height: 18px; }
+  .profile-details-row input[type='date'] {
+    background: url("../images/calendar-icon.png") no-repeat 96% 50%; }
 .profile-details-row select {
   display: block;
   width: 100%;
@@ -1550,7 +1580,7 @@ input[type=number]::-webkit-outer-spin-button {
   line-height: 20px;
   outline: none;
   color: #203140;
-  background: none; }
+  background: url("../images/arrow-icon.png") no-repeat 98% 50%; }
 
 .button-wrapper {
   margin-top: 28px; }
@@ -1697,6 +1727,8 @@ input[type=number]::-webkit-outer-spin-button {
   color: #203140;
   text-transform: uppercase;
   margin-bottom: 50px; }
+  .invest-title span {
+    color: #00b3b7; }
 
 .dashboard-investment-profile .investment-details .investment-details-row {
   margin-bottom: 6px; }
@@ -1742,7 +1774,10 @@ input[type=number]::-webkit-outer-spin-button {
       background-color: #00b3b7; }
   .dashboard-investment-steps .step-col {
     text-align: center;
-    position: relative; }
+    position: relative;
+    text-decoration: none; }
+    .dashboard-investment-steps .step-col:hover {
+      text-decoration: none; }
     .dashboard-investment-steps .step-col:first-child .circle-wrapper:before {
       content: '';
       display: block;
@@ -1817,12 +1852,121 @@ input[type=number]::-webkit-outer-spin-button {
       padding: 10px 15px; } }
   .hint-wrapper p {
     margin: 0;
-    text-transform: uppercase;
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 18px;
     color: #fff; }
     @media (max-width: 768px) {
       .hint-wrapper p {
         font-size: 14px; } }
+  .hint-wrapper span {
+    display: block;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #00b3b7; }
+
+.dashboard-steps-row {
+  margin: 30px 0; }
+  .dashboard-steps-row.verify-container, .dashboard-steps-row.politically-exposed-container {
+    display: none; }
+  .dashboard-steps-row h3 {
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #203140;
+    margin: 0 0 20px 0; }
+    .dashboard-steps-row h3 i {
+      font-weight: 600;
+      text-decoration: underline;
+      font-style: normal; }
+  .dashboard-steps-row .dashboard-investment-row {
+    margin-top: 35px; }
+    .dashboard-steps-row .dashboard-investment-row:last-child {
+      margin-top: 0; }
+
+.upload-input-wrapper {
+  max-width: 700px;
+  margin-bottom: 15px; }
+  .upload-input-wrapper .uploads-container {
+    display: block;
+    width: 100%;
+    height: 44px;
+    border: 1px solid #00b3b7;
+    border-right: none;
+    border-radius: 5px 0 0  5px;
+    outline: none;
+    padding: 15px;
+    background: none !important; }
+  .upload-input-wrapper .file {
+    width: 250px;
+    height: 44px;
+    position: relative; }
+    .upload-input-wrapper .file:hover span {
+      background-color: #203140; }
+    .upload-input-wrapper .file input[type='file'] {
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      z-index: 20; }
+    .upload-input-wrapper .file span {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      font-size: 16px;
+      line-height: 44px;
+      color: #fff;
+      text-transform: uppercase;
+      position: relative;
+      z-index: 10;
+      cursor: pointer;
+      background-color: #00b3b7;
+      border-radius: 0 5px 5px 0;
+      transition: all .2s linear; }
+
+.row-checkbox-terms {
+  margin-top: 40px; }
+  .row-checkbox-terms .checkbox input:checked + label span {
+    background-color: #000;
+    border-color: #000; }
+  .row-checkbox-terms .checkbox label em {
+    font-size: 18px;
+    line-height: 20px;
+    color: #203140; }
+
+.download-form-button {
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid #00b3b7;
+  padding: 10px 20px;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: all .2s linear; }
+  .download-form-button:hover {
+    background-color: #00b3b7;
+    text-decoration: none !important; }
+    .download-form-button:hover span {
+      color: #fff; }
+    .download-form-button:hover i {
+      color: #fff; }
+  .download-form-button span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #00b3b7;
+    transition: all .2s linear; }
+  .download-form-button i {
+    display: inline-block;
+    vertical-align: middle;
+    color: #00b3b7;
+    font-size: 25px;
+    line-height: 25px;
+    transition: all .2s linear; }
 
 /*# sourceMappingURL=dashboard.css.map */

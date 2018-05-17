@@ -146,6 +146,7 @@ main {
   text-decoration: none;
   border: 1px solid #fff;
   border-radius: 30px;
+  cursor: pointer;
   padding: 10px 20px;
   @include transition;
 
@@ -188,6 +189,10 @@ main {
     text-decoration: none;
   }
 
+  &.fullwidth {
+    width: 100%;
+  }
+
   &.dashboard-btn {
     border-radius: 5px;
     background-color: $main-color;
@@ -198,6 +203,12 @@ main {
     font-size: 16px;
     line-height: 18px;
     margin: 15px 0 0 0;
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: -8px;
+    }
 
     @media (max-width: 320px) {
       padding: 12px 2px;
@@ -547,7 +558,7 @@ input[type=number]::-webkit-outer-spin-button {
     color: #fff;
     font-size: 14px;
     line-height: 16px;
-    font-weight: 700;
+    //font-weight: 700;
     white-space: nowrap;
     @include transition;
   }
@@ -615,4 +626,25 @@ input[type=number]::-webkit-outer-spin-button {
 @keyframes rotate {
   0% {transform: rotate(0deg); }
   100% {transform: rotate(360deg); }
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  //visibility: hidden;
+}
+
+input[type=date]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  display: none;
 }
