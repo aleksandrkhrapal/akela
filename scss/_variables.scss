@@ -124,6 +124,11 @@ main {
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.001));
     }
   }
+
+  &.upcoming-bg {
+    background: url('../images/upcoming-bg.png') no-repeat 50% 50%;
+    background-size: contain;
+  }
 }
 
 .wrapper {

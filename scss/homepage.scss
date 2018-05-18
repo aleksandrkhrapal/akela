@@ -61,6 +61,7 @@
 
 .investment-board {
   padding-top: 100px;
+  background-color: #fff;
 
   @media (max-width: $screen-md-min) {
     padding-top: 30px;
@@ -393,4 +394,8 @@
       }
     }
   }
+}
+
+.load-more-button {
+  margin: 50px 0;
 }
