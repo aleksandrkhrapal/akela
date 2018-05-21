@@ -24,10 +24,10 @@ body {
   color: #fff; }
 
 .nopadding {
-  padding: 0; }
+  padding: 0 !important; }
 
 .nomargin {
-  margin: 0; }
+  margin: 0 !important; }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   body {
@@ -229,6 +229,41 @@ input[type=number]::-webkit-outer-spin-button {
         text-decoration: underline; }
         .checkbox label em a:hover {
           text-decoration: none; }
+
+.radiobutton {
+  text-align: center; }
+  .radiobutton input {
+    display: none; }
+    .radiobutton input:checked + label i {
+      border-color: #00b3b7; }
+      .radiobutton input:checked + label i:before {
+        opacity: 1;
+        visibility: visible; }
+  .radiobutton label {
+    margin: 0;
+    cursor: pointer; }
+    .radiobutton label i {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 2px solid #b7b7b7;
+      position: relative;
+      transition: all .2s linear; }
+      .radiobutton label i:before {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #00b3b7;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .2s linear;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
 
 .error-page-wrapper {
   position: absolute;
@@ -1899,14 +1934,17 @@ input[type=date]::-webkit-inner-spin-button {
           line-height: 22px; }
     .dashboard-investment-steps .step-col span {
       display: block;
-      font-size: 20px;
-      line-height: 22px;
+      font-size: 18px;
+      line-height: 20px;
       color: #999;
       text-transform: uppercase; }
       @media (max-width: 768px) {
         .dashboard-investment-steps .step-col span {
           font-size: 12px;
           line-height: 14px; } }
+      @media (max-width: 768px) {
+        .dashboard-investment-steps .step-col span {
+          display: none; } }
 
 .hint-wrapper {
   border-radius: 5px;
@@ -2034,5 +2072,194 @@ input[type=date]::-webkit-inner-spin-button {
     font-size: 25px;
     line-height: 25px;
     transition: all .2s linear; }
+
+.make-app-top {
+  border-radius: 5px;
+  background-color: #def5f6;
+  padding: 50px;
+  margin-bottom: 50px; }
+  @media (max-width: 992px) {
+    .make-app-top {
+      padding: 50px 15px; } }
+  .make-app-top .offer-title {
+    padding: 0 !important;
+    margin: 0 !important; }
+    @media (max-width: 992px) {
+      .make-app-top .offer-title {
+        margin: 0 0 30px 0 !important; } }
+  @media (max-width: 992px) {
+    .make-app-top .investment-board-right {
+      margin-bottom: 30px; } }
+  .make-app-top .investment-board-right .status {
+    margin-bottom: 5px; }
+    .make-app-top .investment-board-right .status em {
+      color: #203140; }
+  .make-app-top .investment-board-right .date {
+    margin-bottom: 0; }
+    .make-app-top .investment-board-right .date .date-col i {
+      color: #203140; }
+  @media (max-width: 992px) {
+    .make-app-top .make-app-text {
+      margin-bottom: 30px; } }
+  .make-app-top .make-app-text span {
+    display: block;
+    font-size: 18px;
+    line-height: 20px;
+    color: #203140;
+    text-transform: uppercase;
+    margin-bottom: 20px; }
+  .make-app-top .make-app-text p {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #203140;
+    margin: 0; }
+
+.closing-soon {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 30px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  white-space: nowrap;
+  line-height: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid transparent;
+  outline: none;
+  background-color: #d45155;
+  color: #fff;
+  transition: all .2s linear; }
+  .closing-soon:hover {
+    background-color: transparent;
+    border-color: #203140;
+    color: #203140; }
+
+.make-app-steps .step-title {
+  display: block;
+  font-size: 24px;
+  line-height: 26px;
+  color: #203140;
+  text-transform: uppercase;
+  margin-bottom: 30px; }
+  @media (max-width: 576px) {
+    .make-app-steps .step-title {
+      font-size: 16px;
+      line-height: 20px; } }
+.make-app-steps .table-wrapper-profile {
+  margin-bottom: 60px; }
+
+.make-app-hint {
+  background-color: #def5f6;
+  padding: 40px 15px;
+  margin-bottom: 20px; }
+  @media (max-width: 576px) {
+    .make-app-hint {
+      padding: 15px; } }
+  .make-app-hint.bg-none {
+    background: none; }
+  .make-app-hint p {
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #203140;
+    margin: 0; }
+    @media (max-width: 576px) {
+      .make-app-hint p {
+        font-size: 14px;
+        line-height: 18px; } }
+
+.terms-container {
+  background-color: #00b3b7;
+  border-radius: 5px;
+  padding: 40px 15px; }
+  @media (max-width: 576px) {
+    .terms-container {
+      padding: 15px 0; } }
+  .terms-container .terms-wrapper {
+    max-width: 600px;
+    margin: 0 auto; }
+    .terms-container .terms-wrapper .terms-row {
+      padding: 10px 25px 10px 95px;
+      border-radius: 5px;
+      margin: 5px 0; }
+      @media (max-width: 576px) {
+        .terms-container .terms-wrapper .terms-row {
+          padding: 10px 15px 10px 35px;
+          border-radius: 0; } }
+      .terms-container .terms-wrapper .terms-row.error {
+        background-color: #ffffa6;
+        position: relative; }
+        .terms-container .terms-wrapper .terms-row.error:before {
+          content: '!';
+          display: block;
+          width: 40px;
+          height: 40px;
+          background-color: #f33;
+          border-radius: 50%;
+          color: #ffffa6;
+          text-align: center;
+          line-height: 40px;
+          font-size: 30px;
+          left: 25px;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%); }
+          @media (max-width: 576px) {
+            .terms-container .terms-wrapper .terms-row.error:before {
+              width: 20px;
+              height: 20px;
+              line-height: 20px;
+              left: 8px;
+              font-size: 18px; } }
+        .terms-container .terms-wrapper .terms-row.error p {
+          color: #203140; }
+        .terms-container .terms-wrapper .terms-row.error .checkbox-container .checkbox label span {
+          background-color: #203140;
+          border-color: #203140; }
+          .terms-container .terms-wrapper .terms-row.error .checkbox-container .checkbox label span i {
+            color: #fff; }
+        .terms-container .terms-wrapper .terms-row.error .checkbox-container i {
+          color: #00b3b7; }
+      .terms-container .terms-wrapper .terms-row p {
+        font-size: 24px;
+        line-height: 26px;
+        color: #fff;
+        margin: 0; }
+        @media (max-width: 576px) {
+          .terms-container .terms-wrapper .terms-row p {
+            font-size: 14px;
+            line-height: 20px; } }
+        .terms-container .terms-wrapper .terms-row p span {
+          text-decoration: underline; }
+        .terms-container .terms-wrapper .terms-row p a {
+          color: #fff;
+          text-decoration: underline; }
+          .terms-container .terms-wrapper .terms-row p a:hover {
+            text-decoration: none; }
+      .terms-container .terms-wrapper .terms-row .checkbox-container {
+        width: 100px; }
+        @media (max-width: 576px) {
+          .terms-container .terms-wrapper .terms-row .checkbox-container {
+            width: 45px; } }
+        .terms-container .terms-wrapper .terms-row .checkbox-container .checkbox {
+          margin: 0; }
+          .terms-container .terms-wrapper .terms-row .checkbox-container .checkbox label span {
+            margin: 0;
+            background-color: #fff;
+            border-color: #fff; }
+            .terms-container .terms-wrapper .terms-row .checkbox-container .checkbox label span i {
+              color: #00b3b7; }
+        .terms-container .terms-wrapper .terms-row .checkbox-container > i {
+          display: block;
+          color: #fff;
+          font-size: 40px;
+          line-height: 40px; }
+          @media (max-width: 576px) {
+            .terms-container .terms-wrapper .terms-row .checkbox-container > i {
+              font-size: 20px;
+              line-height: 20px; } }
 
 /*# sourceMappingURL=dashboard.css.map */

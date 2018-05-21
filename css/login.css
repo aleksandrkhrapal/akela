@@ -24,10 +24,10 @@ body {
   color: #fff; }
 
 .nopadding {
-  padding: 0; }
+  padding: 0 !important; }
 
 .nomargin {
-  margin: 0; }
+  margin: 0 !important; }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   body {
@@ -229,6 +229,41 @@ input[type=number]::-webkit-outer-spin-button {
         text-decoration: underline; }
         .checkbox label em a:hover {
           text-decoration: none; }
+
+.radiobutton {
+  text-align: center; }
+  .radiobutton input {
+    display: none; }
+    .radiobutton input:checked + label i {
+      border-color: #00b3b7; }
+      .radiobutton input:checked + label i:before {
+        opacity: 1;
+        visibility: visible; }
+  .radiobutton label {
+    margin: 0;
+    cursor: pointer; }
+    .radiobutton label i {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 2px solid #b7b7b7;
+      position: relative;
+      transition: all .2s linear; }
+      .radiobutton label i:before {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #00b3b7;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .2s linear;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
 
 .error-page-wrapper {
   position: absolute;

@@ -87,10 +87,10 @@ $dark-color: #203140;
 }
 
 .nopadding {
-  padding: 0;
+  padding: 0 !important;
 }
 .nomargin {
-  margin: 0;
+  margin: 0 !important;
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -373,6 +373,55 @@ input[type=number]::-webkit-outer-spin-button {
         &:hover {
           text-decoration: none;
         }
+      }
+    }
+  }
+}
+
+.radiobutton {
+  text-align: center;
+
+  input {
+    display: none;
+
+    &:checked {
+      + label {
+        i {
+          border-color: $main-color;
+
+          &:before {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+
+  label {
+    margin: 0;
+    cursor: pointer;
+
+    i {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 2px solid #b7b7b7;
+      position: relative;
+      @include transition;
+
+      &:before {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $main-color;
+        opacity: 0;
+        visibility: hidden;
+        @include transition;
+        @include center;
       }
     }
   }
