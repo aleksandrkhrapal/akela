@@ -125,6 +125,12 @@
             visibility: visible;
             bottom: -7px;
           }
+
+          i {
+            @media (max-width: $screen-md-min) {
+              display: none;
+            }
+          }
         }
       }
 
@@ -165,11 +171,24 @@
         visibility: hidden;
         @include transition;
 
+        @media (max-width: $screen-md-min) {
+          @include reset-position;
+          opacity: 1;
+          visibility: visible;
+          padding-top: 0;
+          margin-top: 10px;
+        }
+
         .dropdown-submenu {
           background-color: #fff;
           border-radius: 5px;
           overflow: hidden;
           box-shadow: 0 1px 5px 0 #ddd;
+
+          @media (max-width: $screen-md-min) {
+            background-color: transparent;
+            box-shadow: none;
+          }
 
           a {
             display: block;
@@ -179,10 +198,19 @@
             color: $dark-color;
             @include transition;
 
+            @media (max-width: $screen-md-min) {
+              color: #fff;
+              padding: 5px 10px;
+            }
+
             &:hover, &.active {
               color: $main-color;
               background-color: #ebebeb;
               text-decoration: none;
+
+              @media (max-width: $screen-md-min) {
+                background: none;
+              }
             }
           }
         }

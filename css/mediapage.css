@@ -54,6 +54,12 @@ main {
   main.upcoming-bg {
     background: url("../images/upcoming-bg.png") no-repeat 50% 50%;
     background-size: contain; }
+  main.currently-founding-bg {
+    background: url("../images/currently-founding-bg.png") no-repeat 50% 50%;
+    background-size: contain; }
+  main.closed-bg {
+    background: url("../images/closed-bg.png") no-repeat 50% 50%;
+    background-size: contain; }
 
 .wrapper {
   width: 820px;
@@ -539,6 +545,9 @@ input[type=date]::-webkit-inner-spin-button {
           opacity: 1;
           visibility: visible;
           bottom: -7px; }
+        @media (max-width: 768px) {
+          .main-nav ul li.active a i, .main-nav ul li.active span i {
+            display: none; } }
       .main-nav ul li > a, .main-nav ul li span {
         display: inline-block;
         font-size: 14px;
@@ -571,11 +580,27 @@ input[type=date]::-webkit-inner-spin-button {
         opacity: 0;
         visibility: hidden;
         transition: all .2s linear; }
+        @media (max-width: 768px) {
+          .main-nav ul li .dropdown-submenu-wrapper {
+            position: inherit;
+            top: auto;
+            left: auto;
+            bottom: auto;
+            right: auto;
+            transform: none;
+            opacity: 1;
+            visibility: visible;
+            padding-top: 0;
+            margin-top: 10px; } }
         .main-nav ul li .dropdown-submenu-wrapper .dropdown-submenu {
           background-color: #fff;
           border-radius: 5px;
           overflow: hidden;
           box-shadow: 0 1px 5px 0 #ddd; }
+          @media (max-width: 768px) {
+            .main-nav ul li .dropdown-submenu-wrapper .dropdown-submenu {
+              background-color: transparent;
+              box-shadow: none; } }
           .main-nav ul li .dropdown-submenu-wrapper .dropdown-submenu a {
             display: block;
             padding: 10px;
@@ -583,10 +608,17 @@ input[type=date]::-webkit-inner-spin-button {
             line-height: 16px;
             color: #203140;
             transition: all .2s linear; }
+            @media (max-width: 768px) {
+              .main-nav ul li .dropdown-submenu-wrapper .dropdown-submenu a {
+                color: #fff;
+                padding: 5px 10px; } }
             .main-nav ul li .dropdown-submenu-wrapper .dropdown-submenu a:hover, .main-nav ul li .dropdown-submenu-wrapper .dropdown-submenu a.active {
               color: #00b3b7;
               background-color: #ebebeb;
               text-decoration: none; }
+              @media (max-width: 768px) {
+                .main-nav ul li .dropdown-submenu-wrapper .dropdown-submenu a:hover, .main-nav ul li .dropdown-submenu-wrapper .dropdown-submenu a.active {
+                  background: none; } }
 
 .mobile-menu-button {
   display: none;

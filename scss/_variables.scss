@@ -129,6 +129,16 @@ main {
     background: url('../images/upcoming-bg.png') no-repeat 50% 50%;
     background-size: contain;
   }
+
+  &.currently-founding-bg {
+    background: url('../images/currently-founding-bg.png') no-repeat 50% 50%;
+    background-size: contain;
+  }
+
+  &.closed-bg {
+    background: url('../images/closed-bg.png') no-repeat 50% 50%;
+    background-size: contain;
+  }
 }
 
 .wrapper {
