@@ -593,6 +593,10 @@ input[type=number]::-webkit-outer-spin-button {
       width: 100%;
     }
   }
+
+  .profile-details-row input {
+    padding: 10px 15px;
+  }
 }
 
 .progress-btn {
@@ -712,3 +716,7 @@ input[type=date]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   display: none;
 }
+
+//input[type=number] {
+//  -moz-appearance:textfield;
+//}

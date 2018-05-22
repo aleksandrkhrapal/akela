@@ -642,9 +642,10 @@
     height: 44px;
     border-radius: 5px;
     border: 1px solid #9aa9b8;
-    padding: 15px;
+    padding: 13px 15px;
     font-size: 18px;
     line-height: 20px;
+    background: none;
     //font-weight: 700;
     outline: none;
     color: $dark-color;
@@ -1054,6 +1055,10 @@
       background-color: #ebebeb;
       position: relative;
 
+      @media (max-width: $screen-sm-min) {
+        width: 40px;
+      }
+
       .circle {
         margin: 0 auto 10px auto;
         width: 24px;
@@ -1249,6 +1254,12 @@
   white-space: nowrap;
   text-decoration: none;
   @include transition;
+
+  @media (max-width: $screen-sm-min) {
+    padding: 10px;
+    text-align: center;
+    white-space: normal;
+  }
   
   &:hover {
     background-color: $main-color;
@@ -1392,6 +1403,14 @@
 
   .table-wrapper-profile {
     margin-bottom: 60px;
+  }
+
+  h3 {
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $dark-color;
+    margin: 40px 0 20px 0;
   }
 }
 
@@ -1557,6 +1576,93 @@
           }
         }
       }
+    }
+  }
+}
+
+.amount-wrapper {
+  background-color: #00b3b7;
+  border-radius: 5px;
+  padding: 40px;
+  margin-bottom: 70px;
+
+  .amount-left {
+    @media (max-width: $screen-lg-min) {
+      margin-bottom: 30px;
+    }
+
+    span {
+      display: block;
+      font-size: 24px;
+      line-height: 26px;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .input-wrap {
+      position: relative;
+      margin-right: 20px;
+    }
+
+    mark {
+      display: block;
+      background: none;
+      padding: 0;
+      font-size: 18px;
+      line-height: 20px;
+      color: #fff;
+    }
+  }
+
+  .amount-right {
+    .amount-right-row {
+      margin-bottom: 5px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    span {
+      display: block;
+      font-size: 18px;
+      line-height: 20px;
+      color: #fff;
+    }
+
+    mark {
+      display: inline-block;
+      padding: 0;
+      background: none;
+      font-size: 18px;
+      line-height: 20px;
+      color: #ffffa6;
+    }
+  }
+}
+
+.submit-message {
+  max-width: 600px;
+  margin: 0 auto 50px auto;
+  text-align: center;
+
+  span {
+    display: block;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 26px;
+    color: $dark-color;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 20px;
+    color: $dark-color;
+    margin: 0 0 10px 0;
+
+    &:last-child {
+      margin: 0;
     }
   }
 }
