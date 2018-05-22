@@ -140,9 +140,11 @@
       .logo-lg {
         display: block;
         width: 175px;
+        height: 49.22px;
 
         @media (max-width: $screen-sm-min) {
           width: 87px;
+          height: auto;
         }
       }
 
@@ -187,6 +189,7 @@
         padding: 10px 40px;
         text-decoration: none;
         border-radius: 3px 0 0 3px;
+        color: #fff;
         transition: all .5s ease-in-out;
 
         @media (max-width: $screen-sm-min) {

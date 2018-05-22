@@ -659,6 +659,7 @@
     }
     
     &[type='date'] {
+      padding: 10px 35px 10px 15px;
       background: url('../images/calendar-icon.png') no-repeat 96% 50%;
     }
   }
@@ -1519,6 +1520,7 @@
         font-size: 24px;
         line-height: 26px;
         color: #fff;
+        flex: 1;
         margin: 0;
 
         @media (max-width: $screen-sm-min) {

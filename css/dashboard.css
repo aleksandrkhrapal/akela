@@ -489,6 +489,9 @@ input[type=date]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   display: none; }
 
+input[type=number] {
+  -moz-appearance: textfield; }
+
 .main-header {
   position: fixed;
   top: 0;
@@ -850,10 +853,12 @@ input[type=date]::-webkit-inner-spin-button {
         transition: all .5s ease-in-out; }
       .dashboard-sidebar .heading a .logo-lg {
         display: block;
-        width: 175px; }
+        width: 175px;
+        height: 49.22px; }
         @media (max-width: 576px) {
           .dashboard-sidebar .heading a .logo-lg {
-            width: 87px; } }
+            width: 87px;
+            height: auto; } }
       .dashboard-sidebar .heading a .logo-sm {
         display: none; }
       .dashboard-sidebar .heading a.sidebar-trigger {
@@ -883,6 +888,7 @@ input[type=date]::-webkit-inner-spin-button {
       padding: 10px 40px;
       text-decoration: none;
       border-radius: 3px 0 0 3px;
+      color: #fff;
       transition: all .5s ease-in-out; }
       @media (max-width: 576px) {
         .dashboard-sidebar .sidebar-nav li a {
@@ -1673,6 +1679,7 @@ input[type=date]::-webkit-inner-spin-button {
     font-size: 16px;
     line-height: 18px; }
   .profile-details-row input[type='date'] {
+    padding: 10px 35px 10px 15px;
     background: url("../images/calendar-icon.png") no-repeat 96% 50%; }
 .profile-details-row select {
   display: block;
@@ -2245,6 +2252,7 @@ input[type=date]::-webkit-inner-spin-button {
         font-size: 24px;
         line-height: 26px;
         color: #fff;
+        flex: 1;
         margin: 0; }
         @media (max-width: 576px) {
           .terms-container .terms-wrapper .terms-row p {
