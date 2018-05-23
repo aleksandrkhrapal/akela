@@ -1588,6 +1588,10 @@
   padding: 40px;
   margin-bottom: 70px;
 
+  @media (max-width: $screen-md-min) {
+    padding: 15px;
+  }
+
   .amount-left {
     @media (max-width: $screen-lg-min) {
       margin-bottom: 30px;
