@@ -1,0 +1,125 @@
+@import "variables";
+
+.ck-editor {
+  &.list {
+    padding-left: 20px;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $dark-color;
+      position: absolute;
+      top: 8px;
+      left: 0;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $dark-color;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    color: $dark-color;
+    text-align: justify;
+    margin-bottom: 1rem;
+  }
+  
+  a {
+    color: $main-color;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    margin-bottom: .5rem;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 35px;
+
+
+
+    li {
+      font-size: 16px;
+      line-height: 24px;
+      color: $dark-color;
+      text-align: justify;
+      margin-bottom: .5rem;
+      position: relative;
+
+      &:before {
+        content: '';
+        display: block;
+        width: 5px;
+        height: 5px;
+        background-color: $main-color;
+        position: absolute;
+        top: 10px;
+        left: -14px;
+      }
+    }
+  }
+
+  ol {
+    counter-reset: item;
+    list-style: none;
+    padding-left: 35px;
+
+    li {
+      font-size: 16px;
+      line-height: 24px;
+      color: $dark-color;
+      text-align: justify;
+      margin-bottom: .5rem;
+      position: relative;
+
+      &:before {
+        content: counters(item,".") ". ";
+        counter-increment: item;
+        position: absolute;
+        top: 0;
+        right: calc(100% + 5px);
+        color: $main-color;
+        font-weight: 600;
+      }
+    }
+  }
+
+  blockquote {
+    padding: 15px 35px;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+
+    p {
+      font-style: italic;
+    }
+  }
+
+  table {
+    width: 100%;
+    margin-bottom: 1rem;
+    
+    thead {
+      background-color: #d7d7d7;
+    }
+    
+    td, th {
+      border: 1px solid rgba(0, 0, 0, .1);
+      padding: 10px;
+      font-size: 16px;
+      line-height: 18px;
+      color: $dark-color;
+    }
+  }
+}
