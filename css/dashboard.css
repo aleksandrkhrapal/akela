@@ -1999,6 +1999,9 @@ input[type=number] {
       font-style: normal; }
   .dashboard-steps-row .dashboard-investment-row {
     margin-top: 35px; }
+    .dashboard-steps-row .dashboard-investment-row.grey-bg {
+      padding: 15px;
+      background-color: #ebebeb; }
     .dashboard-steps-row .dashboard-investment-row:last-child {
       margin-top: 0; }
 
@@ -2014,7 +2017,7 @@ input[type=number] {
     border-radius: 5px 0 0  5px;
     outline: none;
     padding: 15px;
-    background: none !important; }
+    background: #fff !important; }
   .upload-input-wrapper .file {
     width: 250px;
     height: 44px;
@@ -2207,7 +2210,7 @@ input[type=number] {
     max-width: 600px;
     margin: 0 auto; }
     .terms-container .terms-wrapper .terms-row {
-      padding: 10px 25px 10px 95px;
+      padding: 10px 25px 10px 70px;
       border-radius: 5px;
       margin: 5px 0; }
       @media (max-width: 576px) {
@@ -2215,19 +2218,19 @@ input[type=number] {
           padding: 10px 15px 10px 35px;
           border-radius: 0; } }
       .terms-container .terms-wrapper .terms-row.error {
-        background-color: #ffffa6;
+        background-color: #def5f6;
         position: relative; }
         .terms-container .terms-wrapper .terms-row.error:before {
           content: '!';
           display: block;
-          width: 40px;
-          height: 40px;
-          background-color: #f33;
+          width: 28px;
+          height: 28px;
+          background-color: #d45155;
           border-radius: 50%;
           color: #ffffa6;
           text-align: center;
-          line-height: 40px;
-          font-size: 30px;
+          line-height: 28px;
+          font-size: 20px;
           left: 25px;
           position: absolute;
           top: 50%;
@@ -2350,5 +2353,68 @@ input[type=number] {
     margin: 0 0 10px 0; }
     .submit-message p:last-child {
       margin: 0; }
+
+/*
+.cntr {
+  text-align: center;
+  height: 21px;
+
+  .btn-radio {
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    margin: 0;
+    height: 21px;
+
+    svg {
+      fill: none;
+      vertical-align: middle;
+
+      circle {
+        stroke-width: 2;
+        stroke: #b7b7b7;
+      }
+
+      path {
+        stroke: $main-color;
+
+        &.inner {
+          stroke-width: 6;
+          stroke-dasharray: 19;
+          stroke-dashoffset: 19;
+        }
+
+        &.outer {
+          stroke-width: 2;
+          stroke-dasharray: 57;
+          stroke-dashoffset: 57;
+        }
+      }
+    }
+
+    input {
+      display: none;
+
+      &:checked + svg path {
+        transition: all 0.4s ease;
+
+        &.inner {
+          stroke-dashoffset: 38;
+          transition-delay: 0.3s;
+        }
+
+        &.outer {
+          stroke-dashoffset: 0;
+        }
+      }
+    }
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+  }
+}*/
 
 /*# sourceMappingURL=dashboard.css.map */
