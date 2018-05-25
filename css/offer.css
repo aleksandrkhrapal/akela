@@ -492,6 +492,9 @@ input[type=date]::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield; }
 
+*:focus {
+  outline: none; }
+
 .main-header {
   position: fixed;
   top: 0;

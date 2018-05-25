@@ -492,6 +492,9 @@ input[type=date]::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield; }
 
+*:focus {
+  outline: none; }
+
 .ck-editor.list {
   padding-left: 20px;
   position: relative; }
