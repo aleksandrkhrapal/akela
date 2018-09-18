@@ -1,0 +1,109 @@
+@import "variables";
+@import "header";
+@import "footer";
+
+.faq-bg {
+  background: url("../images/closed-bg.png") no-repeat 50% 100px;
+  background-size: contain;
+}
+
+.faq-wrapper {
+  padding: 100px 15px;
+  max-width: 700px;
+  margin: 0 auto;
+
+  @media (max-width: $screen-md-max) {
+    padding: 50px 15px;
+  }
+}
+
+.faq-card {
+  margin-bottom: 30px;
+  background-color: #fff;
+  border: 1px solid $dark-color;
+  border-radius: 5px;
+  @include transition;
+
+  &.active {
+    border-color: $main-color;
+  }
+
+  .faq-header {
+    padding: 15px 35px 15px 15px;
+    cursor: pointer;
+    position: relative;
+
+    &[aria-expanded="true"] {
+      .mdi {
+        transform: rotate(-180deg);
+      }
+    }
+
+    span {
+      display: block;
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $dark-color;
+    }
+
+    .mdi {
+      position: absolute;
+      top: 13px;
+      right: 10px;
+      font-size: 22px;
+      line-height: 22px;
+      @include transition;
+    }
+  }
+
+  .faq-body {
+    padding: 15px;
+    border-top: 1px solid $dark-color;
+  }
+}
+
+.faq-content {
+  p {
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 20px;
+
+    &:last-child, &.margin0 {
+      margin: 0;
+    }
+
+    mark {
+      padding: 0;
+      background: none;
+      font-weight: 700;
+      color: $main-color;
+    }
+  }
+
+  ul {
+    padding: 0 0 0 15px;
+    margin: 0 0 20px 0;
+    list-style: none;
+
+    li {
+      font-size: 16px;
+      line-height: 23px;
+      position: relative;
+      padding-left: 20px;
+
+      &:before {
+        content: '';
+        display: block;
+        background-color: $main-color;
+        position: absolute;
+        top: 8px;
+        left: 0;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+      }
+    }
+  }
+}

@@ -123,3 +123,13 @@ $('.collapse').on('shown.bs.collapse', function () {
 $('.collapse').on('hidden.bs.collapse', function () {
     $(this).parent().removeClass('active');
 });
+
+// faq accordion mobile scroll top (delete if not needed)
+if ($(window).width() < 767) {
+    $('.panel-collapse').on('shown.bs.collapse', function () {
+        var $panel = $(this).closest('.faq-card');
+        $('html,body').animate({
+            scrollTop: $panel.offset().top - 70
+        }, 500);
+    });
+}
